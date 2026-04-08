@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # 1. La Base de Datos (PostgreSQL)
+  db:
+    image: postgres:15-alpine
+    container_name: smartchef_db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: smartchef
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # 2. El Backend (La API de Hugo)
+  backend:
+    build: ./src/backend
+    container_name: smartchef_backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/smartchef
+
+  # 3. El Pipeline (Para los scripts de Álex y Blas)
+  pipeline:
+    build: ./src/pipeline
+    container_name: smartchef_pipeline
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/smartchef
+    # Esto mantiene el contenedor encendido para que puedan ejecutar comandos dentro
+    command: tail -f /dev/null 
+
+volumes:
+  pgdata:
