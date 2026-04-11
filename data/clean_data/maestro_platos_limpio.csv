@@ -1,0 +1,26 @@
+id_plato,nombre_plato,categoria,precio_venta
+P-01,Hamburguesa Smart,Principal,12.50
+P-02,Ensalada Cesar,Entrante,9.50
+P-03,Pasta Carbonara IA,Principal,11.00
+P-04,Tarta de Queso Casera,Postre,6.50
+P-05,Refresco Cola,Bebida,2.80
+P-06,Vino Tinto Copa,Bebida,3.50
+P-07,Pizza Margarita,Principal,10.00
+P-08,Croquetas de Jamon,Entrante,8.00
+P-09,Gazpacho Andaluz,Entrante,6.00
+P-10,Solomillo Iberico,Principal,18.00
+P-11,Salmon a la Plancha,Principal,15.50
+P-12,Risotto de Setas,Principal,13.00
+P-13,Bacalao al Horno,Principal,17.00
+P-14,Tortilla de Patatas,Entrante,7.50
+P-15,Cerveza Artesana,Bebida,3.50
+P-16,Agua Mineral,Bebida,2.00
+P-17,Brownie con Helado,Postre,5.50
+P-18,Ensaladilla Rusa,Entrante,8.50
+P-19,Entrecot Ternera,Principal,21.00
+P-20,Paella de Marisco,Principal,16.00
+P-21,Cafe Solo,Bebida,1.50
+P-22,Te Verde,Bebida,1.80
+P-23,Tiramisu de la Casa,Postre,6.00
+P-24,Nuggets de Pollo,Principal,9.00
+P-25,Canelones de Carne,Principal,12.00
