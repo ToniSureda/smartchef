@@ -1,0 +1,299 @@
+--
+-- PostgreSQL database dump
+--
+
+\restrict DqqMGhYeBKwbCwBPeq2esC86q7itrDc0GwJxiJkXqOqkx8OqMojRLEKCTKzdmD6
+
+-- Dumped from database version 18.3
+-- Dumped by pg_dump version 18.3
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: dim_context; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.dim_context (
+    date date NOT NULL,
+    is_holiday integer,
+    es_vispera integer,
+    day_of_week character varying(20),
+    temp_max numeric(5,2),
+    precipitation numeric(5,2)
+);
+
+
+ALTER TABLE public.dim_context OWNER TO postgres;
+
+--
+-- Name: dim_menu; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.dim_menu (
+    id_plato character varying(50) NOT NULL,
+    nombre_plato character varying(255),
+    categoria character varying(100),
+    precio_venta numeric(10,2)
+);
+
+
+ALTER TABLE public.dim_menu OWNER TO postgres;
+
+--
+-- Name: dim_recipes; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.dim_recipes (
+    id_recipe integer NOT NULL,
+    id_plato character varying(50),
+    ingrediente character varying(255),
+    cantidad numeric(10,3),
+    unidad character varying(50),
+    coste_unitario_kg numeric(10,2)
+);
+
+
+ALTER TABLE public.dim_recipes OWNER TO postgres;
+
+--
+-- Name: dim_recipes_id_recipe_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.dim_recipes_id_recipe_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.dim_recipes_id_recipe_seq OWNER TO postgres;
+
+--
+-- Name: dim_recipes_id_recipe_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.dim_recipes_id_recipe_seq OWNED BY public.dim_recipes.id_recipe;
+
+
+--
+-- Name: fact_predictions; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.fact_predictions (
+    id_prediction integer NOT NULL,
+    fecha_prediccion date,
+    id_plato character varying(50),
+    cantidad_predicha numeric(10,2),
+    intervalo_confianza character varying(100)
+);
+
+
+ALTER TABLE public.fact_predictions OWNER TO postgres;
+
+--
+-- Name: fact_predictions_id_prediction_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.fact_predictions_id_prediction_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public.fact_predictions_id_prediction_seq OWNER TO postgres;
+
+--
+-- Name: fact_predictions_id_prediction_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.fact_predictions_id_prediction_seq OWNED BY public.fact_predictions.id_prediction;
+
+
+--
+-- Name: fact_sales; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.fact_sales (
+    id_ticket character varying(100) NOT NULL,
+    fecha date,
+    turno character varying(50),
+    id_plato character varying(50) NOT NULL,
+    cantidad integer
+);
+
+
+ALTER TABLE public.fact_sales OWNER TO postgres;
+
+--
+-- Name: dim_recipes id_recipe; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.dim_recipes ALTER COLUMN id_recipe SET DEFAULT nextval('public.dim_recipes_id_recipe_seq'::regclass);
+
+
+--
+-- Name: fact_predictions id_prediction; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_predictions ALTER COLUMN id_prediction SET DEFAULT nextval('public.fact_predictions_id_prediction_seq'::regclass);
+
+
+--
+-- Data for Name: dim_context; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.dim_context (date, is_holiday, es_vispera, day_of_week, temp_max, precipitation) FROM stdin;
+\.
+
+
+--
+-- Data for Name: dim_menu; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.dim_menu (id_plato, nombre_plato, categoria, precio_venta) FROM stdin;
+\.
+
+
+--
+-- Data for Name: dim_recipes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.dim_recipes (id_recipe, id_plato, ingrediente, cantidad, unidad, coste_unitario_kg) FROM stdin;
+\.
+
+
+--
+-- Data for Name: fact_predictions; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.fact_predictions (id_prediction, fecha_prediccion, id_plato, cantidad_predicha, intervalo_confianza) FROM stdin;
+\.
+
+
+--
+-- Data for Name: fact_sales; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.fact_sales (id_ticket, fecha, turno, id_plato, cantidad) FROM stdin;
+\.
+
+
+--
+-- Name: dim_recipes_id_recipe_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.dim_recipes_id_recipe_seq', 1, false);
+
+
+--
+-- Name: fact_predictions_id_prediction_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.fact_predictions_id_prediction_seq', 1, false);
+
+
+--
+-- Name: dim_context dim_context_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.dim_context
+    ADD CONSTRAINT dim_context_pkey PRIMARY KEY (date);
+
+
+--
+-- Name: dim_menu dim_menu_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.dim_menu
+    ADD CONSTRAINT dim_menu_pkey PRIMARY KEY (id_plato);
+
+
+--
+-- Name: dim_recipes dim_recipes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.dim_recipes
+    ADD CONSTRAINT dim_recipes_pkey PRIMARY KEY (id_recipe);
+
+
+--
+-- Name: fact_predictions fact_predictions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_predictions
+    ADD CONSTRAINT fact_predictions_pkey PRIMARY KEY (id_prediction);
+
+
+--
+-- Name: fact_sales fact_sales_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_sales
+    ADD CONSTRAINT fact_sales_pkey PRIMARY KEY (id_ticket, id_plato);
+
+
+--
+-- Name: dim_recipes dim_recipes_id_plato_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.dim_recipes
+    ADD CONSTRAINT dim_recipes_id_plato_fkey FOREIGN KEY (id_plato) REFERENCES public.dim_menu(id_plato);
+
+
+--
+-- Name: fact_predictions fact_predictions_fecha_prediccion_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_predictions
+    ADD CONSTRAINT fact_predictions_fecha_prediccion_fkey FOREIGN KEY (fecha_prediccion) REFERENCES public.dim_context(date);
+
+
+--
+-- Name: fact_predictions fact_predictions_id_plato_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_predictions
+    ADD CONSTRAINT fact_predictions_id_plato_fkey FOREIGN KEY (id_plato) REFERENCES public.dim_menu(id_plato);
+
+
+--
+-- Name: fact_sales fact_sales_fecha_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_sales
+    ADD CONSTRAINT fact_sales_fecha_fkey FOREIGN KEY (fecha) REFERENCES public.dim_context(date);
+
+
+--
+-- Name: fact_sales fact_sales_id_plato_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.fact_sales
+    ADD CONSTRAINT fact_sales_id_plato_fkey FOREIGN KEY (id_plato) REFERENCES public.dim_menu(id_plato);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict DqqMGhYeBKwbCwBPeq2esC86q7itrDc0GwJxiJkXqOqkx8OqMojRLEKCTKzdmD6
+
