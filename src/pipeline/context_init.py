@@ -4,8 +4,7 @@ import requests
 from datetime import datetime, timedelta
 import os
 
-# --- CONFIGURACIÓN DE RUTAS BLINDADA ---
-# Detecta la ubicación real del script y construye la ruta hacia data/clean
+# --- CONFIGURACIÓN DE RUTAS ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
 CLEAN_PATH = os.path.join(PROJECT_ROOT, 'data', 'clean_data', 'dim_context.csv')
@@ -19,7 +18,7 @@ def get_weather_data(start_date, end_date):
 
     all_data = []
 
-    # 1. PARTE HISTÓRICA (Archive)
+    # 1. PARTE HISTÓRICA
     if start_dt <= yesterday:
         hist_end = min(end_dt, yesterday)
         print(f"📡 Consultando histórico: {start_date} al {hist_end}")
@@ -38,7 +37,7 @@ def get_weather_data(start_date, end_date):
                 "precipitation": res["daily"]["precipitation_sum"]
             }))
 
-    # 2. PARTE FUTURA (Forecast)
+    # 2. PARTE FUTURA
     if end_dt > yesterday:
         fore_start = max(start_dt, yesterday + timedelta(days=1))
         print(f"📡 Consultando predicción: {fore_start} al {end_date}")
@@ -60,12 +59,19 @@ def get_weather_data(start_date, end_date):
     return pd.concat(all_data).drop_duplicates()
 
 def add_features(df):
+    """Añade festivos, vísperas y formatea datos"""
     es_holidays = holidays.CountryHoliday('ESP', subdiv='CT')
     df['is_holiday'] = df['date'].apply(lambda x: 1 if x in es_holidays else 0)
     df = df.sort_values('date')
     df['es_vispera'] = df['is_holiday'].shift(-1).fillna(0).astype(int)
-    days_map = {0:'Lunes', 1:'Martes', 2:'Miércoles', 3:'Jueves', 4:'Viernes', 5:'Sábado', 6:'Domingo'}
+    
+    # Mapeo sin acentos para evitar problemas de compatibilidad (opcional pero seguro)
+    days_map = {0:'Lunes', 1:'Martes', 2:'Miercoles', 3:'Jueves', 4:'Viernes', 5:'Sabado', 6:'Domingo'}
     df['day_of_week'] = df['date'].dt.dayofweek.map(days_map)
+    
+    # Redondeo para limpieza de datos
+    df['temp_max'] = df['temp_max'].round(1)
+    df['precipitation'] = df['precipitation'].round(2)
     return df
 
 def run_init():
@@ -73,13 +79,25 @@ def run_init():
     start = "2024-01-01"
     end = (datetime.now() + timedelta(days=14)).strftime("%Y-%m-%d")
     
-    df = get_weather_data(start, end)
-    df = add_features(df)
-    
-    cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
-    df[cols].to_csv(CLEAN_PATH, index=False)
-    print(f"✅ CSV Creado en: {CLEAN_PATH}")
-    print(f"📊 Registros: {len(df)}")
+    try:
+        df = get_weather_data(start, end)
+        df = add_features(df)
+        
+        cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
+        
+        # GUARDADO BLINDADO
+        df[cols].to_csv(
+            CLEAN_PATH, 
+            index=False, 
+            date_format='%Y-%m-%d', 
+            encoding='utf-8',
+            quoting=1,
+            lineterminator='\n'
+        )
+        print(f"✅ CSV Creado en: {CLEAN_PATH}")
+        print(f"📊 Registros: {len(df)}")
+    except Exception as e:
+        print(f"❌ Error en run_init: {e}")
 
 if __name__ == "__main__":
     run_init()
