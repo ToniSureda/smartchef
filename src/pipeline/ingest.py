@@ -5,26 +5,24 @@ from datetime import datetime, timedelta
 import os
 import logging
 
-# Configuración de logging para mantener el estilo del Ingest
+# Configuración de logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-# CONFIGURACIÓN DE RUTAS (Igual que tu script de Ingest)
+# CONFIGURACIÓN DE RUTAS
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Subimos dos niveles (fuera de src/pipeline) y entramos en data/clean_data
-CLEAN_PATH = os.path.join(BASE_DIR, '../../data/clean_data/dim_context.csv')
+# Ajustado a la estructura de carpetas estándar
+CLEAN_PATH = os.path.abspath(os.path.join(BASE_DIR, '..', '..', 'data', 'clean_data', 'dim_context.csv'))
 
 LAT, LON = 41.3851, 2.1734 # Barcelona
 
 def get_weather_data(start_date, end_date):
-    """Obtiene datos mezclando histórico y predicción para evitar KeyErrors."""
     yesterday = (datetime.now() - timedelta(days=1)).date()
     start_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
     end_dt = datetime.strptime(end_date, "%Y-%m-%d").date()
 
     all_data = []
 
-    # 1. PARTE HISTÓRICA
     if start_dt <= yesterday:
         hist_end = min(end_dt, yesterday)
         logger.info(f"Consultando histórico: {start_date} al {hist_end}")
@@ -43,7 +41,6 @@ def get_weather_data(start_date, end_date):
                 "precipitation": res["daily"]["precipitation_sum"]
             }))
 
-    # 2. PARTE FUTURA
     if end_dt > yesterday:
         fore_start = max(start_dt, yesterday + timedelta(days=1))
         logger.info(f"Consultando predicción: {fore_start} al {end_date}")
@@ -65,23 +62,24 @@ def get_weather_data(start_date, end_date):
     return pd.concat(all_data).drop_duplicates()
 
 def add_features(df):
-    """Añade festivos de Cataluña y vísperas."""
     es_holidays = holidays.CountryHoliday('ESP', subdiv='CT')
     df['is_holiday'] = df['date'].apply(lambda x: 1 if x in es_holidays else 0)
     df = df.sort_values('date')
     df['es_vispera'] = df['is_holiday'].shift(-1).fillna(0).astype(int)
-    days_map = {0:'Lunes', 1:'Martes', 2:'Miércoles', 3:'Jueves', 4:'Viernes', 5:'Sábado', 6:'Domingo'}
+    
+    # Mantener consistencia con nombres sin acentos para BBDD
+    days_map = {0:'Lunes', 1:'Martes', 2:'Miercoles', 3:'Jueves', 4:'Viernes', 5:'Sabado', 6:'Domingo'}
     df['day_of_week'] = df['date'].dt.dayofweek.map(days_map)
+    
+    df['temp_max'] = df['temp_max'].round(1)
+    df['precipitation'] = df['precipitation'].round(2)
     return df
 
 def run_init():
     logger.info("Iniciando generación de dim_context...")
-    
-    # Crear carpeta si no existe
     os.makedirs(os.path.dirname(CLEAN_PATH), exist_ok=True)
     
     start = "2024-01-01"
-    # Horizonte de 14 días
     end = (datetime.now() + timedelta(days=14)).strftime("%Y-%m-%d")
     
     try:
@@ -89,10 +87,18 @@ def run_init():
         df = add_features(df)
         
         cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
-        df[cols].to_csv(CLEAN_PATH, index=False)
+        
+        # Guardado con formato ISO y encoding seguro
+        df[cols].to_csv(
+            CLEAN_PATH, 
+            index=False, 
+            date_format='%Y-%m-%d', 
+            encoding='utf-8',
+            quoting=1,
+            lineterminator='\n'
+        )
         
         logger.info(f"Dataset guardado exitosamente en: {CLEAN_PATH}")
-        logger.info(f"Rango de datos: {df['date'].min().date()} a {df['date'].max().date()}")
     except Exception as e:
         logger.error(f"Error en el proceso: {e}")
 
