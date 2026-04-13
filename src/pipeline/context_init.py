@@ -3,31 +3,26 @@ import holidays
 import requests
 from datetime import datetime, timedelta
 import os
-import logging
 
-# Configuración de logging para mantener el estilo del Ingest
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-logger = logging.getLogger(__name__)
-
-# CONFIGURACIÓN DE RUTAS (Igual que tu script de Ingest)
+# --- CONFIGURACIÓN DE RUTAS BLINDADA ---
+# Detecta la ubicación real del script y construye la ruta hacia data/clean
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Subimos dos niveles (fuera de src/pipeline) y entramos en data/clean_data
-CLEAN_PATH = os.path.join(BASE_DIR, '../../data/clean_data/dim_context.csv')
+PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
+CLEAN_PATH = os.path.join(PROJECT_ROOT, 'data', 'clean_data', 'dim_context.csv')
 
 LAT, LON = 41.3851, 2.1734 # Barcelona
 
 def get_weather_data(start_date, end_date):
-    """Obtiene datos mezclando histórico y predicción para evitar KeyErrors."""
     yesterday = (datetime.now() - timedelta(days=1)).date()
     start_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
     end_dt = datetime.strptime(end_date, "%Y-%m-%d").date()
 
     all_data = []
 
-    # 1. PARTE HISTÓRICA
+    # 1. PARTE HISTÓRICA (Archive)
     if start_dt <= yesterday:
         hist_end = min(end_dt, yesterday)
-        logger.info(f"Consultando histórico: {start_date} al {hist_end}")
+        print(f"📡 Consultando histórico: {start_date} al {hist_end}")
         url_hist = "https://archive-api.open-meteo.com/v1/archive"
         params_hist = {
             "latitude": LAT, "longitude": LON,
@@ -43,10 +38,10 @@ def get_weather_data(start_date, end_date):
                 "precipitation": res["daily"]["precipitation_sum"]
             }))
 
-    # 2. PARTE FUTURA
+    # 2. PARTE FUTURA (Forecast)
     if end_dt > yesterday:
         fore_start = max(start_dt, yesterday + timedelta(days=1))
-        logger.info(f"Consultando predicción: {fore_start} al {end_date}")
+        print(f"📡 Consultando predicción: {fore_start} al {end_date}")
         url_fore = "https://api.open-meteo.com/v1/forecast"
         params_fore = {
             "latitude": LAT, "longitude": LON,
@@ -65,7 +60,6 @@ def get_weather_data(start_date, end_date):
     return pd.concat(all_data).drop_duplicates()
 
 def add_features(df):
-    """Añade festivos de Cataluña y vísperas."""
     es_holidays = holidays.CountryHoliday('ESP', subdiv='CT')
     df['is_holiday'] = df['date'].apply(lambda x: 1 if x in es_holidays else 0)
     df = df.sort_values('date')
@@ -75,26 +69,17 @@ def add_features(df):
     return df
 
 def run_init():
-    logger.info("Iniciando generación de dim_context...")
-    
-    # Crear carpeta si no existe
     os.makedirs(os.path.dirname(CLEAN_PATH), exist_ok=True)
-    
     start = "2024-01-01"
-    # Horizonte de 14 días
     end = (datetime.now() + timedelta(days=14)).strftime("%Y-%m-%d")
     
-    try:
-        df = get_weather_data(start, end)
-        df = add_features(df)
-        
-        cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
-        df[cols].to_csv(CLEAN_PATH, index=False)
-        
-        logger.info(f"Dataset guardado exitosamente en: {CLEAN_PATH}")
-        logger.info(f"Rango de datos: {df['date'].min().date()} a {df['date'].max().date()}")
-    except Exception as e:
-        logger.error(f"Error en el proceso: {e}")
+    df = get_weather_data(start, end)
+    df = add_features(df)
+    
+    cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
+    df[cols].to_csv(CLEAN_PATH, index=False)
+    print(f"✅ CSV Creado en: {CLEAN_PATH}")
+    print(f"📊 Registros: {len(df)}")
 
 if __name__ == "__main__":
     run_init()
