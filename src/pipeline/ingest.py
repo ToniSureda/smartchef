@@ -1,100 +1,72 @@
 import pandas as pd
-import holidays
-import requests
-from datetime import datetime, timedelta
+import numpy as np
 import os
 import logging
 
-# Configuración de logging para mantener el estilo del Ingest
+# Configuración básica de logging
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
-# CONFIGURACIÓN DE RUTAS (Igual que tu script de Ingest)
+# Configuración de rutas relativas
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Subimos dos niveles (fuera de src/pipeline) y entramos en data/clean_data
-CLEAN_PATH = os.path.join(BASE_DIR, '../../data/clean_data/dim_context.csv')
+RAW_PATH = os.path.join(BASE_DIR, '../../data/raw_data/ventas_historico_sucio.csv')
+MASTER_PATH = os.path.join(BASE_DIR, '../../data/clean_data/maestro_platos_limpio.csv')
+CLEAN_PATH = os.path.join(BASE_DIR, '../../data/clean_data/ventas_historico_limpio.csv')
 
-LAT, LON = 41.3851, 2.1734 # Barcelona
+def filter_anomalies(df):
+    """Elimina registros con cantidades ilógicas u outliers."""
+    # Filtramos cantidades negativas o superiores a 20 (umbral de error humano)
+    return df[(df['cantidad'] > 0) & (df['cantidad'] <= 20)]
 
-def get_weather_data(start_date, end_date):
-    """Obtiene datos mezclando histórico y predicción para evitar KeyErrors."""
-    yesterday = (datetime.now() - timedelta(days=1)).date()
-    start_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
-    end_dt = datetime.strptime(end_date, "%Y-%m-%d").date()
+def run_ingest():
+    logger.info("Iniciando proceso de ingesta y limpieza...")
 
-    all_data = []
+    if not os.path.exists(RAW_PATH) or not os.path.exists(MASTER_PATH):
+        logger.error("Error: Faltan archivos de entrada en data/")
+        return
 
-    # 1. PARTE HISTÓRICA
-    if start_dt <= yesterday:
-        hist_end = min(end_dt, yesterday)
-        logger.info(f"Consultando histórico: {start_date} al {hist_end}")
-        url_hist = "https://archive-api.open-meteo.com/v1/archive"
-        params_hist = {
-            "latitude": LAT, "longitude": LON,
-            "start_date": start_date, "end_date": hist_end.strftime("%Y-%m-%d"),
-            "daily": ["temperature_2m_max", "precipitation_sum"],
-            "timezone": "Europe/Madrid"
-        }
-        res = requests.get(url_hist, params=params_hist).json()
-        if "daily" in res:
-            all_data.append(pd.DataFrame({
-                "date": pd.to_datetime(res["daily"]["time"]),
-                "temp_max": res["daily"]["temperature_2m_max"],
-                "precipitation": res["daily"]["precipitation_sum"]
-            }))
+    # 1. Carga de datos
+    df = pd.read_csv(RAW_PATH)
+    master_df = pd.read_csv(MASTER_PATH)
+    initial_rows = len(df)
 
-    # 2. PARTE FUTURA
-    if end_dt > yesterday:
-        fore_start = max(start_dt, yesterday + timedelta(days=1))
-        logger.info(f"Consultando predicción: {fore_start} al {end_date}")
-        url_fore = "https://api.open-meteo.com/v1/forecast"
-        params_fore = {
-            "latitude": LAT, "longitude": LON,
-            "start_date": fore_start.strftime("%Y-%m-%d"), "end_date": end_date,
-            "daily": ["temperature_2m_max", "precipitation_sum"],
-            "timezone": "Europe/Madrid"
-        }
-        res = requests.get(url_fore, params=params_fore).json()
-        if "daily" in res:
-            all_data.append(pd.DataFrame({
-                "date": pd.to_datetime(res["daily"]["time"]),
-                "temp_max": res["daily"]["temperature_2m_max"],
-                "precipitation": res["daily"]["precipitation_sum"]
-            }))
+    # 2. Limpieza inicial: Duplicados exactos y nulos en IDs
+    df = df.drop_duplicates()
+    df['fecha'] = pd.to_datetime(df['fecha'], errors='coerce')
+    df = df.dropna(subset=['fecha', 'id_ticket', 'id_plato'])
 
-    return pd.concat(all_data).drop_duplicates()
+    # 3. Normalización e Imputación de turnos por ticket
+    # Limpiamos strings y rellenamos turnos faltantes usando el contexto del mismo ticket
+    df['turno'] = df['turno'].astype(str).str.strip().str.capitalize()
+    df['turno'] = df.groupby('id_ticket')['turno'].transform(
+        lambda x: x.replace(['Nan', 'None', 'Null', ''], np.nan).ffill().bfill()
+    )
+    df = df[df['turno'].isin(['Comida', 'Cena'])]
 
-def add_features(df):
-    """Añade festivos de Cataluña y vísperas."""
-    es_holidays = holidays.CountryHoliday('ESP', subdiv='CT')
-    df['is_holiday'] = df['date'].apply(lambda x: 1 if x in es_holidays else 0)
-    df = df.sort_values('date')
-    df['es_vispera'] = df['is_holiday'].shift(-1).fillna(0).astype(int)
-    days_map = {0:'Lunes', 1:'Martes', 2:'Miércoles', 3:'Jueves', 4:'Viernes', 5:'Sábado', 6:'Domingo'}
-    df['day_of_week'] = df['date'].dt.dayofweek.map(days_map)
-    return df
+    # 4. Validación de tipos y anomalías
+    df['cantidad'] = pd.to_numeric(df['cantidad'], errors='coerce')
+    df = filter_anomalies(df)
+    df['cantidad'] = df['cantidad'].astype(int)
 
-def run_init():
-    logger.info("Iniciando generación de dim_context...")
+    # 5. Integridad referencial con maestro de platos
+    # Solo mantenemos ventas de platos que existen en nuestro catálogo limpio
+    valid_menu_ids = master_df['id_plato'].unique()
+    df = df[df['id_plato'].isin(valid_menu_ids)]
+
+    # 6. Enriquecimiento (Merge)
+    # Añadimos info del maestro para facilitar el análisis posterior
+    final_df = df.merge(
+        master_df[['id_plato', 'nombre_plato', 'categoria']], 
+        on='id_plato', 
+        how='left'
+    )
+
+    # 7. Exportación a carpeta clean
+    final_df.to_csv(CLEAN_PATH, index=False)
     
-    # Crear carpeta si no existe
-    os.makedirs(os.path.dirname(CLEAN_PATH), exist_ok=True)
-    
-    start = "2024-01-01"
-    # Horizonte de 14 días
-    end = (datetime.now() + timedelta(days=14)).strftime("%Y-%m-%d")
-    
-    try:
-        df = get_weather_data(start, end)
-        df = add_features(df)
-        
-        cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
-        df[cols].to_csv(CLEAN_PATH, index=False)
-        
-        logger.info(f"Dataset guardado exitosamente en: {CLEAN_PATH}")
-        logger.info(f"Rango de datos: {df['date'].min().date()} a {df['date'].max().date()}")
-    except Exception as e:
-        logger.error(f"Error en el proceso: {e}")
+    health_score = (len(final_df) / initial_rows) * 100
+    logger.info(f"Proceso finalizado. Health Score: {health_score:.2f}%")
+    logger.info(f"Dataset guardado en: {CLEAN_PATH}")
 
 if __name__ == "__main__":
-    run_init()
+    run_ingest()
