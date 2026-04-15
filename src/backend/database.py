@@ -1,10 +1,7 @@
 import psycopg2
+import os
 
 def get_connection():
-    return psycopg2.connect(
-        host="localhost",
-        port=5432,
-        database="smartchef",
-        user="postgres",
-        password="password"
-    )
+    # Usamos la variable de entorno que le pasamos en el docker-compose
+    db_url = os.getenv("DATABASE_URL", "postgresql://smartchef:password@db:5432/smartchef")
+    return psycopg2.connect(db_url)

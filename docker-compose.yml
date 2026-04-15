@@ -1,40 +1,62 @@
-version: '3.8'
-
 services:
-  # 1. La Base de Datos (PostgreSQL)
+# 1. BASE DE DATOS
   db:
-    image: postgres:15-alpine
+    build: ./data/database
     container_name: smartchef_db
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_USER: smartchef
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: smartchef
     ports:
       - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartchef"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - db_data:/var/lib/postgresql/data
 
-  # 2. El Backend (La API de Hugo)
+  # 2. BACKEND (Tu API)
   backend:
-    build: ./src/backend
+    build: 
+      context: ./src/backend
     container_name: smartchef_backend
     ports:
       - "8000:8000"
     depends_on:
       - db
+    volumes:
+      - ./src/backend:/app          # Tu código en vivo
+      - ./data:/app/data            # Acceso a los CSVs y exports
     environment:
-      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/smartchef
+      - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
 
-  # 3. El Pipeline (Para los scripts de Álex y Blas)
+  # 3. FRONTEND (Servidor Web Nginx)
+  frontend:
+    image: nginx:alpine
+    container_name: smartchef_frontend
+    build: ./src/frontend
+    ports:
+      - "80:80"  # Lo verás en http://localhost
+    volumes:
+      # Sirve tus archivos HTML, CSS y JS automáticamente
+      - ./src/frontend:/usr/share/nginx/html
+
+  # 4. PIPELINE (El currante de las 3 AM)
   pipeline:
-    build: ./src/pipeline
+    build:
+      context: ./src/pipeline
     container_name: smartchef_pipeline
     depends_on:
-      - db
+      db:
+        condition: service_healthy
+    volumes:
+      - ./src/pipeline:/app         # Tu código de pipeline
+      - ./data:/data     
+      - ./src/backend:/app/backend         # Acceso para guardar los CSVs limpios/sucios
     environment:
-      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/smartchef
-    # Esto mantiene el contenedor encendido para que puedan ejecutar comandos dentro
-    command: tail -f /dev/null 
+      - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
 
 volumes:
-  pgdata:
+  db_data:
