@@ -1,0 +1,62 @@
+services:
+# Base de datos PostgreSQL con volumen persistente para evitar pérdida de información
+  db:
+    build: ./data/database
+    container_name: smartchef_db
+    environment:
+      POSTGRES_USER: smartchef
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: smartchef
+    ports:
+      - "5432:5432"
+# Healthcheck para la revisión de disponibilidad antes de arrancar otros contenedores.
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U smartchef"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - db_data:/var/lib/postgresql/databackend
+# Backend FastAPI. Mapeo de volumen local para sincronización de código en tiempo real.  backend:
+  backend:
+    build:  
+      context: ./src/backend
+    container_name: smartchef_backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    volumes:
+      - ./src/backend:/app         
+      - ./data:/app/data           
+    environment:
+      - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
+
+# Servidor Nginx para el despliegue del frontend web.
+  frontend:
+    image: nginx:alpine
+    container_name: smartchef_frontend
+    build: ./src/frontend
+    ports:
+      - "80:80"  
+    volumes:
+      - ./src/frontend:/usr/share/nginx/html
+
+# Servicio de ingesta y modelo predictivo. Condicionado al estado saludable de la base de datos.
+  pipeline:
+    build:
+      context: ./src/pipeline
+    container_name: smartchef_pipeline
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./src/pipeline:/app       
+      - ./data:/data     
+      - ./src/backend:/app/backend         
+    environment:
+      - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
+
+volumes:
+# Declaración del volumen físico para almacenamiento persistente.
+  db_data:

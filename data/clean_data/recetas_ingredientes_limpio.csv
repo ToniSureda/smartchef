@@ -1,0 +1,250 @@
+id_plato,ingrediente,cantidad,unidad,coste_unitario_kg
+P-01,Carne Vacuno,0.200,kg,12.00
+P-01,Pan Brioche,1,ud,0.50
+P-01,Queso Cheddar,0.020,kg,9.50
+P-01,Lechuga,0.015,kg,1.80
+P-01,Tomate,0.020,kg,2.10
+P-01,Cebolla Caramelizada,0.030,kg,3.50
+P-01,Bacon Ahumado,0.025,kg,8.50
+P-01,Pepinillos,0.010,kg,4.20
+P-01,Salsa Secreta,0.030,kg,5.00
+P-01,Patatas Guarnicion,0.150,kg,0.90
+P-01,Aceite Fritura,0.050,kg,2.10
+P-01,Sal Fina,0.002,kg,0.50
+P-02,Lechuga Romana,0.150,kg,1.50
+P-02,Pollo Crujiente,0.100,kg,7.20
+P-02,Salsa Cesar,0.040,kg,5.50
+P-02,Queso Parmesano,0.015,kg,14.00
+P-02,Pan Frito (Croutons),0.020,kg,3.00
+P-02,Anchoas,0.005,kg,22.00
+P-02,Aceite de Oliva,0.010,kg,6.50
+P-02,Limon Juice,0.005,kg,2.00
+P-02,Pimienta Negra,0.001,kg,18.00
+P-02,Ajo,0.002,kg,3.00
+P-02,Mostaza,0.005,kg,4.50
+P-02,Huevo Cocido,0.5,ud,0.15
+P-03,Pasta Espagueti,0.120,kg,1.30
+P-03,Huevo fresco,2,ud,0.15
+P-03,Guanciale,0.050,kg,16.00
+P-03,Queso Pecorino,0.030,kg,18.00
+P-03,Pimienta Negra,0.003,kg,25.00
+P-03,Sal de Mar,0.005,kg,0.80
+P-03,Agua Coccion,0.500,kg,0.01
+P-03,Ajo tierno,0.010,kg,4.00
+P-03,Aceite de Oliva,0.005,kg,6.50
+P-03,Perejil,0.002,kg,8.00
+P-03,Queso Parmesano Extra,0.010,kg,14.00
+P-03,Nata Cocina (Opcional),0.020,kg,3.50
+P-04,Queso Crema,0.150,kg,7.50
+P-04,Nata Liquida,0.100,kg,4.00
+P-04,Azucar Blanca,0.050,kg,1.20
+P-04,Huevo fresco,1,ud,0.15
+P-04,Galleta Maria,0.030,kg,2.50
+P-04,Mantequilla,0.020,kg,6.00
+P-04,Esencia Vainilla,0.002,kg,45.00
+P-04,Sal,0.001,kg,0.50
+P-04,Harina Trigo,0.005,kg,1.00
+P-04,Mermelada Arandanos,0.020,kg,5.50
+P-04,Frutos Rojos,0.010,kg,12.00
+P-04,Papel Horno,0.001,ud,0.05
+P-05,Lata Refresco,1,ud,0.60
+P-05,Hielo,0.100,kg,0.20
+P-05,Rodaja Limon,0.010,kg,2.00
+P-05,Pajita Biodegradable,1,ud,0.02
+P-06,Vino Tinto Botella,0.150,litro,8.00
+P-06,Copa Vidrio (Uso),1,ud,0.05
+P-07,Masa Pizza,1,ud,1.20
+P-07,Tomate Tamizado,0.080,kg,1.90
+P-07,Queso Mozzarella,0.120,kg,8.00
+P-07,Albahaca Fresca,0.005,kg,12.00
+P-07,Aceite de Oliva,0.010,kg,5.00
+P-07,Harina de Espelta,0.010,kg,1.50
+P-07,Sal,0.002,kg,0.50
+P-07,Oregano Seco,0.001,kg,15.00
+P-07,Ajo en Polvo,0.001,kg,8.00
+P-07,Levadura fresca,0.002,kg,4.50
+P-07,Azucar (Leudado),0.001,kg,1.20
+P-07,Agua Mineral,0.050,kg,0.10
+P-08,Jamon Iberico,0.040,kg,45.00
+P-08,Leche Entera,0.250,litro,1.00
+P-08,Mantequilla,0.040,kg,6.00
+P-08,Harina Trigo,0.050,kg,1.00
+P-08,Huevo (Rebozado),1,ud,0.15
+P-08,Pan Rallado,0.050,kg,1.50
+P-08,Aceite de Girasol,0.100,kg,2.10
+P-08,Nuez Moscada,0.001,kg,35.00
+P-08,Cebolla Blanca,0.020,kg,1.10
+P-08,Sal,0.002,kg,0.50
+P-08,Caldo de Pollo,0.050,kg,1.50
+P-08,Gelatina Neutra,0.001,kg,20.00
+P-09,Tomate Pera,0.500,kg,1.80
+P-09,Pimiento Verde,0.050,kg,2.50
+P-09,Pepino,0.050,kg,1.40
+P-09,Aceite Oliva VE,0.050,kg,8.50
+P-09,Vinagre de Jerez,0.015,kg,4.00
+P-09,Pan del dia anterior,0.050,kg,0.50
+P-09,Sal,0.005,kg,0.50
+P-09,Agua Fria,0.100,kg,0.10
+P-09,Ajo Blanco,0.003,kg,3.00
+P-09,Huevo Duro (Garnit),0.2,ud,0.15
+P-09,Jamon Picado (Garnit),0.010,kg,45.00
+P-09,Comino,0.001,kg,12.00
+P-10,Solomillo Iberico,0.250,kg,18.50
+P-10,Sal Escamas,0.002,kg,4.00
+P-10,Aceite Oliva,0.015,kg,8.50
+P-10,Patata Monalisa,0.200,kg,0.90
+P-10,Pimiento de Padron,0.050,kg,6.00
+P-10,Ajo Morado,0.005,kg,4.00
+P-10,Romero Fresco,0.002,kg,15.00
+P-10,Mantequilla,0.010,kg,6.00
+P-10,Vino Pedro Ximenez,0.030,litro,12.00
+P-10,Cebolla Chalota,0.020,kg,4.50
+P-10,Pimienta Grano,0.002,kg,22.00
+P-10,Caldo Carne Conc,0.020,kg,15.00
+P-11,Salmon Fresco,0.200,kg,19.00
+P-11,Esparragos Verdes,0.100,kg,6.50
+P-11,Aceite Oliva,0.010,kg,8.50
+P-11,Limon Juice,0.010,kg,2.00
+P-11,Eneldo Fresco,0.002,kg,18.00
+P-11,Sal Fina,0.002,kg,0.50
+P-11,Pimienta Blanca,0.001,kg,24.00
+P-11,Miel (Glaseado),0.005,kg,9.00
+P-11,Soja Salsa,0.005,kg,4.50
+P-11,Semillas Sesamo,0.001,kg,11.00
+P-11,Vino Blanco,0.020,litro,5.00
+P-11,Tomate Cherry,0.030,kg,4.50
+P-12,Arroz Arborio,0.100,kg,3.50
+P-12,Setas Variadas,0.150,kg,12.00
+P-12,Caldo de Verduras,0.400,litro,1.80
+P-12,Cebolla Chalota,0.030,kg,4.50
+P-12,Mantequilla,0.030,kg,6.00
+P-12,Queso Parmesano,0.040,kg,14.00
+P-12,Vino Blanco,0.050,litro,5.00
+P-12,Aceite de Oliva,0.010,kg,8.50
+P-12,Sal,0.002,kg,0.50
+P-12,Pimienta Negra,0.001,kg,18.00
+P-12,Trufa Negra (Aroma),0.001,kg,250.00
+P-12,Ajo Morado,0.002,kg,4.00
+P-13,Bacalao Lomo,0.200,kg,21.00
+P-13,Patata Panadera,0.150,kg,0.90
+P-13,Cebolla Dulce,0.050,kg,1.30
+P-13,Ajo laminado,0.005,kg,4.00
+P-13,Pimenton de la Vera,0.002,kg,14.00
+P-13,Guindilla Seca,0.001,kg,18.00
+P-13,Aceite Oliva VE,0.040,kg,8.50
+P-13,Vinagre Sidra,0.005,kg,3.00
+P-13,Perejil Picado,0.002,kg,8.00
+P-13,Sal Escamas,0.002,kg,4.00
+P-13,Caldo Pescado (Base),0.020,kg,2.50
+P-13,Harina (Rebozado),0.010,kg,1.00
+P-14,Patata Monalisa,0.400,kg,0.90
+P-14,Huevo fresco,5,ud,0.15
+P-14,Cebolla Blanca,0.080,kg,1.10
+P-14,Aceite de Girasol,0.200,kg,2.10
+P-14,Aceite Oliva,0.010,kg,8.50
+P-14,Sal Fina,0.005,kg,0.50
+P-14,Chupito Leche (Truco),0.005,kg,1.00
+P-14,Pimiento Verde (Opc),0.020,kg,2.50
+P-14,Levadura (Aire),0.001,kg,4.50
+P-14,Ajo picado,0.001,kg,4.00
+P-14,Pimienta (Pizca),0.001,kg,18.00
+P-14,Pan Acompañante,0.030,kg,2.50
+P-15,Cerveza Barril,0.330,litro,1.80
+P-15,CO2 Gas,0.001,kg,5.00
+P-15,Vaso Cristal (Uso),1,ud,0.05
+P-16,Agua Mineral Botella,0.500,litro,0.40
+P-16,Reciclaje Plastico,1,ud,0.02
+P-17,Chocolate Fondant,0.050,kg,12.00
+P-17,Mantequilla,0.040,kg,6.00
+P-17,Azucar Moreno,0.040,kg,1.80
+P-17,Nueces Peladas,0.020,kg,15.00
+P-17,Harina reposteria,0.030,kg,1.50
+P-17,Huevo fresco,1,ud,0.15
+P-17,Helado Vainilla,0.050,kg,7.00
+P-17,Cacao Polvo,0.005,kg,9.00
+P-17,Sirope Chocolate,0.010,kg,6.50
+P-17,Menta hoja,0.001,kg,25.00
+P-17,Sal Maldon,0.001,kg,4.00
+P-17,Esencia Vainilla,0.002,kg,45.00
+P-18,Patata Cocida,0.200,kg,0.90
+P-18,Atun en Conserva,0.050,kg,11.00
+P-18,Mayonesa Casera,0.060,kg,4.00
+P-18,Huevo Duro,1,ud,0.15
+P-18,Zanahoria Cocida,0.030,kg,1.20
+P-18,Guisantes,0.020,kg,2.50
+P-18,Aceitunas Rellenas,0.015,kg,6.00
+P-18,Pimiento Morron,0.010,kg,5.50
+P-18,Vinagre Blanca,0.005,kg,2.00
+P-18,Sal,0.002,kg,0.50
+P-18,Pepinillo picado,0.005,kg,4.20
+P-18,Palito de Cangrejo,0.020,kg,8.00
+P-19,Entrecot Ternera Madur,0.350,kg,24.00
+P-19,Sal Escamas,0.004,kg,4.00
+P-19,Aceite Oliva VE,0.015,kg,8.50
+P-19,Patata Frita (Garnit),0.200,kg,0.90
+P-19,Aceite Fritura,0.050,kg,2.10
+P-19,Pimienta Negra Crack,0.002,kg,22.00
+P-19,Romero Seco,0.001,kg,12.00
+P-19,Tomillo Seco,0.001,kg,12.00
+P-19,Ajo en Camisa,0.005,kg,3.00
+P-19,Mantequilla de Hierbas,0.010,kg,15.00
+P-19,Salsa Chimi (Extra),0.020,kg,8.00
+P-19,Sal Maldon,0.001,kg,4.00
+P-20,Arroz Bomba,0.100,kg,3.20
+P-20,Gamba Roja,0.080,kg,38.00
+P-20,Calamar Nacional,0.060,kg,16.00
+P-20,Mejillon de Roca,0.080,kg,4.50
+P-20,Caldo Pescado (Fumet),0.350,kg,2.50
+P-20,Aceite Oliva VE,0.020,kg,8.50
+P-20,Azafran en Hebra,0.001,kg,800.00
+P-20,Pimiento Rojo,0.020,kg,2.50
+P-20,Judia Verde,0.020,kg,3.00
+P-20,Garrofo (Alubia),0.015,kg,4.50
+P-20,Colorante Alimentario,0.001,kg,10.00
+P-20,Sal,0.005,kg,0.50
+P-21,Cafe Grano Arabica,0.010,kg,18.00
+P-21,Agua Mineral,0.050,kg,0.10
+P-21,Azucar Sobre,1,ud,0.02
+P-21,Leche (Opcional),0.020,litro,1.00
+P-21,Galleta Cortesia,1,ud,0.10
+P-22,Bolsita Te Verde,1,ud,0.15
+P-22,Agua Mineral,0.200,kg,0.10
+P-22,Azucar Sobre,1,ud,0.02
+P-22,Sacarina,1,ud,0.05
+P-22,Limon Juice,0.005,kg,2.00
+P-23,Queso Mascarpone,0.100,kg,11.00
+P-23,Bizcocho Soletilla,0.050,kg,5.00
+P-23,Cafe Espresso,0.050,litro,2.00
+P-23,Huevo fresco,1,ud,0.15
+P-23,Azucar Blanca,0.040,kg,1.20
+P-23,Cacao en Polvo,0.005,kg,9.00
+P-23,Licor Amaretto,0.010,litro,15.00
+P-23,Nata para montar,0.040,kg,4.50
+P-23,Sal (Pizca),0.001,kg,0.50
+P-23,Canela Polvo,0.001,kg,14.00
+P-23,Esencia Vainilla,0.001,kg,45.00
+P-23,Menta decoracion,0.001,kg,25.00
+P-24,Pechuga Pollo,0.150,kg,7.00
+P-24,Pan Rallado Panko,0.040,kg,4.50
+P-24,Harina Trigo,0.020,kg,1.00
+P-24,Huevo fresco,1,ud,0.15
+P-24,Aceite de Girasol,0.100,kg,2.10
+P-24,Salsa Barbacoa,0.030,kg,4.00
+P-24,Sal,0.002,kg,0.50
+P-24,Ajo en Polvo,0.002,kg,8.00
+P-24,Cebolla Polvo,0.002,kg,8.00
+P-24,Pimenton Dulce,0.001,kg,12.00
+P-24,Leche (Marinado),0.020,kg,1.00
+P-24,Pimienta Blanca,0.001,kg,22.00
+P-25,Pasta Placas Lasaña,0.050,kg,4.50
+P-25,Carne Picada Vacuno,0.100,kg,9.50
+P-25,Carne Picada Cerdo,0.050,kg,7.50
+P-25,Tomate Frito,0.080,kg,2.20
+P-25,Cebolla Blanca,0.030,kg,1.10
+P-25,Zanahoria picada,0.020,kg,1.20
+P-25,Vino Tinto Cocina,0.020,litro,5.00
+P-25,Bechamel preparada,0.100,kg,3.50
+P-25,Queso Emmental Rall,0.030,kg,9.50
+P-25,Aceite Oliva,0.010,kg,8.50
+P-25,Sal,0.002,kg,0.50
+P-25,Nuez Moscada,0.001,kg,35.00
