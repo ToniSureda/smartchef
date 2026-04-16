@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SmartChef — Dashboard Operativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div id="loading">
+  <div class="loader-text">SMARTCHEF // CARGANDO DATOS</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🍳</div>
+    <div class="logo-text">Smart<span>Chef</span></div>
+  </div>
+  <div class="header-meta">
+    <span class="badge">MVP · GRUPO 9</span>
+    <span class="timestamp" id="ts">—</span>
+  </div>
+</header>
+
+<nav>
+  <div class="tab active" data-tab="resumen">Resumen</div>
+  <div class="tab" data-tab="ventas">Ventas &amp; Categorías</div>
+  <div class="tab" data-tab="predicciones">Predicciones</div>
+  <div class="tab" data-tab="desperdicio">Riesgo Desperdicio</div>
+  <div class="tab" data-tab="ingredientes">Ingredientes</div>
+</nav>
+
+<main>
+
+  <!-- ══ RESUMEN ══════════════════════════════════════════ -->
+  <div class="section active" id="tab-resumen">
+
+    <div class="section-title">KPIs Operativos · 90 días</div>
+
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-label">Ingresos totales</div>
+        <div class="kpi-value" id="kpi-revenue">—</div>
+        <div class="kpi-sub">últimos 90 días</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Tickets emitidos</div>
+        <div class="kpi-value" id="kpi-tickets">—</div>
+        <div class="kpi-sub">comandas únicas</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Ticket medio</div>
+        <div class="kpi-value" id="kpi-avg">—</div>
+        <div class="kpi-sub">€ por comanda</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Días analizados</div>
+        <div class="kpi-value" id="kpi-days">—</div>
+        <div class="kpi-sub">histórico disponible</div>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ingresos diarios</span>
+          <span class="panel-tag">fact_sales</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:180px">
+            <canvas id="revenueChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ventas por categoría</span>
+          <span class="panel-tag">dim_menu</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:180px">
+            <canvas id="catChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Contexto climático</span>
+          <span class="panel-tag">dim_context</span>
+        </div>
+        <div class="panel-body">
+          <div class="climate-grid" id="climateGrid"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel grid-full">
+      <div class="panel-header">
+        <span class="panel-title">Top platos · unidades vendidas</span>
+        <span class="panel-tag">dim_menu × fact_sales</span>
+      </div>
+      <div class="panel-body">
+        <div class="chart-wrap" style="height:160px">
+          <canvas id="topDishChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══ VENTAS ═══════════════════════════════════════════ -->
+  <div class="section" id="tab-ventas">
+
+    <div class="section-title">Análisis de ventas históricas</div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ingresos diarios (área)</span>
+          <span class="panel-tag">90 días</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:240px">
+            <canvas id="revenueArea"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Distribución por categoría</span>
+          <span class="panel-tag">unidades</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:240px">
+            <canvas id="catDoughnut"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Top 6 platos</span>
+        <span class="panel-tag">ranking por unidades</span>
+      </div>
+      <div class="panel-body">
+        <table id="topDishTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Plato</th>
+              <th class="right">Unidades</th>
+              <th style="width:260px">Proporción</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══ PREDICCIONES ══════════════════════════════════════ -->
+  <div class="section" id="tab-predicciones">
+
+    <div class="section-title">Predicciones próxima semana</div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Kg previstos por ingrediente</span>
+          <span class="panel-tag">fact_predictions</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:280px">
+            <canvas id="predChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Detalle de predicciones</span>
+          <span class="panel-tag">± intervalo de confianza</span>
+        </div>
+        <div class="panel-body" style="overflow-y:auto; max-height:310px">
+          <table id="predTable">
+            <thead>
+              <tr>
+                <th>Ingrediente</th>
+                <th class="right">Kg predicho</th>
+                <th class="right">± IC</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══ DESPERDICIO ════════════════════════════════════════ -->
+  <div class="section" id="tab-desperdicio">
+
+    <div class="section-title">Análisis de riesgo de desperdicio</div>
+
+    <div class="panel grid-full">
+      <div class="panel-header">
+        <span class="panel-title">Predicho vs. histórico semanal promedio</span>
+        <span class="panel-tag">desviación %</span>
+      </div>
+      <div class="panel-body">
+        <div class="chart-wrap" style="height:220px">
+          <canvas id="wasteChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-header">
+        <span class="panel-title">Matriz de riesgo por ingrediente</span>
+        <span class="panel-tag">semana +1</span>
+      </div>
+      <div class="panel-body">
+        <table id="wasteTable">
+          <thead>
+            <tr>
+              <th>Ingrediente</th>
+              <th class="right">Kg predicho</th>
+              <th class="right">Kg histórico / semana</th>
+              <th class="right">Desviación</th>
+              <th class="center">Riesgo</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ══ INGREDIENTES ══════════════════════════════════════ -->
+  <div class="section" id="tab-ingredientes">
+
+    <div class="section-title">Consumo histórico de ingredientes</div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Top 12 ingredientes consumidos</span>
+          <span class="panel-tag">kg totales · 90 días</span>
+        </div>
+        <div class="panel-body">
+          <div class="chart-wrap" style="height:300px">
+            <canvas id="ingChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header">
+          <span class="panel-title">Ranking detallado</span>
+          <span class="panel-tag">dim_recipes × fact_sales</span>
+        </div>
+        <div class="panel-body" style="overflow-y:auto; max-height:330px">
+          <table id="ingTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Ingrediente</th>
+                <th class="right">Kg totales</th>
+                <th style="width:180px">Volumen</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

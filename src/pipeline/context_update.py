@@ -10,9 +10,9 @@ logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 # --- CONFIGURACIÓN DE RUTAS BLINDADA (Misma que en init) ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
-CLEAN_PATH = os.path.join(PROJECT_ROOT, 'data', 'clean_data', 'dim_context.csv')
+DATA_PATH = os.getenv("DATA_PATH", "/data")
+CLEAN_PATH = os.path.join(DATA_PATH, "clean_data", "dim_context.csv")
+
 
 def update_incremental():
     if not os.path.exists(CLEAN_PATH):

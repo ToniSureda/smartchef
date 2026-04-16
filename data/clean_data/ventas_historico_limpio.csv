@@ -722,7 +722,6 @@ T-17849,2025-09-12,Comida,P-17,1,Brownie con Helado,Postre
 T-11606,2025-06-15,Cena,P-01,1,Hamburguesa Smart,Principal
 T-11842,2024-06-21,Comida,P-11,2,Salmon a la Plancha,Principal
 T-17738,2025-02-05,Cena,P-19,4,Entrecot Ternera,Principal
-T-10721,2024-10-14,Cena,P-16,3,Agua Mineral,Bebida
 T-15289,2025-06-12,Comida,P-22,4,Te Verde,Bebida
 T-15291,2024-02-14,Cena,P-10,2,Solomillo Iberico,Principal
 T-14624,2024-07-12,Cena,P-18,2,Ensaladilla Rusa,Entrante
@@ -3834,7 +3833,6 @@ T-15256,2025-08-29,Comida,P-24,3,Nuggets de Pollo,Principal
 T-17259,2025-07-27,Comida,P-24,2,Nuggets de Pollo,Principal
 T-12026,2025-08-23,Cena,P-06,2,Vino Tinto Copa,Bebida
 T-14975,2024-03-15,Comida,P-21,2,Cafe Solo,Bebida
-T-10721,2024-03-16,Cena,P-17,1,Brownie con Helado,Postre
 T-14284,2024-12-11,Comida,P-11,3,Salmon a la Plancha,Principal
 T-10422,2024-01-13,Cena,P-10,1,Solomillo Iberico,Principal
 T-10919,2025-09-13,Cena,P-16,3,Agua Mineral,Bebida
@@ -14401,12 +14399,2344 @@ T-14185,2024-08-04,Cena,P-13,1,Bacalao al Horno,Principal
 T-10594,2024-04-11,Comida,P-13,1,Bacalao al Horno,Principal
 T-16374,2025-03-14,Cena,P-02,4,Ensalada Cesar,Entrante
 T-14584,2024-11-12,Cena,P-04,2,Tarta de Queso Casera,Postre
-T-16409,2024-11-08,Cena,P-01,4,Hamburguesa Smart,Principal
-T-14356,2025-09-17,Comida,P-18,4,Ensaladilla Rusa,Entrante
-T-17515,2025-06-07,Comida,P-25,2,Canelones de Carne,Principal
-T-13827,2024-08-04,Comida,P-14,3,Tortilla de Patatas,Entrante
-T-10721,2025-02-15,Cena,P-24,3,Nuggets de Pollo,Principal
-T-11095,2024-11-01,Comida,P-21,2,Cafe Solo,Bebida
-T-14474,2024-01-13,Cena,P-01,2,Hamburguesa Smart,Principal
-T-13432,2024-02-14,Comida,P-08,4,Croquetas de Jamon,Entrante
-T-12157,2025-03-18,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-93579,2026-01-01,Cena,P-24,1,Nuggets de Pollo,Principal
+T-47526,2026-01-01,Cena,P-07,4,Pizza Margarita,Principal
+T-80892,2026-01-01,Comida,P-24,2,Nuggets de Pollo,Principal
+T-63470,2026-01-01,Cena,P-01,4,Hamburguesa Smart,Principal
+T-72914,2026-01-01,Cena,P-07,4,Pizza Margarita,Principal
+T-54585,2026-01-01,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-84505,2026-01-01,Cena,P-24,1,Nuggets de Pollo,Principal
+T-72158,2026-01-01,Comida,P-22,1,Te Verde,Bebida
+T-66183,2026-01-01,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-56385,2026-01-01,Comida,P-20,4,Paella de Marisco,Principal
+T-23232,2026-01-01,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-45911,2026-01-01,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-94870,2026-01-01,Comida,P-13,3,Bacalao al Horno,Principal
+T-50785,2026-01-01,Cena,P-20,2,Paella de Marisco,Principal
+T-29771,2026-01-01,Cena,P-10,4,Solomillo Iberico,Principal
+T-73787,2026-01-01,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-43716,2026-01-01,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-96801,2026-01-01,Comida,P-25,2,Canelones de Carne,Principal
+T-43627,2026-01-02,Comida,P-21,1,Cafe Solo,Bebida
+T-77149,2026-01-02,Cena,P-25,4,Canelones de Carne,Principal
+T-99231,2026-01-02,Cena,P-17,1,Brownie con Helado,Postre
+T-57637,2026-01-02,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-58879,2026-01-02,Cena,P-24,1,Nuggets de Pollo,Principal
+T-57424,2026-01-02,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-66080,2026-01-02,Comida,P-12,4,Risotto de Setas,Principal
+T-72118,2026-01-02,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-83877,2026-01-02,Cena,P-01,2,Hamburguesa Smart,Principal
+T-34201,2026-01-02,Comida,P-16,3,Agua Mineral,Bebida
+T-98968,2026-01-02,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-37664,2026-01-02,Cena,P-17,3,Brownie con Helado,Postre
+T-47384,2026-01-02,Comida,P-16,1,Agua Mineral,Bebida
+T-90078,2026-01-02,Comida,P-20,1,Paella de Marisco,Principal
+T-31147,2026-01-02,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-29893,2026-01-02,Cena,P-11,3,Salmon a la Plancha,Principal
+T-54110,2026-01-02,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-42026,2026-01-02,Cena,P-22,2,Te Verde,Bebida
+T-57524,2026-01-02,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-20691,2026-01-02,Comida,P-05,1,Refresco Cola,Bebida
+T-48979,2026-01-02,Cena,P-07,2,Pizza Margarita,Principal
+T-68817,2026-01-02,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-85261,2026-01-02,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-46442,2026-01-02,Cena,P-19,1,Entrecot Ternera,Principal
+T-21769,2026-01-02,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-68632,2026-01-02,Cena,P-19,3,Entrecot Ternera,Principal
+T-76902,2026-01-02,Cena,P-13,4,Bacalao al Horno,Principal
+T-89866,2026-01-02,Comida,P-02,2,Ensalada Cesar,Entrante
+T-51999,2026-01-02,Comida,P-25,3,Canelones de Carne,Principal
+T-57840,2026-01-02,Comida,P-19,1,Entrecot Ternera,Principal
+T-90784,2026-01-03,Comida,P-09,4,Gazpacho Andaluz,Entrante
+T-82623,2026-01-03,Cena,P-25,3,Canelones de Carne,Principal
+T-29626,2026-01-03,Cena,P-02,4,Ensalada Cesar,Entrante
+T-52071,2026-01-03,Cena,P-02,1,Ensalada Cesar,Entrante
+T-48747,2026-01-03,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-39896,2026-01-03,Cena,P-22,3,Te Verde,Bebida
+T-28145,2026-01-03,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-99166,2026-01-03,Comida,P-11,2,Salmon a la Plancha,Principal
+T-56174,2026-01-03,Cena,P-01,2,Hamburguesa Smart,Principal
+T-41381,2026-01-03,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-42518,2026-01-03,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-82373,2026-01-03,Comida,P-22,2,Te Verde,Bebida
+T-48224,2026-01-03,Cena,P-17,2,Brownie con Helado,Postre
+T-85226,2026-01-03,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-67435,2026-01-03,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-30724,2026-01-03,Cena,P-16,3,Agua Mineral,Bebida
+T-40555,2026-01-04,Cena,P-25,1,Canelones de Carne,Principal
+T-52150,2026-01-04,Cena,P-19,3,Entrecot Ternera,Principal
+T-98084,2026-01-04,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-21847,2026-01-04,Comida,P-22,3,Te Verde,Bebida
+T-90820,2026-01-04,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-70496,2026-01-04,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-49418,2026-01-04,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-38739,2026-01-04,Cena,P-07,4,Pizza Margarita,Principal
+T-28300,2026-01-04,Cena,P-10,2,Solomillo Iberico,Principal
+T-88867,2026-01-04,Cena,P-13,3,Bacalao al Horno,Principal
+T-87221,2026-01-04,Comida,P-13,2,Bacalao al Horno,Principal
+T-80017,2026-01-04,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-70799,2026-01-04,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-59021,2026-01-04,Cena,P-22,4,Te Verde,Bebida
+T-32939,2026-01-04,Cena,P-01,1,Hamburguesa Smart,Principal
+T-69300,2026-01-04,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-43371,2026-01-04,Cena,P-12,2,Risotto de Setas,Principal
+T-24098,2026-01-04,Cena,P-22,3,Te Verde,Bebida
+T-22588,2026-01-04,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-86135,2026-01-04,Comida,P-11,3,Salmon a la Plancha,Principal
+T-75098,2026-01-04,Cena,P-11,2,Salmon a la Plancha,Principal
+T-46446,2026-01-04,Comida,P-17,2,Brownie con Helado,Postre
+T-87815,2026-01-05,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-96307,2026-01-05,Comida,P-02,2,Ensalada Cesar,Entrante
+T-85535,2026-01-05,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-62111,2026-01-05,Cena,P-01,3,Hamburguesa Smart,Principal
+T-56003,2026-01-05,Cena,P-24,1,Nuggets de Pollo,Principal
+T-89627,2026-01-05,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-52242,2026-01-05,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-93645,2026-01-05,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-49281,2026-01-05,Comida,P-24,2,Nuggets de Pollo,Principal
+T-53207,2026-01-05,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-87979,2026-01-05,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-89539,2026-01-05,Cena,P-19,4,Entrecot Ternera,Principal
+T-42553,2026-01-05,Cena,P-12,2,Risotto de Setas,Principal
+T-39183,2026-01-05,Comida,P-12,3,Risotto de Setas,Principal
+T-27374,2026-01-05,Comida,P-24,1,Nuggets de Pollo,Principal
+T-85504,2026-01-05,Cena,P-24,3,Nuggets de Pollo,Principal
+T-99831,2026-01-05,Cena,P-11,3,Salmon a la Plancha,Principal
+T-71432,2026-01-05,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-32010,2026-01-05,Cena,P-22,3,Te Verde,Bebida
+T-93522,2026-01-05,Comida,P-12,4,Risotto de Setas,Principal
+T-26900,2026-01-06,Cena,P-16,3,Agua Mineral,Bebida
+T-71732,2026-01-06,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-24637,2026-01-06,Cena,P-24,2,Nuggets de Pollo,Principal
+T-97868,2026-01-06,Cena,P-15,2,Cerveza Artesana,Bebida
+T-96997,2026-01-06,Cena,P-25,4,Canelones de Carne,Principal
+T-49563,2026-01-06,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-28373,2026-01-06,Comida,P-21,3,Cafe Solo,Bebida
+T-83335,2026-01-06,Cena,P-21,4,Cafe Solo,Bebida
+T-85496,2026-01-06,Comida,P-05,1,Refresco Cola,Bebida
+T-47947,2026-01-06,Cena,P-25,2,Canelones de Carne,Principal
+T-90798,2026-01-06,Cena,P-22,1,Te Verde,Bebida
+T-89536,2026-01-06,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-33469,2026-01-06,Comida,P-22,2,Te Verde,Bebida
+T-58175,2026-01-06,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-48063,2026-01-06,Comida,P-17,4,Brownie con Helado,Postre
+T-77215,2026-01-06,Cena,P-25,4,Canelones de Carne,Principal
+T-34675,2026-01-06,Cena,P-22,2,Te Verde,Bebida
+T-49579,2026-01-06,Comida,P-24,3,Nuggets de Pollo,Principal
+T-49559,2026-01-06,Cena,P-20,3,Paella de Marisco,Principal
+T-60814,2026-01-06,Cena,P-22,3,Te Verde,Bebida
+T-67267,2026-01-06,Cena,P-16,2,Agua Mineral,Bebida
+T-91332,2026-01-06,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-26092,2026-01-06,Cena,P-02,1,Ensalada Cesar,Entrante
+T-27952,2026-01-07,Cena,P-11,3,Salmon a la Plancha,Principal
+T-47734,2026-01-07,Comida,P-22,2,Te Verde,Bebida
+T-45183,2026-01-07,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-92753,2026-01-07,Cena,P-25,4,Canelones de Carne,Principal
+T-83287,2026-01-07,Cena,P-25,2,Canelones de Carne,Principal
+T-29576,2026-01-07,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-74286,2026-01-07,Comida,P-17,1,Brownie con Helado,Postre
+T-56970,2026-01-07,Comida,P-25,4,Canelones de Carne,Principal
+T-48044,2026-01-07,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-93574,2026-01-07,Cena,P-13,2,Bacalao al Horno,Principal
+T-71328,2026-01-07,Comida,P-15,2,Cerveza Artesana,Bebida
+T-85916,2026-01-07,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-64581,2026-01-08,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-31552,2026-01-08,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-84484,2026-01-08,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-53364,2026-01-08,Cena,P-17,2,Brownie con Helado,Postre
+T-48004,2026-01-08,Comida,P-22,2,Te Verde,Bebida
+T-57755,2026-01-08,Comida,P-21,2,Cafe Solo,Bebida
+T-77112,2026-01-08,Cena,P-10,1,Solomillo Iberico,Principal
+T-85194,2026-01-09,Comida,P-05,3,Refresco Cola,Bebida
+T-46544,2026-01-09,Cena,P-02,1,Ensalada Cesar,Entrante
+T-52241,2026-01-09,Comida,P-17,4,Brownie con Helado,Postre
+T-76120,2026-01-09,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-54012,2026-01-09,Cena,P-24,4,Nuggets de Pollo,Principal
+T-31048,2026-01-09,Comida,P-19,2,Entrecot Ternera,Principal
+T-86752,2026-01-09,Cena,P-20,3,Paella de Marisco,Principal
+T-72891,2026-01-09,Cena,P-13,4,Bacalao al Horno,Principal
+T-32363,2026-01-09,Cena,P-25,4,Canelones de Carne,Principal
+T-47527,2026-01-09,Cena,P-10,4,Solomillo Iberico,Principal
+T-97119,2026-01-09,Cena,P-16,2,Agua Mineral,Bebida
+T-52562,2026-01-09,Comida,P-13,2,Bacalao al Horno,Principal
+T-76557,2026-01-09,Cena,P-16,1,Agua Mineral,Bebida
+T-88283,2026-01-09,Comida,P-20,2,Paella de Marisco,Principal
+T-86221,2026-01-09,Comida,P-25,3,Canelones de Carne,Principal
+T-64020,2026-01-09,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-67054,2026-01-09,Comida,P-16,3,Agua Mineral,Bebida
+T-67948,2026-01-09,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-25958,2026-01-09,Comida,P-17,3,Brownie con Helado,Postre
+T-74333,2026-01-09,Cena,P-22,3,Te Verde,Bebida
+T-86156,2026-01-09,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-88499,2026-01-09,Cena,P-13,1,Bacalao al Horno,Principal
+T-65991,2026-01-09,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-26722,2026-01-09,Comida,P-10,2,Solomillo Iberico,Principal
+T-38501,2026-01-09,Cena,P-10,4,Solomillo Iberico,Principal
+T-92703,2026-01-09,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-94221,2026-01-09,Cena,P-05,2,Refresco Cola,Bebida
+T-92584,2026-01-09,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-51937,2026-01-09,Comida,P-12,3,Risotto de Setas,Principal
+T-93057,2026-01-09,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-29291,2026-01-09,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-89236,2026-01-09,Comida,P-25,4,Canelones de Carne,Principal
+T-24967,2026-01-10,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-50619,2026-01-10,Comida,P-16,2,Agua Mineral,Bebida
+T-31267,2026-01-10,Cena,P-01,4,Hamburguesa Smart,Principal
+T-35604,2026-01-10,Comida,P-09,4,Gazpacho Andaluz,Entrante
+T-80837,2026-01-10,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-24685,2026-01-10,Comida,P-16,2,Agua Mineral,Bebida
+T-72502,2026-01-10,Cena,P-10,4,Solomillo Iberico,Principal
+T-36344,2026-01-10,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-47132,2026-01-10,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-75729,2026-01-10,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-59380,2026-01-10,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-65392,2026-01-10,Comida,P-10,2,Solomillo Iberico,Principal
+T-54977,2026-01-10,Cena,P-12,4,Risotto de Setas,Principal
+T-41717,2026-01-10,Cena,P-17,1,Brownie con Helado,Postre
+T-58176,2026-01-10,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-69342,2026-01-10,Comida,P-24,4,Nuggets de Pollo,Principal
+T-30635,2026-01-10,Cena,P-25,2,Canelones de Carne,Principal
+T-35184,2026-01-10,Cena,P-13,2,Bacalao al Horno,Principal
+T-31926,2026-01-10,Cena,P-17,3,Brownie con Helado,Postre
+T-65014,2026-01-10,Cena,P-21,1,Cafe Solo,Bebida
+T-85865,2026-01-10,Cena,P-15,3,Cerveza Artesana,Bebida
+T-90807,2026-01-10,Cena,P-12,4,Risotto de Setas,Principal
+T-72242,2026-01-10,Cena,P-19,4,Entrecot Ternera,Principal
+T-78373,2026-01-10,Cena,P-10,3,Solomillo Iberico,Principal
+T-78020,2026-01-10,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-38309,2026-01-10,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-57091,2026-01-10,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-52030,2026-01-10,Cena,P-17,4,Brownie con Helado,Postre
+T-98333,2026-01-11,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-85625,2026-01-11,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-99518,2026-01-11,Cena,P-25,3,Canelones de Carne,Principal
+T-93450,2026-01-11,Comida,P-12,3,Risotto de Setas,Principal
+T-47541,2026-01-11,Comida,P-21,1,Cafe Solo,Bebida
+T-73275,2026-01-11,Cena,P-19,1,Entrecot Ternera,Principal
+T-43256,2026-01-11,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-48238,2026-01-11,Cena,P-05,2,Refresco Cola,Bebida
+T-84235,2026-01-11,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-99347,2026-01-11,Cena,P-17,2,Brownie con Helado,Postre
+T-61345,2026-01-11,Comida,P-21,3,Cafe Solo,Bebida
+T-69911,2026-01-11,Cena,P-10,2,Solomillo Iberico,Principal
+T-75408,2026-01-11,Cena,P-10,4,Solomillo Iberico,Principal
+T-23560,2026-01-11,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-38018,2026-01-11,Comida,P-20,4,Paella de Marisco,Principal
+T-45459,2026-01-11,Cena,P-21,4,Cafe Solo,Bebida
+T-32623,2026-01-11,Comida,P-13,2,Bacalao al Horno,Principal
+T-52431,2026-01-11,Cena,P-20,2,Paella de Marisco,Principal
+T-94994,2026-01-11,Comida,P-25,3,Canelones de Carne,Principal
+T-85394,2026-01-11,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-42294,2026-01-11,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-88363,2026-01-11,Cena,P-02,1,Ensalada Cesar,Entrante
+T-81767,2026-01-11,Cena,P-07,2,Pizza Margarita,Principal
+T-34538,2026-01-11,Cena,P-12,2,Risotto de Setas,Principal
+T-72645,2026-01-11,Cena,P-12,1,Risotto de Setas,Principal
+T-40187,2026-01-12,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-84653,2026-01-12,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-64035,2026-01-12,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-35198,2026-01-12,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-33654,2026-01-12,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-22609,2026-01-12,Cena,P-02,2,Ensalada Cesar,Entrante
+T-79736,2026-01-12,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-87669,2026-01-12,Cena,P-24,1,Nuggets de Pollo,Principal
+T-91332,2026-01-12,Cena,P-01,4,Hamburguesa Smart,Principal
+T-21998,2026-01-12,Cena,P-25,1,Canelones de Carne,Principal
+T-45637,2026-01-12,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-93297,2026-01-12,Cena,P-02,3,Ensalada Cesar,Entrante
+T-55959,2026-01-12,Comida,P-25,4,Canelones de Carne,Principal
+T-25198,2026-01-12,Cena,P-15,4,Cerveza Artesana,Bebida
+T-72583,2026-01-12,Comida,P-10,3,Solomillo Iberico,Principal
+T-96593,2026-01-12,Comida,P-20,2,Paella de Marisco,Principal
+T-31393,2026-01-13,Cena,P-12,2,Risotto de Setas,Principal
+T-32426,2026-01-13,Comida,P-24,3,Nuggets de Pollo,Principal
+T-70866,2026-01-13,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-96869,2026-01-13,Comida,P-21,3,Cafe Solo,Bebida
+T-94875,2026-01-13,Comida,P-02,3,Ensalada Cesar,Entrante
+T-68838,2026-01-13,Comida,P-15,2,Cerveza Artesana,Bebida
+T-31365,2026-01-13,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-65885,2026-01-13,Cena,P-02,2,Ensalada Cesar,Entrante
+T-95030,2026-01-13,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-89591,2026-01-13,Cena,P-19,1,Entrecot Ternera,Principal
+T-75148,2026-01-13,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-90471,2026-01-13,Cena,P-10,1,Solomillo Iberico,Principal
+T-51999,2026-01-13,Comida,P-07,4,Pizza Margarita,Principal
+T-63443,2026-01-13,Cena,P-17,4,Brownie con Helado,Postre
+T-26964,2026-01-13,Comida,P-22,4,Te Verde,Bebida
+T-26899,2026-01-13,Cena,P-15,2,Cerveza Artesana,Bebida
+T-42301,2026-01-13,Comida,P-12,4,Risotto de Setas,Principal
+T-88316,2026-01-13,Cena,P-16,3,Agua Mineral,Bebida
+T-22513,2026-01-13,Cena,P-07,4,Pizza Margarita,Principal
+T-66667,2026-01-13,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-40721,2026-01-14,Cena,P-01,3,Hamburguesa Smart,Principal
+T-69769,2026-01-14,Cena,P-05,2,Refresco Cola,Bebida
+T-79559,2026-01-14,Cena,P-24,3,Nuggets de Pollo,Principal
+T-48738,2026-01-14,Cena,P-11,2,Salmon a la Plancha,Principal
+T-69903,2026-01-14,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-39967,2026-01-14,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-62075,2026-01-14,Cena,P-13,2,Bacalao al Horno,Principal
+T-61811,2026-01-14,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-88199,2026-01-14,Cena,P-13,2,Bacalao al Horno,Principal
+T-81830,2026-01-14,Cena,P-11,2,Salmon a la Plancha,Principal
+T-71688,2026-01-14,Comida,P-12,2,Risotto de Setas,Principal
+T-70232,2026-01-14,Cena,P-19,2,Entrecot Ternera,Principal
+T-54431,2026-01-14,Cena,P-20,1,Paella de Marisco,Principal
+T-84285,2026-01-14,Comida,P-25,2,Canelones de Carne,Principal
+T-58006,2026-01-14,Cena,P-12,3,Risotto de Setas,Principal
+T-20827,2026-01-14,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-87257,2026-01-14,Comida,P-15,2,Cerveza Artesana,Bebida
+T-85226,2026-01-15,Cena,P-10,3,Solomillo Iberico,Principal
+T-71231,2026-01-15,Comida,P-02,2,Ensalada Cesar,Entrante
+T-86294,2026-01-15,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-30964,2026-01-15,Comida,P-22,3,Te Verde,Bebida
+T-39711,2026-01-15,Cena,P-10,2,Solomillo Iberico,Principal
+T-72626,2026-01-15,Comida,P-07,2,Pizza Margarita,Principal
+T-75601,2026-01-15,Comida,P-07,4,Pizza Margarita,Principal
+T-45639,2026-01-15,Cena,P-05,4,Refresco Cola,Bebida
+T-59338,2026-01-15,Cena,P-10,2,Solomillo Iberico,Principal
+T-29106,2026-01-15,Cena,P-12,4,Risotto de Setas,Principal
+T-92602,2026-01-15,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-35101,2026-01-15,Comida,P-05,4,Refresco Cola,Bebida
+T-74403,2026-01-15,Cena,P-11,2,Salmon a la Plancha,Principal
+T-95178,2026-01-15,Comida,P-24,1,Nuggets de Pollo,Principal
+T-25294,2026-01-15,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-53295,2026-01-15,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-62203,2026-01-15,Cena,P-15,1,Cerveza Artesana,Bebida
+T-75028,2026-01-15,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-43497,2026-01-15,Cena,P-15,3,Cerveza Artesana,Bebida
+T-79736,2026-01-15,Comida,P-07,4,Pizza Margarita,Principal
+T-85689,2026-01-15,Comida,P-19,3,Entrecot Ternera,Principal
+T-40846,2026-01-15,Cena,P-22,4,Te Verde,Bebida
+T-95780,2026-01-16,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-86121,2026-01-16,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-62984,2026-01-16,Comida,P-15,4,Cerveza Artesana,Bebida
+T-48368,2026-01-16,Cena,P-22,2,Te Verde,Bebida
+T-97432,2026-01-16,Comida,P-05,4,Refresco Cola,Bebida
+T-63535,2026-01-16,Comida,P-21,1,Cafe Solo,Bebida
+T-26469,2026-01-16,Comida,P-22,3,Te Verde,Bebida
+T-30635,2026-01-16,Cena,P-05,2,Refresco Cola,Bebida
+T-61481,2026-01-16,Comida,P-15,1,Cerveza Artesana,Bebida
+T-70888,2026-01-16,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-68249,2026-01-16,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-38761,2026-01-17,Cena,P-07,3,Pizza Margarita,Principal
+T-51128,2026-01-17,Cena,P-22,4,Te Verde,Bebida
+T-58609,2026-01-17,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-89301,2026-01-17,Cena,P-25,2,Canelones de Carne,Principal
+T-99470,2026-01-17,Comida,P-24,3,Nuggets de Pollo,Principal
+T-67159,2026-01-17,Cena,P-21,1,Cafe Solo,Bebida
+T-59886,2026-01-17,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-57153,2026-01-17,Cena,P-17,3,Brownie con Helado,Postre
+T-83274,2026-01-17,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-81839,2026-01-17,Cena,P-17,2,Brownie con Helado,Postre
+T-43679,2026-01-17,Cena,P-20,1,Paella de Marisco,Principal
+T-36408,2026-01-17,Comida,P-07,3,Pizza Margarita,Principal
+T-72327,2026-01-17,Cena,P-19,1,Entrecot Ternera,Principal
+T-47231,2026-01-17,Cena,P-05,2,Refresco Cola,Bebida
+T-69257,2026-01-17,Comida,P-13,4,Bacalao al Horno,Principal
+T-31099,2026-01-17,Cena,P-21,1,Cafe Solo,Bebida
+T-98259,2026-01-17,Comida,P-11,2,Salmon a la Plancha,Principal
+T-77843,2026-01-17,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-45051,2026-01-17,Cena,P-13,4,Bacalao al Horno,Principal
+T-44338,2026-01-18,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-88995,2026-01-18,Comida,P-21,4,Cafe Solo,Bebida
+T-47384,2026-01-18,Comida,P-21,4,Cafe Solo,Bebida
+T-77031,2026-01-18,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-96261,2026-01-18,Comida,P-22,2,Te Verde,Bebida
+T-81973,2026-01-18,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-21912,2026-01-18,Cena,P-25,3,Canelones de Carne,Principal
+T-52688,2026-01-18,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-70808,2026-01-18,Cena,P-02,2,Ensalada Cesar,Entrante
+T-79122,2026-01-18,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-99620,2026-01-18,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-71358,2026-01-18,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-67415,2026-01-18,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-48202,2026-01-18,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-78175,2026-01-18,Comida,P-16,4,Agua Mineral,Bebida
+T-93936,2026-01-18,Comida,P-16,4,Agua Mineral,Bebida
+T-24290,2026-01-18,Cena,P-10,2,Solomillo Iberico,Principal
+T-64172,2026-01-18,Comida,P-05,1,Refresco Cola,Bebida
+T-71637,2026-01-18,Cena,P-21,4,Cafe Solo,Bebida
+T-33480,2026-01-18,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-30818,2026-01-18,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-88620,2026-01-18,Cena,P-19,3,Entrecot Ternera,Principal
+T-24121,2026-01-19,Cena,P-01,3,Hamburguesa Smart,Principal
+T-39677,2026-01-19,Cena,P-20,4,Paella de Marisco,Principal
+T-93895,2026-01-19,Comida,P-17,1,Brownie con Helado,Postre
+T-84336,2026-01-19,Cena,P-19,2,Entrecot Ternera,Principal
+T-21076,2026-01-19,Cena,P-17,1,Brownie con Helado,Postre
+T-84102,2026-01-19,Cena,P-16,2,Agua Mineral,Bebida
+T-46122,2026-01-19,Comida,P-25,1,Canelones de Carne,Principal
+T-39731,2026-01-19,Comida,P-19,4,Entrecot Ternera,Principal
+T-27431,2026-01-19,Cena,P-17,3,Brownie con Helado,Postre
+T-78821,2026-01-19,Comida,P-21,3,Cafe Solo,Bebida
+T-45545,2026-01-19,Comida,P-22,1,Te Verde,Bebida
+T-53502,2026-01-19,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-48843,2026-01-19,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-31038,2026-01-19,Cena,P-24,2,Nuggets de Pollo,Principal
+T-78942,2026-01-19,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-55836,2026-01-19,Cena,P-16,4,Agua Mineral,Bebida
+T-76723,2026-01-19,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-85367,2026-01-19,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-45549,2026-01-19,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-65524,2026-01-19,Comida,P-07,2,Pizza Margarita,Principal
+T-21546,2026-01-19,Cena,P-10,3,Solomillo Iberico,Principal
+T-88642,2026-01-19,Cena,P-15,4,Cerveza Artesana,Bebida
+T-54597,2026-01-19,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-64222,2026-01-19,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-56561,2026-01-19,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-34979,2026-01-19,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-94850,2026-01-19,Cena,P-25,3,Canelones de Carne,Principal
+T-87002,2026-01-19,Cena,P-13,1,Bacalao al Horno,Principal
+T-61319,2026-01-20,Cena,P-12,4,Risotto de Setas,Principal
+T-84334,2026-01-20,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-86885,2026-01-20,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-41955,2026-01-20,Comida,P-10,4,Solomillo Iberico,Principal
+T-38664,2026-01-20,Cena,P-22,3,Te Verde,Bebida
+T-32524,2026-01-20,Cena,P-24,1,Nuggets de Pollo,Principal
+T-33095,2026-01-20,Cena,P-19,4,Entrecot Ternera,Principal
+T-89690,2026-01-20,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-58143,2026-01-20,Comida,P-17,1,Brownie con Helado,Postre
+T-52592,2026-01-20,Cena,P-21,3,Cafe Solo,Bebida
+T-34829,2026-01-20,Cena,P-19,2,Entrecot Ternera,Principal
+T-64638,2026-01-20,Comida,P-16,3,Agua Mineral,Bebida
+T-40891,2026-01-20,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-34057,2026-01-20,Cena,P-10,2,Solomillo Iberico,Principal
+T-92809,2026-01-20,Cena,P-22,4,Te Verde,Bebida
+T-34738,2026-01-20,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-24238,2026-01-20,Comida,P-02,4,Ensalada Cesar,Entrante
+T-50050,2026-01-20,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-20370,2026-01-20,Cena,P-21,1,Cafe Solo,Bebida
+T-87213,2026-01-21,Cena,P-01,2,Hamburguesa Smart,Principal
+T-44302,2026-01-21,Cena,P-21,4,Cafe Solo,Bebida
+T-96809,2026-01-21,Cena,P-10,1,Solomillo Iberico,Principal
+T-73309,2026-01-21,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-83874,2026-01-21,Comida,P-19,4,Entrecot Ternera,Principal
+T-83194,2026-01-21,Comida,P-10,4,Solomillo Iberico,Principal
+T-57047,2026-01-21,Cena,P-25,2,Canelones de Carne,Principal
+T-47692,2026-01-21,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-54971,2026-01-21,Cena,P-01,3,Hamburguesa Smart,Principal
+T-83486,2026-01-21,Cena,P-20,3,Paella de Marisco,Principal
+T-69498,2026-01-21,Comida,P-15,3,Cerveza Artesana,Bebida
+T-48067,2026-01-21,Cena,P-13,1,Bacalao al Horno,Principal
+T-24212,2026-01-21,Comida,P-20,4,Paella de Marisco,Principal
+T-77492,2026-01-21,Comida,P-10,1,Solomillo Iberico,Principal
+T-81503,2026-01-21,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-42496,2026-01-21,Cena,P-15,1,Cerveza Artesana,Bebida
+T-78233,2026-01-21,Comida,P-17,2,Brownie con Helado,Postre
+T-80120,2026-01-21,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-40827,2026-01-21,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-46456,2026-01-21,Cena,P-20,2,Paella de Marisco,Principal
+T-73187,2026-01-21,Comida,P-15,3,Cerveza Artesana,Bebida
+T-94045,2026-01-21,Cena,P-15,3,Cerveza Artesana,Bebida
+T-82377,2026-01-21,Cena,P-21,2,Cafe Solo,Bebida
+T-92906,2026-01-21,Cena,P-11,3,Salmon a la Plancha,Principal
+T-56133,2026-01-21,Cena,P-24,1,Nuggets de Pollo,Principal
+T-39371,2026-01-21,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-59128,2026-01-21,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-48231,2026-01-22,Cena,P-19,1,Entrecot Ternera,Principal
+T-20041,2026-01-22,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-88228,2026-01-22,Cena,P-15,1,Cerveza Artesana,Bebida
+T-78170,2026-01-22,Cena,P-25,2,Canelones de Carne,Principal
+T-94059,2026-01-22,Cena,P-19,1,Entrecot Ternera,Principal
+T-84410,2026-01-22,Comida,P-07,3,Pizza Margarita,Principal
+T-73061,2026-01-22,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-79383,2026-01-22,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-94966,2026-01-22,Cena,P-11,3,Salmon a la Plancha,Principal
+T-59217,2026-01-22,Cena,P-13,3,Bacalao al Horno,Principal
+T-95349,2026-01-22,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-58071,2026-01-22,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-75163,2026-01-22,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-35931,2026-01-22,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-93505,2026-01-22,Cena,P-02,2,Ensalada Cesar,Entrante
+T-50479,2026-01-22,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-80977,2026-01-22,Cena,P-22,1,Te Verde,Bebida
+T-49553,2026-01-22,Comida,P-10,3,Solomillo Iberico,Principal
+T-88961,2026-01-22,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-24434,2026-01-22,Comida,P-25,4,Canelones de Carne,Principal
+T-61692,2026-01-22,Cena,P-24,2,Nuggets de Pollo,Principal
+T-46761,2026-01-22,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-76995,2026-01-22,Cena,P-20,1,Paella de Marisco,Principal
+T-88088,2026-01-22,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-84810,2026-01-23,Comida,P-02,3,Ensalada Cesar,Entrante
+T-92249,2026-01-23,Cena,P-02,2,Ensalada Cesar,Entrante
+T-33703,2026-01-23,Cena,P-07,1,Pizza Margarita,Principal
+T-24450,2026-01-23,Cena,P-16,1,Agua Mineral,Bebida
+T-41372,2026-01-23,Cena,P-07,4,Pizza Margarita,Principal
+T-20678,2026-01-23,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-67291,2026-01-23,Comida,P-12,2,Risotto de Setas,Principal
+T-80325,2026-01-23,Cena,P-01,2,Hamburguesa Smart,Principal
+T-79966,2026-01-23,Comida,P-25,3,Canelones de Carne,Principal
+T-95502,2026-01-23,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-50567,2026-01-23,Cena,P-19,4,Entrecot Ternera,Principal
+T-44931,2026-01-23,Comida,P-15,2,Cerveza Artesana,Bebida
+T-64410,2026-01-23,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-52614,2026-01-23,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-50042,2026-01-23,Cena,P-05,3,Refresco Cola,Bebida
+T-21872,2026-01-23,Cena,P-20,4,Paella de Marisco,Principal
+T-48463,2026-01-23,Cena,P-13,2,Bacalao al Horno,Principal
+T-39794,2026-01-23,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-92855,2026-01-23,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-34099,2026-01-23,Cena,P-21,2,Cafe Solo,Bebida
+T-78472,2026-01-24,Cena,P-05,4,Refresco Cola,Bebida
+T-95133,2026-01-24,Cena,P-02,1,Ensalada Cesar,Entrante
+T-95199,2026-01-24,Comida,P-21,2,Cafe Solo,Bebida
+T-92189,2026-01-24,Cena,P-25,3,Canelones de Carne,Principal
+T-51994,2026-01-24,Cena,P-21,3,Cafe Solo,Bebida
+T-37797,2026-01-24,Cena,P-16,1,Agua Mineral,Bebida
+T-92223,2026-01-24,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-97076,2026-01-24,Cena,P-21,1,Cafe Solo,Bebida
+T-61233,2026-01-24,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-45118,2026-01-24,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-34158,2026-01-24,Cena,P-01,4,Hamburguesa Smart,Principal
+T-88918,2026-01-24,Cena,P-19,3,Entrecot Ternera,Principal
+T-31189,2026-01-25,Cena,P-21,1,Cafe Solo,Bebida
+T-31582,2026-01-25,Comida,P-02,1,Ensalada Cesar,Entrante
+T-29871,2026-01-25,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-95212,2026-01-25,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-84311,2026-01-25,Comida,P-20,1,Paella de Marisco,Principal
+T-73054,2026-01-25,Cena,P-10,4,Solomillo Iberico,Principal
+T-88938,2026-01-25,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-46008,2026-01-25,Comida,P-10,2,Solomillo Iberico,Principal
+T-40126,2026-01-25,Cena,P-24,4,Nuggets de Pollo,Principal
+T-69425,2026-01-25,Cena,P-11,1,Salmon a la Plancha,Principal
+T-88919,2026-01-25,Cena,P-22,4,Te Verde,Bebida
+T-70933,2026-01-25,Cena,P-02,2,Ensalada Cesar,Entrante
+T-56747,2026-01-25,Cena,P-15,3,Cerveza Artesana,Bebida
+T-78819,2026-01-25,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-76837,2026-01-25,Comida,P-20,2,Paella de Marisco,Principal
+T-30080,2026-01-25,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-65483,2026-01-25,Comida,P-11,1,Salmon a la Plancha,Principal
+T-59252,2026-01-25,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-23244,2026-01-25,Cena,P-20,3,Paella de Marisco,Principal
+T-28111,2026-01-25,Cena,P-10,2,Solomillo Iberico,Principal
+T-79452,2026-01-25,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-97322,2026-01-25,Cena,P-20,2,Paella de Marisco,Principal
+T-41556,2026-01-25,Comida,P-05,2,Refresco Cola,Bebida
+T-40982,2026-01-25,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-49681,2026-01-25,Cena,P-20,3,Paella de Marisco,Principal
+T-40568,2026-01-25,Cena,P-11,4,Salmon a la Plancha,Principal
+T-67668,2026-01-25,Cena,P-02,2,Ensalada Cesar,Entrante
+T-38634,2026-01-26,Cena,P-25,4,Canelones de Carne,Principal
+T-26760,2026-01-26,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-99479,2026-01-26,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-90871,2026-01-26,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-80431,2026-01-26,Comida,P-16,1,Agua Mineral,Bebida
+T-75137,2026-01-26,Comida,P-19,1,Entrecot Ternera,Principal
+T-82249,2026-01-26,Cena,P-22,4,Te Verde,Bebida
+T-96801,2026-01-26,Comida,P-24,3,Nuggets de Pollo,Principal
+T-52782,2026-01-26,Cena,P-10,4,Solomillo Iberico,Principal
+T-45598,2026-01-26,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-37677,2026-01-26,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-97882,2026-01-26,Comida,P-01,4,Hamburguesa Smart,Principal
+T-63771,2026-01-26,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-86347,2026-01-26,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-76705,2026-01-26,Comida,P-13,3,Bacalao al Horno,Principal
+T-51669,2026-01-26,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-60784,2026-01-26,Cena,P-05,2,Refresco Cola,Bebida
+T-57877,2026-01-26,Cena,P-17,2,Brownie con Helado,Postre
+T-56454,2026-01-26,Comida,P-19,2,Entrecot Ternera,Principal
+T-29424,2026-01-26,Comida,P-21,2,Cafe Solo,Bebida
+T-61669,2026-01-26,Comida,P-25,4,Canelones de Carne,Principal
+T-23757,2026-01-26,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-23153,2026-01-26,Cena,P-02,3,Ensalada Cesar,Entrante
+T-91389,2026-01-26,Comida,P-01,3,Hamburguesa Smart,Principal
+T-87220,2026-01-26,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-76174,2026-01-26,Cena,P-13,2,Bacalao al Horno,Principal
+T-94413,2026-01-26,Cena,P-24,3,Nuggets de Pollo,Principal
+T-53176,2026-01-26,Comida,P-07,2,Pizza Margarita,Principal
+T-38304,2026-01-26,Cena,P-07,2,Pizza Margarita,Principal
+T-97397,2026-01-26,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-47270,2026-01-26,Cena,P-21,2,Cafe Solo,Bebida
+T-99582,2026-01-26,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-88689,2026-01-27,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-56047,2026-01-27,Cena,P-11,3,Salmon a la Plancha,Principal
+T-77671,2026-01-27,Cena,P-19,3,Entrecot Ternera,Principal
+T-90211,2026-01-27,Cena,P-25,4,Canelones de Carne,Principal
+T-68213,2026-01-27,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-74080,2026-01-27,Comida,P-01,3,Hamburguesa Smart,Principal
+T-47216,2026-01-27,Comida,P-13,3,Bacalao al Horno,Principal
+T-37598,2026-01-27,Cena,P-15,2,Cerveza Artesana,Bebida
+T-86254,2026-01-27,Comida,P-17,1,Brownie con Helado,Postre
+T-25504,2026-01-27,Comida,P-24,2,Nuggets de Pollo,Principal
+T-88478,2026-01-27,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-32614,2026-01-27,Comida,P-20,3,Paella de Marisco,Principal
+T-72989,2026-01-27,Cena,P-11,4,Salmon a la Plancha,Principal
+T-31610,2026-01-27,Cena,P-10,3,Solomillo Iberico,Principal
+T-91861,2026-01-27,Cena,P-15,3,Cerveza Artesana,Bebida
+T-64624,2026-01-28,Comida,P-11,4,Salmon a la Plancha,Principal
+T-74909,2026-01-28,Comida,P-15,3,Cerveza Artesana,Bebida
+T-36573,2026-01-28,Cena,P-12,4,Risotto de Setas,Principal
+T-43801,2026-01-28,Comida,P-05,4,Refresco Cola,Bebida
+T-60588,2026-01-28,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-51078,2026-01-28,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-76955,2026-01-28,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-26866,2026-01-28,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-32261,2026-01-28,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-26538,2026-01-28,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-37680,2026-01-28,Cena,P-16,1,Agua Mineral,Bebida
+T-73996,2026-01-28,Cena,P-10,4,Solomillo Iberico,Principal
+T-99068,2026-01-28,Comida,P-13,3,Bacalao al Horno,Principal
+T-55433,2026-01-28,Comida,P-19,1,Entrecot Ternera,Principal
+T-68130,2026-01-28,Cena,P-16,2,Agua Mineral,Bebida
+T-50794,2026-01-28,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-65340,2026-01-28,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-94401,2026-01-28,Cena,P-10,3,Solomillo Iberico,Principal
+T-77160,2026-01-28,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-37411,2026-01-28,Cena,P-13,1,Bacalao al Horno,Principal
+T-43785,2026-01-28,Comida,P-10,1,Solomillo Iberico,Principal
+T-73843,2026-01-28,Cena,P-19,1,Entrecot Ternera,Principal
+T-66906,2026-01-28,Comida,P-21,2,Cafe Solo,Bebida
+T-36035,2026-01-28,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-65371,2026-01-28,Cena,P-15,1,Cerveza Artesana,Bebida
+T-46442,2026-01-28,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-25816,2026-01-28,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-35667,2026-01-28,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-40102,2026-01-29,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-36541,2026-01-29,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-94071,2026-01-29,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-60548,2026-01-29,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-90506,2026-01-29,Cena,P-19,2,Entrecot Ternera,Principal
+T-25282,2026-01-29,Cena,P-02,2,Ensalada Cesar,Entrante
+T-33134,2026-01-29,Comida,P-11,2,Salmon a la Plancha,Principal
+T-34791,2026-01-29,Comida,P-13,3,Bacalao al Horno,Principal
+T-67022,2026-01-29,Comida,P-20,1,Paella de Marisco,Principal
+T-43749,2026-01-29,Comida,P-02,1,Ensalada Cesar,Entrante
+T-57743,2026-01-29,Comida,P-02,1,Ensalada Cesar,Entrante
+T-73157,2026-01-29,Cena,P-13,1,Bacalao al Horno,Principal
+T-80469,2026-01-29,Cena,P-12,2,Risotto de Setas,Principal
+T-27502,2026-01-29,Comida,P-02,1,Ensalada Cesar,Entrante
+T-55565,2026-01-29,Cena,P-12,4,Risotto de Setas,Principal
+T-53870,2026-01-29,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-69529,2026-01-29,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-86893,2026-01-29,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-79742,2026-01-29,Cena,P-01,1,Hamburguesa Smart,Principal
+T-80001,2026-01-30,Cena,P-22,4,Te Verde,Bebida
+T-76701,2026-01-30,Cena,P-05,3,Refresco Cola,Bebida
+T-21290,2026-01-30,Cena,P-15,3,Cerveza Artesana,Bebida
+T-37453,2026-01-30,Cena,P-16,2,Agua Mineral,Bebida
+T-92031,2026-01-30,Cena,P-20,4,Paella de Marisco,Principal
+T-25222,2026-01-30,Comida,P-25,1,Canelones de Carne,Principal
+T-77693,2026-01-30,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-53732,2026-01-30,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-86549,2026-01-30,Cena,P-15,3,Cerveza Artesana,Bebida
+T-58782,2026-01-30,Comida,P-07,3,Pizza Margarita,Principal
+T-90458,2026-01-30,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-41072,2026-01-30,Comida,P-05,1,Refresco Cola,Bebida
+T-66536,2026-01-30,Comida,P-07,4,Pizza Margarita,Principal
+T-56069,2026-01-30,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-91094,2026-01-30,Cena,P-25,1,Canelones de Carne,Principal
+T-63620,2026-01-30,Cena,P-17,1,Brownie con Helado,Postre
+T-94775,2026-01-30,Cena,P-19,4,Entrecot Ternera,Principal
+T-24758,2026-01-30,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-87528,2026-01-30,Cena,P-22,2,Te Verde,Bebida
+T-43290,2026-01-30,Comida,P-24,2,Nuggets de Pollo,Principal
+T-56600,2026-01-30,Comida,P-05,1,Refresco Cola,Bebida
+T-63961,2026-01-30,Cena,P-21,3,Cafe Solo,Bebida
+T-99557,2026-01-30,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-88177,2026-01-30,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-32518,2026-01-30,Comida,P-05,4,Refresco Cola,Bebida
+T-48822,2026-01-30,Comida,P-19,3,Entrecot Ternera,Principal
+T-55512,2026-01-31,Comida,P-16,3,Agua Mineral,Bebida
+T-22901,2026-01-31,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-64756,2026-01-31,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-24878,2026-01-31,Cena,P-01,1,Hamburguesa Smart,Principal
+T-83315,2026-01-31,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-49367,2026-01-31,Cena,P-22,1,Te Verde,Bebida
+T-92540,2026-01-31,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-21786,2026-01-31,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-60377,2026-01-31,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-86362,2026-01-31,Cena,P-24,2,Nuggets de Pollo,Principal
+T-59415,2026-01-31,Cena,P-24,4,Nuggets de Pollo,Principal
+T-31163,2026-01-31,Cena,P-20,1,Paella de Marisco,Principal
+T-64936,2026-01-31,Cena,P-07,2,Pizza Margarita,Principal
+T-36090,2026-01-31,Cena,P-17,4,Brownie con Helado,Postre
+T-46984,2026-01-31,Cena,P-17,1,Brownie con Helado,Postre
+T-99518,2026-01-31,Cena,P-07,2,Pizza Margarita,Principal
+T-84876,2026-01-31,Comida,P-05,1,Refresco Cola,Bebida
+T-93673,2026-01-31,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-43341,2026-01-31,Cena,P-22,3,Te Verde,Bebida
+T-56109,2026-01-31,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-77790,2026-01-31,Cena,P-02,1,Ensalada Cesar,Entrante
+T-69948,2026-01-31,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-35294,2026-01-31,Cena,P-07,1,Pizza Margarita,Principal
+T-72584,2026-01-31,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-93988,2026-01-31,Comida,P-11,2,Salmon a la Plancha,Principal
+T-36594,2026-01-31,Cena,P-12,1,Risotto de Setas,Principal
+T-47773,2026-01-31,Comida,P-12,2,Risotto de Setas,Principal
+T-35262,2026-01-31,Comida,P-25,2,Canelones de Carne,Principal
+T-71680,2026-01-31,Comida,P-12,3,Risotto de Setas,Principal
+T-43319,2026-01-31,Cena,P-10,1,Solomillo Iberico,Principal
+T-49453,2026-01-31,Cena,P-05,2,Refresco Cola,Bebida
+T-84471,2026-02-01,Comida,P-21,4,Cafe Solo,Bebida
+T-79148,2026-02-01,Comida,P-12,4,Risotto de Setas,Principal
+T-79360,2026-02-01,Cena,P-20,1,Paella de Marisco,Principal
+T-84550,2026-02-01,Comida,P-16,3,Agua Mineral,Bebida
+T-27826,2026-02-01,Cena,P-17,2,Brownie con Helado,Postre
+T-93236,2026-02-01,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-69099,2026-02-01,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-41679,2026-02-01,Cena,P-17,1,Brownie con Helado,Postre
+T-26859,2026-02-01,Comida,P-05,4,Refresco Cola,Bebida
+T-58100,2026-02-01,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-94330,2026-02-01,Comida,P-12,1,Risotto de Setas,Principal
+T-68418,2026-02-01,Cena,P-15,4,Cerveza Artesana,Bebida
+T-51493,2026-02-01,Cena,P-21,1,Cafe Solo,Bebida
+T-75800,2026-02-01,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-41642,2026-02-02,Cena,P-11,3,Salmon a la Plancha,Principal
+T-87910,2026-02-02,Cena,P-15,4,Cerveza Artesana,Bebida
+T-21897,2026-02-02,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-77836,2026-02-02,Cena,P-24,2,Nuggets de Pollo,Principal
+T-89877,2026-02-02,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-57750,2026-02-02,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-72261,2026-02-02,Comida,P-10,4,Solomillo Iberico,Principal
+T-33423,2026-02-02,Comida,P-25,4,Canelones de Carne,Principal
+T-52661,2026-02-02,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-95461,2026-02-02,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-46182,2026-02-02,Cena,P-05,2,Refresco Cola,Bebida
+T-68322,2026-02-02,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-96276,2026-02-02,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-97522,2026-02-02,Cena,P-17,3,Brownie con Helado,Postre
+T-66807,2026-02-02,Cena,P-25,2,Canelones de Carne,Principal
+T-65104,2026-02-02,Cena,P-07,4,Pizza Margarita,Principal
+T-41190,2026-02-03,Comida,P-17,3,Brownie con Helado,Postre
+T-91976,2026-02-03,Comida,P-17,3,Brownie con Helado,Postre
+T-86030,2026-02-03,Cena,P-17,1,Brownie con Helado,Postre
+T-79832,2026-02-03,Cena,P-16,4,Agua Mineral,Bebida
+T-53958,2026-02-03,Comida,P-20,3,Paella de Marisco,Principal
+T-86425,2026-02-03,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-78490,2026-02-03,Comida,P-19,3,Entrecot Ternera,Principal
+T-97681,2026-02-03,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-46699,2026-02-03,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-81575,2026-02-03,Comida,P-12,1,Risotto de Setas,Principal
+T-23520,2026-02-03,Comida,P-25,2,Canelones de Carne,Principal
+T-72355,2026-02-03,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-33783,2026-02-03,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-26558,2026-02-03,Comida,P-19,4,Entrecot Ternera,Principal
+T-99583,2026-02-03,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-43154,2026-02-03,Cena,P-22,3,Te Verde,Bebida
+T-61532,2026-02-03,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-62828,2026-02-03,Cena,P-01,3,Hamburguesa Smart,Principal
+T-35568,2026-02-03,Cena,P-25,1,Canelones de Carne,Principal
+T-92986,2026-02-03,Cena,P-15,3,Cerveza Artesana,Bebida
+T-60727,2026-02-03,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-76474,2026-02-03,Comida,P-01,2,Hamburguesa Smart,Principal
+T-87341,2026-02-04,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-85246,2026-02-04,Cena,P-22,4,Te Verde,Bebida
+T-43485,2026-02-04,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-98277,2026-02-04,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-60384,2026-02-04,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-85059,2026-02-04,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-95000,2026-02-04,Comida,P-13,1,Bacalao al Horno,Principal
+T-38853,2026-02-04,Cena,P-01,3,Hamburguesa Smart,Principal
+T-30541,2026-02-04,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-74552,2026-02-04,Cena,P-25,2,Canelones de Carne,Principal
+T-62095,2026-02-04,Cena,P-13,3,Bacalao al Horno,Principal
+T-40200,2026-02-04,Comida,P-10,2,Solomillo Iberico,Principal
+T-71136,2026-02-04,Comida,P-25,1,Canelones de Carne,Principal
+T-37271,2026-02-04,Comida,P-12,4,Risotto de Setas,Principal
+T-95948,2026-02-04,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-42701,2026-02-04,Comida,P-15,1,Cerveza Artesana,Bebida
+T-58289,2026-02-04,Cena,P-15,4,Cerveza Artesana,Bebida
+T-43652,2026-02-04,Cena,P-05,3,Refresco Cola,Bebida
+T-21593,2026-02-04,Cena,P-12,2,Risotto de Setas,Principal
+T-99939,2026-02-04,Comida,P-01,1,Hamburguesa Smart,Principal
+T-34933,2026-02-04,Cena,P-12,1,Risotto de Setas,Principal
+T-71395,2026-02-04,Comida,P-25,2,Canelones de Carne,Principal
+T-86740,2026-02-04,Cena,P-25,1,Canelones de Carne,Principal
+T-29427,2026-02-04,Cena,P-19,3,Entrecot Ternera,Principal
+T-33182,2026-02-04,Cena,P-10,3,Solomillo Iberico,Principal
+T-85232,2026-02-04,Cena,P-07,3,Pizza Margarita,Principal
+T-89763,2026-02-04,Comida,P-10,3,Solomillo Iberico,Principal
+T-22039,2026-02-04,Comida,P-25,3,Canelones de Carne,Principal
+T-58590,2026-02-04,Cena,P-01,4,Hamburguesa Smart,Principal
+T-84079,2026-02-04,Cena,P-10,1,Solomillo Iberico,Principal
+T-43584,2026-02-04,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-54947,2026-02-04,Cena,P-25,4,Canelones de Carne,Principal
+T-82033,2026-02-05,Comida,P-20,3,Paella de Marisco,Principal
+T-67196,2026-02-05,Comida,P-10,2,Solomillo Iberico,Principal
+T-22488,2026-02-05,Cena,P-25,2,Canelones de Carne,Principal
+T-50256,2026-02-05,Comida,P-22,1,Te Verde,Bebida
+T-71801,2026-02-05,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-40961,2026-02-05,Comida,P-13,2,Bacalao al Horno,Principal
+T-69972,2026-02-05,Cena,P-20,1,Paella de Marisco,Principal
+T-76301,2026-02-05,Cena,P-22,4,Te Verde,Bebida
+T-99422,2026-02-05,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-24336,2026-02-05,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-65708,2026-02-05,Comida,P-11,2,Salmon a la Plancha,Principal
+T-82649,2026-02-05,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-62927,2026-02-05,Comida,P-25,4,Canelones de Carne,Principal
+T-50276,2026-02-05,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-30407,2026-02-05,Cena,P-02,4,Ensalada Cesar,Entrante
+T-45308,2026-02-05,Cena,P-05,3,Refresco Cola,Bebida
+T-82387,2026-02-05,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-97925,2026-02-06,Comida,P-16,3,Agua Mineral,Bebida
+T-85324,2026-02-06,Cena,P-02,4,Ensalada Cesar,Entrante
+T-28052,2026-02-06,Cena,P-16,2,Agua Mineral,Bebida
+T-35926,2026-02-06,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-41509,2026-02-06,Comida,P-15,2,Cerveza Artesana,Bebida
+T-74924,2026-02-06,Comida,P-22,3,Te Verde,Bebida
+T-95535,2026-02-06,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-20735,2026-02-06,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-69244,2026-02-06,Cena,P-02,2,Ensalada Cesar,Entrante
+T-59403,2026-02-06,Comida,P-02,3,Ensalada Cesar,Entrante
+T-37734,2026-02-06,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-90362,2026-02-06,Comida,P-10,3,Solomillo Iberico,Principal
+T-72118,2026-02-06,Cena,P-01,2,Hamburguesa Smart,Principal
+T-42015,2026-02-06,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-32077,2026-02-06,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-56443,2026-02-06,Comida,P-13,4,Bacalao al Horno,Principal
+T-63637,2026-02-06,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-84448,2026-02-06,Comida,P-17,3,Brownie con Helado,Postre
+T-99359,2026-02-07,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-33644,2026-02-07,Comida,P-20,4,Paella de Marisco,Principal
+T-88830,2026-02-07,Comida,P-17,1,Brownie con Helado,Postre
+T-24861,2026-02-07,Comida,P-02,1,Ensalada Cesar,Entrante
+T-73915,2026-02-07,Cena,P-16,3,Agua Mineral,Bebida
+T-92058,2026-02-07,Cena,P-17,1,Brownie con Helado,Postre
+T-36968,2026-02-07,Cena,P-21,3,Cafe Solo,Bebida
+T-20231,2026-02-07,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-43329,2026-02-07,Comida,P-07,3,Pizza Margarita,Principal
+T-99775,2026-02-07,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-30324,2026-02-07,Cena,P-16,1,Agua Mineral,Bebida
+T-64065,2026-02-07,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-99863,2026-02-07,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-80772,2026-02-07,Cena,P-13,1,Bacalao al Horno,Principal
+T-76264,2026-02-07,Cena,P-15,4,Cerveza Artesana,Bebida
+T-79956,2026-02-07,Comida,P-17,1,Brownie con Helado,Postre
+T-83502,2026-02-07,Comida,P-22,4,Te Verde,Bebida
+T-29810,2026-02-07,Cena,P-10,1,Solomillo Iberico,Principal
+T-48815,2026-02-07,Cena,P-05,2,Refresco Cola,Bebida
+T-59156,2026-02-07,Cena,P-22,4,Te Verde,Bebida
+T-32647,2026-02-07,Comida,P-15,3,Cerveza Artesana,Bebida
+T-50374,2026-02-07,Cena,P-25,2,Canelones de Carne,Principal
+T-68999,2026-02-07,Cena,P-05,4,Refresco Cola,Bebida
+T-46458,2026-02-07,Cena,P-19,2,Entrecot Ternera,Principal
+T-20832,2026-02-07,Cena,P-07,1,Pizza Margarita,Principal
+T-22109,2026-02-07,Cena,P-19,4,Entrecot Ternera,Principal
+T-39459,2026-02-07,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-62085,2026-02-08,Cena,P-13,4,Bacalao al Horno,Principal
+T-95377,2026-02-08,Cena,P-01,3,Hamburguesa Smart,Principal
+T-62489,2026-02-08,Cena,P-20,3,Paella de Marisco,Principal
+T-87455,2026-02-08,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-61093,2026-02-08,Cena,P-15,1,Cerveza Artesana,Bebida
+T-53978,2026-02-08,Comida,P-12,2,Risotto de Setas,Principal
+T-77102,2026-02-08,Comida,P-21,1,Cafe Solo,Bebida
+T-27323,2026-02-08,Cena,P-13,3,Bacalao al Horno,Principal
+T-35429,2026-02-08,Comida,P-21,1,Cafe Solo,Bebida
+T-77135,2026-02-08,Cena,P-25,4,Canelones de Carne,Principal
+T-55830,2026-02-08,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-78236,2026-02-08,Cena,P-10,2,Solomillo Iberico,Principal
+T-66921,2026-02-08,Cena,P-21,1,Cafe Solo,Bebida
+T-26955,2026-02-08,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-60187,2026-02-08,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-69629,2026-02-08,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-82129,2026-02-08,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-43784,2026-02-08,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-91888,2026-02-08,Cena,P-05,2,Refresco Cola,Bebida
+T-71398,2026-02-08,Cena,P-07,1,Pizza Margarita,Principal
+T-67746,2026-02-08,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-33499,2026-02-08,Comida,P-01,4,Hamburguesa Smart,Principal
+T-65283,2026-02-08,Cena,P-13,2,Bacalao al Horno,Principal
+T-96799,2026-02-08,Comida,P-11,1,Salmon a la Plancha,Principal
+T-20341,2026-02-09,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-97769,2026-02-09,Comida,P-25,1,Canelones de Carne,Principal
+T-27281,2026-02-09,Comida,P-01,1,Hamburguesa Smart,Principal
+T-85596,2026-02-09,Comida,P-21,2,Cafe Solo,Bebida
+T-93496,2026-02-09,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-91678,2026-02-09,Cena,P-20,3,Paella de Marisco,Principal
+T-38473,2026-02-09,Comida,P-25,4,Canelones de Carne,Principal
+T-42683,2026-02-09,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-54931,2026-02-09,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-84934,2026-02-09,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-45982,2026-02-09,Comida,P-07,4,Pizza Margarita,Principal
+T-30150,2026-02-09,Comida,P-05,1,Refresco Cola,Bebida
+T-21074,2026-02-09,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-31606,2026-02-09,Cena,P-20,3,Paella de Marisco,Principal
+T-48501,2026-02-09,Cena,P-15,2,Cerveza Artesana,Bebida
+T-75849,2026-02-09,Comida,P-17,2,Brownie con Helado,Postre
+T-23344,2026-02-09,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-89050,2026-02-09,Cena,P-12,1,Risotto de Setas,Principal
+T-46044,2026-02-09,Comida,P-25,3,Canelones de Carne,Principal
+T-53731,2026-02-09,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-23796,2026-02-09,Comida,P-05,1,Refresco Cola,Bebida
+T-61126,2026-02-10,Comida,P-21,2,Cafe Solo,Bebida
+T-97235,2026-02-10,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-78959,2026-02-10,Cena,P-07,1,Pizza Margarita,Principal
+T-90703,2026-02-10,Cena,P-11,1,Salmon a la Plancha,Principal
+T-91502,2026-02-10,Comida,P-22,2,Te Verde,Bebida
+T-56347,2026-02-10,Comida,P-22,4,Te Verde,Bebida
+T-60264,2026-02-10,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-22676,2026-02-10,Cena,P-22,4,Te Verde,Bebida
+T-53845,2026-02-10,Comida,P-05,2,Refresco Cola,Bebida
+T-33401,2026-02-10,Cena,P-21,1,Cafe Solo,Bebida
+T-30371,2026-02-10,Cena,P-15,4,Cerveza Artesana,Bebida
+T-40889,2026-02-10,Cena,P-22,3,Te Verde,Bebida
+T-64585,2026-02-10,Comida,P-02,1,Ensalada Cesar,Entrante
+T-59924,2026-02-10,Cena,P-10,1,Solomillo Iberico,Principal
+T-27437,2026-02-10,Cena,P-11,1,Salmon a la Plancha,Principal
+T-81082,2026-02-10,Comida,P-02,1,Ensalada Cesar,Entrante
+T-67423,2026-02-10,Cena,P-10,3,Solomillo Iberico,Principal
+T-56310,2026-02-11,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-73138,2026-02-11,Cena,P-17,3,Brownie con Helado,Postre
+T-68387,2026-02-11,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-29979,2026-02-11,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-46350,2026-02-11,Cena,P-15,3,Cerveza Artesana,Bebida
+T-20520,2026-02-11,Comida,P-16,4,Agua Mineral,Bebida
+T-98988,2026-02-11,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-85356,2026-02-11,Cena,P-02,1,Ensalada Cesar,Entrante
+T-56486,2026-02-11,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-80493,2026-02-11,Comida,P-07,1,Pizza Margarita,Principal
+T-57591,2026-02-11,Cena,P-02,4,Ensalada Cesar,Entrante
+T-96472,2026-02-11,Comida,P-13,1,Bacalao al Horno,Principal
+T-50953,2026-02-11,Comida,P-11,1,Salmon a la Plancha,Principal
+T-99390,2026-02-11,Cena,P-01,2,Hamburguesa Smart,Principal
+T-29756,2026-02-11,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-64240,2026-02-11,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-59420,2026-02-11,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-27793,2026-02-11,Comida,P-07,4,Pizza Margarita,Principal
+T-24673,2026-02-11,Comida,P-25,1,Canelones de Carne,Principal
+T-28258,2026-02-11,Cena,P-13,1,Bacalao al Horno,Principal
+T-28094,2026-02-12,Cena,P-24,4,Nuggets de Pollo,Principal
+T-31484,2026-02-12,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-42571,2026-02-12,Comida,P-21,3,Cafe Solo,Bebida
+T-57863,2026-02-12,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-77724,2026-02-12,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-22372,2026-02-12,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-30095,2026-02-12,Comida,P-15,1,Cerveza Artesana,Bebida
+T-32778,2026-02-12,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-44720,2026-02-12,Comida,P-16,4,Agua Mineral,Bebida
+T-51371,2026-02-12,Comida,P-21,2,Cafe Solo,Bebida
+T-62090,2026-02-12,Cena,P-15,1,Cerveza Artesana,Bebida
+T-61490,2026-02-12,Comida,P-01,1,Hamburguesa Smart,Principal
+T-46345,2026-02-12,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-65466,2026-02-12,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-96958,2026-02-12,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-60179,2026-02-12,Comida,P-25,2,Canelones de Carne,Principal
+T-48432,2026-02-13,Cena,P-10,4,Solomillo Iberico,Principal
+T-38816,2026-02-13,Comida,P-15,2,Cerveza Artesana,Bebida
+T-75152,2026-02-13,Comida,P-12,1,Risotto de Setas,Principal
+T-44929,2026-02-13,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-50842,2026-02-13,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-25724,2026-02-13,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-77731,2026-02-13,Comida,P-10,3,Solomillo Iberico,Principal
+T-93658,2026-02-13,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-58634,2026-02-13,Cena,P-05,2,Refresco Cola,Bebida
+T-70034,2026-02-13,Comida,P-10,4,Solomillo Iberico,Principal
+T-47663,2026-02-13,Comida,P-12,3,Risotto de Setas,Principal
+T-66482,2026-02-13,Cena,P-16,1,Agua Mineral,Bebida
+T-80498,2026-02-13,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-48628,2026-02-13,Cena,P-15,3,Cerveza Artesana,Bebida
+T-92001,2026-02-13,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-97883,2026-02-13,Cena,P-10,4,Solomillo Iberico,Principal
+T-61538,2026-02-13,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-81344,2026-02-13,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-56491,2026-02-13,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-53421,2026-02-13,Cena,P-01,4,Hamburguesa Smart,Principal
+T-34726,2026-02-13,Cena,P-24,1,Nuggets de Pollo,Principal
+T-47360,2026-02-14,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-95473,2026-02-14,Comida,P-05,1,Refresco Cola,Bebida
+T-47001,2026-02-14,Cena,P-05,3,Refresco Cola,Bebida
+T-43390,2026-02-14,Cena,P-15,1,Cerveza Artesana,Bebida
+T-58130,2026-02-14,Cena,P-15,2,Cerveza Artesana,Bebida
+T-81815,2026-02-14,Comida,P-02,1,Ensalada Cesar,Entrante
+T-36311,2026-02-14,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-44783,2026-02-14,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-54376,2026-02-14,Comida,P-22,3,Te Verde,Bebida
+T-44865,2026-02-14,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-29205,2026-02-14,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-23232,2026-02-14,Comida,P-13,1,Bacalao al Horno,Principal
+T-44577,2026-02-14,Comida,P-21,2,Cafe Solo,Bebida
+T-84010,2026-02-14,Cena,P-24,4,Nuggets de Pollo,Principal
+T-34474,2026-02-14,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-73843,2026-02-14,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-21735,2026-02-14,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-25502,2026-02-14,Comida,P-25,2,Canelones de Carne,Principal
+T-53872,2026-02-14,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-65669,2026-02-14,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-50740,2026-02-14,Comida,P-20,4,Paella de Marisco,Principal
+T-23331,2026-02-14,Cena,P-10,1,Solomillo Iberico,Principal
+T-87046,2026-02-14,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-64782,2026-02-14,Comida,P-07,4,Pizza Margarita,Principal
+T-89759,2026-02-14,Cena,P-01,3,Hamburguesa Smart,Principal
+T-80533,2026-02-14,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-54820,2026-02-14,Comida,P-07,4,Pizza Margarita,Principal
+T-43715,2026-02-14,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-44388,2026-02-14,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-81140,2026-02-14,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-40240,2026-02-14,Cena,P-15,2,Cerveza Artesana,Bebida
+T-34063,2026-02-15,Cena,P-17,1,Brownie con Helado,Postre
+T-70327,2026-02-15,Cena,P-01,3,Hamburguesa Smart,Principal
+T-47397,2026-02-15,Cena,P-21,4,Cafe Solo,Bebida
+T-25630,2026-02-15,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-82544,2026-02-15,Comida,P-25,4,Canelones de Carne,Principal
+T-20918,2026-02-15,Comida,P-15,3,Cerveza Artesana,Bebida
+T-65075,2026-02-15,Comida,P-20,2,Paella de Marisco,Principal
+T-61219,2026-02-15,Cena,P-10,4,Solomillo Iberico,Principal
+T-39768,2026-02-15,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-41381,2026-02-15,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-64971,2026-02-15,Comida,P-24,3,Nuggets de Pollo,Principal
+T-86083,2026-02-15,Comida,P-05,1,Refresco Cola,Bebida
+T-22035,2026-02-15,Comida,P-19,4,Entrecot Ternera,Principal
+T-94071,2026-02-15,Cena,P-19,4,Entrecot Ternera,Principal
+T-75989,2026-02-15,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-76641,2026-02-15,Cena,P-21,1,Cafe Solo,Bebida
+T-77932,2026-02-15,Cena,P-19,2,Entrecot Ternera,Principal
+T-35622,2026-02-16,Cena,P-05,2,Refresco Cola,Bebida
+T-85583,2026-02-16,Comida,P-12,2,Risotto de Setas,Principal
+T-44690,2026-02-16,Comida,P-12,1,Risotto de Setas,Principal
+T-93255,2026-02-16,Cena,P-15,2,Cerveza Artesana,Bebida
+T-89393,2026-02-16,Comida,P-20,2,Paella de Marisco,Principal
+T-23484,2026-02-16,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-32999,2026-02-16,Cena,P-13,3,Bacalao al Horno,Principal
+T-61044,2026-02-16,Comida,P-07,4,Pizza Margarita,Principal
+T-32504,2026-02-16,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-52493,2026-02-16,Cena,P-07,2,Pizza Margarita,Principal
+T-60300,2026-02-16,Cena,P-16,4,Agua Mineral,Bebida
+T-23197,2026-02-16,Comida,P-05,3,Refresco Cola,Bebida
+T-22475,2026-02-16,Comida,P-25,1,Canelones de Carne,Principal
+T-22043,2026-02-16,Comida,P-05,1,Refresco Cola,Bebida
+T-93284,2026-02-16,Comida,P-10,2,Solomillo Iberico,Principal
+T-94674,2026-02-16,Comida,P-10,3,Solomillo Iberico,Principal
+T-45198,2026-02-16,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-96043,2026-02-16,Cena,P-07,1,Pizza Margarita,Principal
+T-52603,2026-02-16,Cena,P-01,4,Hamburguesa Smart,Principal
+T-97039,2026-02-16,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-58300,2026-02-16,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-45121,2026-02-16,Comida,P-24,2,Nuggets de Pollo,Principal
+T-34223,2026-02-16,Comida,P-07,1,Pizza Margarita,Principal
+T-62715,2026-02-16,Cena,P-02,1,Ensalada Cesar,Entrante
+T-57451,2026-02-16,Comida,P-19,4,Entrecot Ternera,Principal
+T-31458,2026-02-16,Cena,P-12,3,Risotto de Setas,Principal
+T-68311,2026-02-16,Comida,P-15,1,Cerveza Artesana,Bebida
+T-43080,2026-02-16,Comida,P-01,4,Hamburguesa Smart,Principal
+T-71801,2026-02-16,Cena,P-21,4,Cafe Solo,Bebida
+T-67948,2026-02-16,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-29741,2026-02-16,Comida,P-01,1,Hamburguesa Smart,Principal
+T-63902,2026-02-17,Cena,P-15,4,Cerveza Artesana,Bebida
+T-31911,2026-02-17,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-39944,2026-02-17,Cena,P-05,4,Refresco Cola,Bebida
+T-73543,2026-02-17,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-40774,2026-02-17,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-46599,2026-02-17,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-91865,2026-02-17,Cena,P-24,2,Nuggets de Pollo,Principal
+T-69354,2026-02-17,Cena,P-25,4,Canelones de Carne,Principal
+T-99733,2026-02-17,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-39959,2026-02-17,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-98753,2026-02-17,Comida,P-12,1,Risotto de Setas,Principal
+T-87189,2026-02-17,Comida,P-22,1,Te Verde,Bebida
+T-46772,2026-02-17,Cena,P-01,4,Hamburguesa Smart,Principal
+T-61262,2026-02-17,Cena,P-10,1,Solomillo Iberico,Principal
+T-99868,2026-02-17,Cena,P-20,2,Paella de Marisco,Principal
+T-58734,2026-02-17,Cena,P-17,3,Brownie con Helado,Postre
+T-73080,2026-02-17,Comida,P-21,3,Cafe Solo,Bebida
+T-39829,2026-02-17,Cena,P-05,1,Refresco Cola,Bebida
+T-54112,2026-02-17,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-63594,2026-02-17,Cena,P-22,3,Te Verde,Bebida
+T-31008,2026-02-18,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-37779,2026-02-18,Cena,P-24,1,Nuggets de Pollo,Principal
+T-71297,2026-02-18,Cena,P-16,1,Agua Mineral,Bebida
+T-34486,2026-02-18,Cena,P-11,3,Salmon a la Plancha,Principal
+T-44842,2026-02-18,Cena,P-22,1,Te Verde,Bebida
+T-30601,2026-02-18,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-74092,2026-02-18,Comida,P-07,2,Pizza Margarita,Principal
+T-46435,2026-02-18,Comida,P-25,3,Canelones de Carne,Principal
+T-87612,2026-02-18,Cena,P-02,2,Ensalada Cesar,Entrante
+T-56882,2026-02-18,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-45285,2026-02-18,Cena,P-21,3,Cafe Solo,Bebida
+T-56991,2026-02-18,Cena,P-16,1,Agua Mineral,Bebida
+T-42772,2026-02-18,Comida,P-05,2,Refresco Cola,Bebida
+T-50954,2026-02-18,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-67886,2026-02-18,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-27633,2026-02-18,Comida,P-21,3,Cafe Solo,Bebida
+T-35503,2026-02-18,Comida,P-01,2,Hamburguesa Smart,Principal
+T-87778,2026-02-18,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-86761,2026-02-18,Comida,P-15,4,Cerveza Artesana,Bebida
+T-95377,2026-02-18,Cena,P-10,1,Solomillo Iberico,Principal
+T-51848,2026-02-18,Cena,P-17,2,Brownie con Helado,Postre
+T-27023,2026-02-18,Cena,P-12,1,Risotto de Setas,Principal
+T-76892,2026-02-18,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-39883,2026-02-18,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-88067,2026-02-18,Cena,P-13,2,Bacalao al Horno,Principal
+T-53103,2026-02-18,Cena,P-19,4,Entrecot Ternera,Principal
+T-41835,2026-02-18,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-37173,2026-02-18,Comida,P-15,3,Cerveza Artesana,Bebida
+T-39443,2026-02-18,Cena,P-12,1,Risotto de Setas,Principal
+T-36266,2026-02-18,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-68959,2026-02-18,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-46693,2026-02-18,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-58929,2026-02-18,Comida,P-15,1,Cerveza Artesana,Bebida
+T-97045,2026-02-18,Cena,P-11,2,Salmon a la Plancha,Principal
+T-82828,2026-02-19,Comida,P-24,1,Nuggets de Pollo,Principal
+T-86979,2026-02-19,Cena,P-16,4,Agua Mineral,Bebida
+T-44387,2026-02-19,Comida,P-16,4,Agua Mineral,Bebida
+T-22639,2026-02-19,Cena,P-11,2,Salmon a la Plancha,Principal
+T-62288,2026-02-19,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-36866,2026-02-19,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-28026,2026-02-19,Cena,P-20,3,Paella de Marisco,Principal
+T-94136,2026-02-19,Cena,P-01,1,Hamburguesa Smart,Principal
+T-69773,2026-02-19,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-89899,2026-02-19,Comida,P-16,2,Agua Mineral,Bebida
+T-77517,2026-02-19,Cena,P-22,2,Te Verde,Bebida
+T-80352,2026-02-19,Cena,P-16,1,Agua Mineral,Bebida
+T-86232,2026-02-19,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-35050,2026-02-19,Comida,P-12,1,Risotto de Setas,Principal
+T-34112,2026-02-19,Comida,P-25,1,Canelones de Carne,Principal
+T-91978,2026-02-19,Cena,P-10,4,Solomillo Iberico,Principal
+T-63981,2026-02-19,Cena,P-11,2,Salmon a la Plancha,Principal
+T-96017,2026-02-19,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-28026,2026-02-19,Cena,P-07,4,Pizza Margarita,Principal
+T-69608,2026-02-19,Comida,P-15,3,Cerveza Artesana,Bebida
+T-84125,2026-02-19,Comida,P-15,2,Cerveza Artesana,Bebida
+T-96661,2026-02-19,Cena,P-07,3,Pizza Margarita,Principal
+T-99315,2026-02-19,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-39051,2026-02-19,Comida,P-22,2,Te Verde,Bebida
+T-20598,2026-02-19,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-58596,2026-02-19,Cena,P-20,3,Paella de Marisco,Principal
+T-63576,2026-02-19,Cena,P-24,3,Nuggets de Pollo,Principal
+T-93124,2026-02-19,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-56747,2026-02-20,Comida,P-13,4,Bacalao al Horno,Principal
+T-45505,2026-02-20,Cena,P-10,1,Solomillo Iberico,Principal
+T-35390,2026-02-20,Cena,P-05,3,Refresco Cola,Bebida
+T-41552,2026-02-20,Comida,P-10,3,Solomillo Iberico,Principal
+T-34251,2026-02-20,Comida,P-25,2,Canelones de Carne,Principal
+T-93829,2026-02-20,Comida,P-22,4,Te Verde,Bebida
+T-51789,2026-02-20,Cena,P-01,4,Hamburguesa Smart,Principal
+T-83945,2026-02-20,Cena,P-21,3,Cafe Solo,Bebida
+T-37506,2026-02-20,Cena,P-16,3,Agua Mineral,Bebida
+T-90512,2026-02-20,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-61744,2026-02-20,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-61432,2026-02-20,Cena,P-13,3,Bacalao al Horno,Principal
+T-76008,2026-02-20,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-86150,2026-02-20,Cena,P-12,4,Risotto de Setas,Principal
+T-93462,2026-02-20,Cena,P-02,2,Ensalada Cesar,Entrante
+T-21161,2026-02-20,Comida,P-17,2,Brownie con Helado,Postre
+T-29665,2026-02-20,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-34262,2026-02-20,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-67486,2026-02-20,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-74288,2026-02-20,Cena,P-21,2,Cafe Solo,Bebida
+T-30363,2026-02-20,Comida,P-20,1,Paella de Marisco,Principal
+T-29562,2026-02-21,Cena,P-02,1,Ensalada Cesar,Entrante
+T-41253,2026-02-21,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-28883,2026-02-21,Cena,P-07,3,Pizza Margarita,Principal
+T-61563,2026-02-21,Comida,P-22,1,Te Verde,Bebida
+T-39444,2026-02-21,Cena,P-12,3,Risotto de Setas,Principal
+T-91321,2026-02-21,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-56564,2026-02-21,Cena,P-11,4,Salmon a la Plancha,Principal
+T-21055,2026-02-21,Comida,P-10,3,Solomillo Iberico,Principal
+T-63779,2026-02-21,Comida,P-15,1,Cerveza Artesana,Bebida
+T-79073,2026-02-21,Cena,P-20,3,Paella de Marisco,Principal
+T-77540,2026-02-21,Comida,P-19,4,Entrecot Ternera,Principal
+T-69069,2026-02-21,Cena,P-12,1,Risotto de Setas,Principal
+T-93027,2026-02-21,Cena,P-02,4,Ensalada Cesar,Entrante
+T-33949,2026-02-21,Cena,P-12,1,Risotto de Setas,Principal
+T-34640,2026-02-21,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-80020,2026-02-21,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-67426,2026-02-21,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-39558,2026-02-21,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-80116,2026-02-21,Comida,P-09,4,Gazpacho Andaluz,Entrante
+T-58111,2026-02-21,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-49956,2026-02-21,Cena,P-22,1,Te Verde,Bebida
+T-45424,2026-02-21,Comida,P-21,2,Cafe Solo,Bebida
+T-36961,2026-02-21,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-51609,2026-02-21,Comida,P-15,1,Cerveza Artesana,Bebida
+T-96462,2026-02-21,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-87259,2026-02-21,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-32518,2026-02-21,Comida,P-01,2,Hamburguesa Smart,Principal
+T-30985,2026-02-21,Comida,P-13,2,Bacalao al Horno,Principal
+T-62973,2026-02-21,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-34765,2026-02-21,Comida,P-10,2,Solomillo Iberico,Principal
+T-95210,2026-02-21,Cena,P-16,1,Agua Mineral,Bebida
+T-48418,2026-02-21,Comida,P-19,3,Entrecot Ternera,Principal
+T-44502,2026-02-21,Cena,P-10,1,Solomillo Iberico,Principal
+T-74908,2026-02-21,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-21255,2026-02-22,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-60950,2026-02-22,Comida,P-02,3,Ensalada Cesar,Entrante
+T-44134,2026-02-22,Comida,P-19,1,Entrecot Ternera,Principal
+T-26340,2026-02-22,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-36894,2026-02-22,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-54365,2026-02-22,Cena,P-20,4,Paella de Marisco,Principal
+T-44641,2026-02-22,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-62469,2026-02-22,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-96730,2026-02-22,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-88140,2026-02-22,Cena,P-20,3,Paella de Marisco,Principal
+T-22551,2026-02-22,Cena,P-19,1,Entrecot Ternera,Principal
+T-37456,2026-02-22,Cena,P-24,3,Nuggets de Pollo,Principal
+T-73669,2026-02-22,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-57861,2026-02-22,Comida,P-17,2,Brownie con Helado,Postre
+T-67854,2026-02-22,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-40587,2026-02-22,Cena,P-05,4,Refresco Cola,Bebida
+T-47177,2026-02-22,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-32488,2026-02-22,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-47085,2026-02-22,Comida,P-16,2,Agua Mineral,Bebida
+T-91075,2026-02-22,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-50326,2026-02-22,Comida,P-14,2,Tortilla de Patatas,Entrante
+T-71025,2026-02-22,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-21030,2026-02-22,Cena,P-12,3,Risotto de Setas,Principal
+T-84332,2026-02-22,Cena,P-07,3,Pizza Margarita,Principal
+T-68924,2026-02-22,Cena,P-01,4,Hamburguesa Smart,Principal
+T-95359,2026-02-22,Cena,P-25,1,Canelones de Carne,Principal
+T-65843,2026-02-23,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-72747,2026-02-23,Comida,P-01,3,Hamburguesa Smart,Principal
+T-81221,2026-02-23,Cena,P-01,1,Hamburguesa Smart,Principal
+T-91924,2026-02-23,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-27520,2026-02-23,Comida,P-25,1,Canelones de Carne,Principal
+T-98767,2026-02-23,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-49197,2026-02-23,Cena,P-21,4,Cafe Solo,Bebida
+T-47734,2026-02-23,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-54671,2026-02-23,Comida,P-05,4,Refresco Cola,Bebida
+T-61680,2026-02-23,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-91765,2026-02-23,Cena,P-25,3,Canelones de Carne,Principal
+T-95191,2026-02-23,Cena,P-12,4,Risotto de Setas,Principal
+T-54063,2026-02-23,Comida,P-05,1,Refresco Cola,Bebida
+T-68114,2026-02-23,Cena,P-12,4,Risotto de Setas,Principal
+T-34223,2026-02-23,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-57763,2026-02-23,Comida,P-10,3,Solomillo Iberico,Principal
+T-91218,2026-02-23,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-21206,2026-02-23,Cena,P-02,4,Ensalada Cesar,Entrante
+T-87131,2026-02-23,Cena,P-25,4,Canelones de Carne,Principal
+T-55120,2026-02-23,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-87202,2026-02-23,Cena,P-19,3,Entrecot Ternera,Principal
+T-87981,2026-02-23,Comida,P-11,2,Salmon a la Plancha,Principal
+T-53118,2026-02-23,Comida,P-21,1,Cafe Solo,Bebida
+T-43055,2026-02-23,Cena,P-25,1,Canelones de Carne,Principal
+T-52113,2026-02-24,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-95455,2026-02-24,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-35121,2026-02-24,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-35751,2026-02-24,Comida,P-12,3,Risotto de Setas,Principal
+T-54741,2026-02-24,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-66808,2026-02-24,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-71030,2026-02-24,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-33592,2026-02-24,Comida,P-05,2,Refresco Cola,Bebida
+T-89262,2026-02-24,Cena,P-17,4,Brownie con Helado,Postre
+T-95595,2026-02-24,Cena,P-10,4,Solomillo Iberico,Principal
+T-61010,2026-02-24,Cena,P-13,1,Bacalao al Horno,Principal
+T-97917,2026-02-24,Comida,P-12,1,Risotto de Setas,Principal
+T-76454,2026-02-24,Cena,P-02,3,Ensalada Cesar,Entrante
+T-25228,2026-02-24,Comida,P-12,4,Risotto de Setas,Principal
+T-77372,2026-02-24,Comida,P-01,1,Hamburguesa Smart,Principal
+T-70752,2026-02-24,Cena,P-16,1,Agua Mineral,Bebida
+T-59179,2026-02-24,Cena,P-17,2,Brownie con Helado,Postre
+T-51550,2026-02-24,Comida,P-11,2,Salmon a la Plancha,Principal
+T-28406,2026-02-24,Cena,P-05,4,Refresco Cola,Bebida
+T-84236,2026-02-24,Cena,P-24,2,Nuggets de Pollo,Principal
+T-49346,2026-02-24,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-56643,2026-02-25,Comida,P-07,1,Pizza Margarita,Principal
+T-51417,2026-02-25,Cena,P-12,3,Risotto de Setas,Principal
+T-90320,2026-02-25,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-83419,2026-02-25,Comida,P-07,2,Pizza Margarita,Principal
+T-88411,2026-02-25,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-39917,2026-02-25,Cena,P-22,1,Te Verde,Bebida
+T-66743,2026-02-25,Cena,P-12,4,Risotto de Setas,Principal
+T-39518,2026-02-25,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-45998,2026-02-25,Cena,P-24,1,Nuggets de Pollo,Principal
+T-81637,2026-02-25,Cena,P-25,1,Canelones de Carne,Principal
+T-87817,2026-02-25,Comida,P-13,1,Bacalao al Horno,Principal
+T-32192,2026-02-25,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-95332,2026-02-25,Comida,P-22,2,Te Verde,Bebida
+T-35996,2026-02-25,Cena,P-15,3,Cerveza Artesana,Bebida
+T-47047,2026-02-25,Cena,P-19,1,Entrecot Ternera,Principal
+T-83188,2026-02-25,Cena,P-25,4,Canelones de Carne,Principal
+T-53153,2026-02-25,Cena,P-02,4,Ensalada Cesar,Entrante
+T-29396,2026-02-25,Comida,P-22,1,Te Verde,Bebida
+T-30201,2026-02-25,Comida,P-12,1,Risotto de Setas,Principal
+T-73939,2026-02-25,Cena,P-16,3,Agua Mineral,Bebida
+T-77708,2026-02-25,Comida,P-19,4,Entrecot Ternera,Principal
+T-45902,2026-02-25,Comida,P-15,2,Cerveza Artesana,Bebida
+T-64930,2026-02-26,Cena,P-19,3,Entrecot Ternera,Principal
+T-64914,2026-02-26,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-24952,2026-02-26,Comida,P-12,4,Risotto de Setas,Principal
+T-59921,2026-02-26,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-57527,2026-02-26,Comida,P-15,4,Cerveza Artesana,Bebida
+T-54003,2026-02-26,Cena,P-11,1,Salmon a la Plancha,Principal
+T-37120,2026-02-26,Cena,P-01,3,Hamburguesa Smart,Principal
+T-23716,2026-02-26,Cena,P-25,3,Canelones de Carne,Principal
+T-23033,2026-02-26,Comida,P-24,4,Nuggets de Pollo,Principal
+T-77776,2026-02-26,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-66205,2026-02-26,Cena,P-21,4,Cafe Solo,Bebida
+T-89242,2026-02-26,Comida,P-24,1,Nuggets de Pollo,Principal
+T-61391,2026-02-26,Cena,P-10,2,Solomillo Iberico,Principal
+T-35945,2026-02-26,Comida,P-17,2,Brownie con Helado,Postre
+T-89973,2026-02-26,Cena,P-22,1,Te Verde,Bebida
+T-88107,2026-02-27,Cena,P-17,4,Brownie con Helado,Postre
+T-90993,2026-02-27,Comida,P-07,1,Pizza Margarita,Principal
+T-51251,2026-02-27,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-54803,2026-02-27,Comida,P-20,2,Paella de Marisco,Principal
+T-64090,2026-02-27,Comida,P-17,3,Brownie con Helado,Postre
+T-64678,2026-02-27,Comida,P-22,2,Te Verde,Bebida
+T-44592,2026-02-27,Comida,P-20,3,Paella de Marisco,Principal
+T-77137,2026-02-27,Cena,P-17,3,Brownie con Helado,Postre
+T-31730,2026-02-27,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-64175,2026-02-27,Cena,P-17,1,Brownie con Helado,Postre
+T-80497,2026-02-27,Cena,P-24,2,Nuggets de Pollo,Principal
+T-89688,2026-02-27,Comida,P-02,4,Ensalada Cesar,Entrante
+T-29690,2026-02-27,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-42016,2026-02-27,Cena,P-19,2,Entrecot Ternera,Principal
+T-45506,2026-02-27,Cena,P-19,4,Entrecot Ternera,Principal
+T-54508,2026-02-27,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-52285,2026-02-27,Cena,P-05,3,Refresco Cola,Bebida
+T-64469,2026-02-27,Cena,P-01,3,Hamburguesa Smart,Principal
+T-77645,2026-02-28,Cena,P-25,2,Canelones de Carne,Principal
+T-85771,2026-02-28,Cena,P-21,3,Cafe Solo,Bebida
+T-61135,2026-02-28,Cena,P-01,2,Hamburguesa Smart,Principal
+T-31537,2026-02-28,Comida,P-17,3,Brownie con Helado,Postre
+T-67471,2026-02-28,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-70571,2026-02-28,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-77896,2026-02-28,Cena,P-21,2,Cafe Solo,Bebida
+T-23541,2026-02-28,Cena,P-20,4,Paella de Marisco,Principal
+T-54863,2026-02-28,Comida,P-24,1,Nuggets de Pollo,Principal
+T-30478,2026-02-28,Comida,P-05,4,Refresco Cola,Bebida
+T-84247,2026-02-28,Cena,P-12,1,Risotto de Setas,Principal
+T-70894,2026-02-28,Comida,P-13,1,Bacalao al Horno,Principal
+T-62392,2026-02-28,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-30061,2026-03-01,Comida,P-11,3,Salmon a la Plancha,Principal
+T-27393,2026-03-01,Cena,P-22,1,Te Verde,Bebida
+T-82267,2026-03-01,Comida,P-22,2,Te Verde,Bebida
+T-22304,2026-03-01,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-58168,2026-03-01,Cena,P-11,2,Salmon a la Plancha,Principal
+T-44079,2026-03-01,Cena,P-07,1,Pizza Margarita,Principal
+T-56835,2026-03-01,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-34813,2026-03-01,Cena,P-16,2,Agua Mineral,Bebida
+T-46662,2026-03-01,Comida,P-25,1,Canelones de Carne,Principal
+T-25451,2026-03-01,Cena,P-02,2,Ensalada Cesar,Entrante
+T-95387,2026-03-01,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-37769,2026-03-01,Comida,P-21,2,Cafe Solo,Bebida
+T-75002,2026-03-01,Comida,P-10,2,Solomillo Iberico,Principal
+T-60593,2026-03-01,Cena,P-02,3,Ensalada Cesar,Entrante
+T-42496,2026-03-01,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-20484,2026-03-01,Comida,P-24,3,Nuggets de Pollo,Principal
+T-50400,2026-03-01,Cena,P-17,4,Brownie con Helado,Postre
+T-51444,2026-03-01,Comida,P-05,2,Refresco Cola,Bebida
+T-32795,2026-03-01,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-83961,2026-03-01,Cena,P-11,2,Salmon a la Plancha,Principal
+T-26877,2026-03-01,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-78026,2026-03-02,Cena,P-25,1,Canelones de Carne,Principal
+T-55414,2026-03-02,Cena,P-01,4,Hamburguesa Smart,Principal
+T-88956,2026-03-02,Comida,P-01,3,Hamburguesa Smart,Principal
+T-63600,2026-03-02,Cena,P-05,1,Refresco Cola,Bebida
+T-40297,2026-03-02,Comida,P-13,3,Bacalao al Horno,Principal
+T-26238,2026-03-02,Cena,P-12,3,Risotto de Setas,Principal
+T-22364,2026-03-02,Comida,P-16,1,Agua Mineral,Bebida
+T-70790,2026-03-02,Cena,P-24,1,Nuggets de Pollo,Principal
+T-83196,2026-03-02,Cena,P-21,3,Cafe Solo,Bebida
+T-83509,2026-03-02,Comida,P-22,4,Te Verde,Bebida
+T-31529,2026-03-02,Comida,P-22,3,Te Verde,Bebida
+T-70426,2026-03-02,Cena,P-25,4,Canelones de Carne,Principal
+T-81968,2026-03-02,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-55406,2026-03-02,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-70592,2026-03-02,Cena,P-13,2,Bacalao al Horno,Principal
+T-72756,2026-03-02,Cena,P-17,2,Brownie con Helado,Postre
+T-34788,2026-03-02,Cena,P-21,3,Cafe Solo,Bebida
+T-93537,2026-03-02,Cena,P-12,1,Risotto de Setas,Principal
+T-99603,2026-03-02,Comida,P-07,2,Pizza Margarita,Principal
+T-91252,2026-03-02,Cena,P-07,1,Pizza Margarita,Principal
+T-73399,2026-03-02,Comida,P-20,2,Paella de Marisco,Principal
+T-92437,2026-03-02,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-51057,2026-03-02,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-92349,2026-03-02,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-90299,2026-03-03,Cena,P-16,3,Agua Mineral,Bebida
+T-87501,2026-03-03,Cena,P-19,4,Entrecot Ternera,Principal
+T-76933,2026-03-03,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-68956,2026-03-03,Cena,P-16,4,Agua Mineral,Bebida
+T-80322,2026-03-03,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-36965,2026-03-03,Comida,P-20,4,Paella de Marisco,Principal
+T-40229,2026-03-03,Cena,P-11,4,Salmon a la Plancha,Principal
+T-30201,2026-03-03,Comida,P-22,2,Te Verde,Bebida
+T-32041,2026-03-03,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-56034,2026-03-03,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-20242,2026-03-03,Cena,P-17,3,Brownie con Helado,Postre
+T-96204,2026-03-03,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-78446,2026-03-03,Cena,P-13,3,Bacalao al Horno,Principal
+T-50946,2026-03-03,Comida,P-10,4,Solomillo Iberico,Principal
+T-29747,2026-03-03,Cena,P-15,2,Cerveza Artesana,Bebida
+T-36165,2026-03-03,Cena,P-05,4,Refresco Cola,Bebida
+T-56317,2026-03-03,Comida,P-21,1,Cafe Solo,Bebida
+T-78699,2026-03-03,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-82867,2026-03-03,Cena,P-21,1,Cafe Solo,Bebida
+T-66495,2026-03-03,Cena,P-12,4,Risotto de Setas,Principal
+T-30076,2026-03-03,Cena,P-15,2,Cerveza Artesana,Bebida
+T-93223,2026-03-03,Cena,P-21,3,Cafe Solo,Bebida
+T-71987,2026-03-03,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-21738,2026-03-03,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-29197,2026-03-03,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-98807,2026-03-03,Comida,P-15,2,Cerveza Artesana,Bebida
+T-36229,2026-03-03,Cena,P-22,2,Te Verde,Bebida
+T-53127,2026-03-03,Cena,P-10,4,Solomillo Iberico,Principal
+T-82278,2026-03-03,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-33813,2026-03-03,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-29054,2026-03-03,Cena,P-20,1,Paella de Marisco,Principal
+T-96437,2026-03-04,Cena,P-25,2,Canelones de Carne,Principal
+T-70366,2026-03-04,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-98720,2026-03-04,Cena,P-24,1,Nuggets de Pollo,Principal
+T-43172,2026-03-04,Cena,P-24,4,Nuggets de Pollo,Principal
+T-32416,2026-03-04,Comida,P-21,2,Cafe Solo,Bebida
+T-60932,2026-03-04,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-45342,2026-03-04,Comida,P-22,4,Te Verde,Bebida
+T-59616,2026-03-04,Comida,P-02,4,Ensalada Cesar,Entrante
+T-97538,2026-03-04,Cena,P-20,2,Paella de Marisco,Principal
+T-30578,2026-03-04,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-67394,2026-03-04,Cena,P-25,2,Canelones de Carne,Principal
+T-80129,2026-03-04,Comida,P-09,4,Gazpacho Andaluz,Entrante
+T-59219,2026-03-04,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-30674,2026-03-04,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-72428,2026-03-04,Cena,P-24,3,Nuggets de Pollo,Principal
+T-82886,2026-03-04,Cena,P-10,3,Solomillo Iberico,Principal
+T-52260,2026-03-04,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-73198,2026-03-04,Cena,P-13,2,Bacalao al Horno,Principal
+T-40480,2026-03-04,Comida,P-11,3,Salmon a la Plancha,Principal
+T-47796,2026-03-04,Cena,P-21,2,Cafe Solo,Bebida
+T-84798,2026-03-04,Comida,P-07,3,Pizza Margarita,Principal
+T-53657,2026-03-04,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-91381,2026-03-04,Comida,P-17,3,Brownie con Helado,Postre
+T-50876,2026-03-04,Cena,P-16,4,Agua Mineral,Bebida
+T-31626,2026-03-04,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-92582,2026-03-04,Cena,P-15,3,Cerveza Artesana,Bebida
+T-70270,2026-03-04,Cena,P-07,1,Pizza Margarita,Principal
+T-93534,2026-03-04,Cena,P-15,2,Cerveza Artesana,Bebida
+T-42642,2026-03-04,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-91932,2026-03-05,Cena,P-01,1,Hamburguesa Smart,Principal
+T-97876,2026-03-05,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-43433,2026-03-05,Cena,P-20,1,Paella de Marisco,Principal
+T-38641,2026-03-05,Comida,P-17,4,Brownie con Helado,Postre
+T-24783,2026-03-05,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-56144,2026-03-05,Comida,P-19,3,Entrecot Ternera,Principal
+T-78519,2026-03-05,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-40428,2026-03-05,Cena,P-01,3,Hamburguesa Smart,Principal
+T-41742,2026-03-05,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-63490,2026-03-05,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-69800,2026-03-05,Cena,P-05,2,Refresco Cola,Bebida
+T-56218,2026-03-05,Cena,P-16,2,Agua Mineral,Bebida
+T-77763,2026-03-05,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-72989,2026-03-05,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-30641,2026-03-05,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-38067,2026-03-05,Cena,P-05,1,Refresco Cola,Bebida
+T-52691,2026-03-05,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-42567,2026-03-05,Comida,P-19,2,Entrecot Ternera,Principal
+T-68038,2026-03-05,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-98849,2026-03-05,Cena,P-10,1,Solomillo Iberico,Principal
+T-73457,2026-03-05,Comida,P-19,3,Entrecot Ternera,Principal
+T-50292,2026-03-05,Comida,P-17,3,Brownie con Helado,Postre
+T-64620,2026-03-05,Cena,P-21,1,Cafe Solo,Bebida
+T-65544,2026-03-05,Comida,P-01,1,Hamburguesa Smart,Principal
+T-44976,2026-03-05,Comida,P-16,1,Agua Mineral,Bebida
+T-26115,2026-03-06,Cena,P-16,1,Agua Mineral,Bebida
+T-73312,2026-03-06,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-97749,2026-03-06,Comida,P-07,1,Pizza Margarita,Principal
+T-67783,2026-03-06,Cena,P-24,1,Nuggets de Pollo,Principal
+T-33953,2026-03-06,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-32104,2026-03-06,Comida,P-17,4,Brownie con Helado,Postre
+T-38512,2026-03-06,Comida,P-13,4,Bacalao al Horno,Principal
+T-79499,2026-03-06,Cena,P-22,4,Te Verde,Bebida
+T-69887,2026-03-06,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-58874,2026-03-06,Comida,P-10,4,Solomillo Iberico,Principal
+T-74705,2026-03-06,Cena,P-17,1,Brownie con Helado,Postre
+T-48361,2026-03-06,Comida,P-19,2,Entrecot Ternera,Principal
+T-43965,2026-03-06,Comida,P-16,4,Agua Mineral,Bebida
+T-27325,2026-03-06,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-30214,2026-03-06,Cena,P-19,2,Entrecot Ternera,Principal
+T-52319,2026-03-06,Comida,P-10,1,Solomillo Iberico,Principal
+T-38284,2026-03-06,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-57742,2026-03-06,Cena,P-01,4,Hamburguesa Smart,Principal
+T-36754,2026-03-06,Cena,P-15,1,Cerveza Artesana,Bebida
+T-79057,2026-03-06,Cena,P-19,2,Entrecot Ternera,Principal
+T-84297,2026-03-06,Cena,P-10,3,Solomillo Iberico,Principal
+T-72888,2026-03-06,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-82181,2026-03-06,Comida,P-11,4,Salmon a la Plancha,Principal
+T-28446,2026-03-07,Comida,P-07,1,Pizza Margarita,Principal
+T-73659,2026-03-07,Comida,P-07,2,Pizza Margarita,Principal
+T-70632,2026-03-07,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-28299,2026-03-07,Cena,P-17,1,Brownie con Helado,Postre
+T-90011,2026-03-07,Comida,P-25,4,Canelones de Carne,Principal
+T-31427,2026-03-07,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-98992,2026-03-07,Cena,P-02,2,Ensalada Cesar,Entrante
+T-51109,2026-03-07,Comida,P-19,2,Entrecot Ternera,Principal
+T-59519,2026-03-07,Cena,P-15,3,Cerveza Artesana,Bebida
+T-36896,2026-03-07,Cena,P-15,3,Cerveza Artesana,Bebida
+T-66594,2026-03-07,Cena,P-19,1,Entrecot Ternera,Principal
+T-32279,2026-03-07,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-86022,2026-03-07,Comida,P-17,2,Brownie con Helado,Postre
+T-47141,2026-03-07,Cena,P-15,1,Cerveza Artesana,Bebida
+T-42906,2026-03-07,Comida,P-02,1,Ensalada Cesar,Entrante
+T-34707,2026-03-07,Comida,P-25,3,Canelones de Carne,Principal
+T-51118,2026-03-07,Comida,P-19,2,Entrecot Ternera,Principal
+T-70963,2026-03-07,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-99082,2026-03-07,Comida,P-15,3,Cerveza Artesana,Bebida
+T-21541,2026-03-07,Cena,P-24,4,Nuggets de Pollo,Principal
+T-58235,2026-03-07,Comida,P-16,4,Agua Mineral,Bebida
+T-71323,2026-03-07,Comida,P-07,1,Pizza Margarita,Principal
+T-38428,2026-03-07,Comida,P-19,1,Entrecot Ternera,Principal
+T-48064,2026-03-07,Comida,P-25,4,Canelones de Carne,Principal
+T-75226,2026-03-07,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-26582,2026-03-08,Cena,P-10,2,Solomillo Iberico,Principal
+T-21333,2026-03-08,Cena,P-07,2,Pizza Margarita,Principal
+T-90066,2026-03-08,Cena,P-22,3,Te Verde,Bebida
+T-28306,2026-03-08,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-26091,2026-03-08,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-72215,2026-03-08,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-74141,2026-03-08,Cena,P-01,2,Hamburguesa Smart,Principal
+T-63752,2026-03-08,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-48387,2026-03-08,Comida,P-11,1,Salmon a la Plancha,Principal
+T-90155,2026-03-08,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-80043,2026-03-08,Comida,P-16,3,Agua Mineral,Bebida
+T-48866,2026-03-08,Cena,P-10,3,Solomillo Iberico,Principal
+T-39673,2026-03-08,Comida,P-07,1,Pizza Margarita,Principal
+T-33801,2026-03-08,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-93492,2026-03-08,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-95972,2026-03-09,Cena,P-01,2,Hamburguesa Smart,Principal
+T-58036,2026-03-09,Comida,P-20,3,Paella de Marisco,Principal
+T-93083,2026-03-09,Comida,P-02,1,Ensalada Cesar,Entrante
+T-81446,2026-03-09,Cena,P-17,1,Brownie con Helado,Postre
+T-34448,2026-03-09,Comida,P-20,3,Paella de Marisco,Principal
+T-95387,2026-03-09,Comida,P-09,4,Gazpacho Andaluz,Entrante
+T-53404,2026-03-09,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-77453,2026-03-09,Cena,P-13,3,Bacalao al Horno,Principal
+T-89790,2026-03-09,Cena,P-12,2,Risotto de Setas,Principal
+T-98903,2026-03-09,Comida,P-22,1,Te Verde,Bebida
+T-61749,2026-03-09,Comida,P-17,4,Brownie con Helado,Postre
+T-44427,2026-03-09,Cena,P-11,4,Salmon a la Plancha,Principal
+T-69904,2026-03-09,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-34093,2026-03-09,Cena,P-15,2,Cerveza Artesana,Bebida
+T-27021,2026-03-09,Cena,P-20,4,Paella de Marisco,Principal
+T-44794,2026-03-09,Cena,P-21,4,Cafe Solo,Bebida
+T-91536,2026-03-09,Comida,P-17,3,Brownie con Helado,Postre
+T-85491,2026-03-09,Comida,P-24,1,Nuggets de Pollo,Principal
+T-85372,2026-03-09,Cena,P-15,2,Cerveza Artesana,Bebida
+T-93167,2026-03-09,Comida,P-12,3,Risotto de Setas,Principal
+T-45183,2026-03-09,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-74080,2026-03-09,Comida,P-02,4,Ensalada Cesar,Entrante
+T-71927,2026-03-09,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-50020,2026-03-09,Cena,P-22,1,Te Verde,Bebida
+T-60676,2026-03-09,Comida,P-16,3,Agua Mineral,Bebida
+T-27345,2026-03-09,Cena,P-11,3,Salmon a la Plancha,Principal
+T-70686,2026-03-09,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-27344,2026-03-09,Cena,P-13,4,Bacalao al Horno,Principal
+T-65155,2026-03-10,Cena,P-17,4,Brownie con Helado,Postre
+T-42412,2026-03-10,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-98606,2026-03-10,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-84436,2026-03-10,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-64574,2026-03-10,Comida,P-17,2,Brownie con Helado,Postre
+T-75089,2026-03-10,Cena,P-12,3,Risotto de Setas,Principal
+T-87155,2026-03-10,Cena,P-12,1,Risotto de Setas,Principal
+T-50248,2026-03-10,Cena,P-21,2,Cafe Solo,Bebida
+T-97719,2026-03-10,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-60957,2026-03-10,Comida,P-13,1,Bacalao al Horno,Principal
+T-87374,2026-03-10,Cena,P-15,2,Cerveza Artesana,Bebida
+T-88693,2026-03-10,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-89249,2026-03-10,Comida,P-10,3,Solomillo Iberico,Principal
+T-42296,2026-03-10,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-52451,2026-03-10,Cena,P-11,2,Salmon a la Plancha,Principal
+T-67421,2026-03-10,Cena,P-24,1,Nuggets de Pollo,Principal
+T-38617,2026-03-10,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-85071,2026-03-11,Cena,P-17,3,Brownie con Helado,Postre
+T-85844,2026-03-11,Comida,P-21,2,Cafe Solo,Bebida
+T-88494,2026-03-11,Cena,P-05,1,Refresco Cola,Bebida
+T-99061,2026-03-11,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-20192,2026-03-11,Comida,P-02,1,Ensalada Cesar,Entrante
+T-41575,2026-03-11,Comida,P-13,3,Bacalao al Horno,Principal
+T-76449,2026-03-11,Cena,P-17,3,Brownie con Helado,Postre
+T-71269,2026-03-11,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-81767,2026-03-11,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-24160,2026-03-11,Comida,P-13,2,Bacalao al Horno,Principal
+T-50876,2026-03-11,Cena,P-25,1,Canelones de Carne,Principal
+T-94233,2026-03-11,Cena,P-02,4,Ensalada Cesar,Entrante
+T-82416,2026-03-11,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-98522,2026-03-11,Comida,P-22,2,Te Verde,Bebida
+T-68061,2026-03-11,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-40741,2026-03-11,Comida,P-17,1,Brownie con Helado,Postre
+T-45718,2026-03-11,Cena,P-05,3,Refresco Cola,Bebida
+T-64604,2026-03-12,Cena,P-19,4,Entrecot Ternera,Principal
+T-71251,2026-03-12,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-30676,2026-03-12,Comida,P-02,2,Ensalada Cesar,Entrante
+T-41679,2026-03-12,Cena,P-11,2,Salmon a la Plancha,Principal
+T-94388,2026-03-12,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-36084,2026-03-12,Comida,P-02,4,Ensalada Cesar,Entrante
+T-26113,2026-03-12,Cena,P-16,2,Agua Mineral,Bebida
+T-77524,2026-03-12,Comida,P-20,3,Paella de Marisco,Principal
+T-69051,2026-03-12,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-34198,2026-03-12,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-87956,2026-03-12,Cena,P-15,4,Cerveza Artesana,Bebida
+T-49180,2026-03-12,Cena,P-19,4,Entrecot Ternera,Principal
+T-59332,2026-03-12,Cena,P-10,2,Solomillo Iberico,Principal
+T-53478,2026-03-12,Comida,P-01,1,Hamburguesa Smart,Principal
+T-91200,2026-03-12,Cena,P-24,4,Nuggets de Pollo,Principal
+T-69135,2026-03-12,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-46692,2026-03-12,Comida,P-02,3,Ensalada Cesar,Entrante
+T-94223,2026-03-12,Comida,P-01,2,Hamburguesa Smart,Principal
+T-36222,2026-03-12,Cena,P-07,1,Pizza Margarita,Principal
+T-82779,2026-03-13,Cena,P-12,3,Risotto de Setas,Principal
+T-32415,2026-03-13,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-72438,2026-03-13,Cena,P-17,4,Brownie con Helado,Postre
+T-82649,2026-03-13,Cena,P-17,4,Brownie con Helado,Postre
+T-23410,2026-03-13,Cena,P-15,2,Cerveza Artesana,Bebida
+T-83012,2026-03-13,Comida,P-15,2,Cerveza Artesana,Bebida
+T-45761,2026-03-13,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-94972,2026-03-13,Comida,P-17,1,Brownie con Helado,Postre
+T-50624,2026-03-13,Cena,P-25,2,Canelones de Carne,Principal
+T-67493,2026-03-13,Cena,P-11,2,Salmon a la Plancha,Principal
+T-31069,2026-03-13,Cena,P-15,2,Cerveza Artesana,Bebida
+T-59522,2026-03-13,Cena,P-01,3,Hamburguesa Smart,Principal
+T-25906,2026-03-13,Comida,P-20,4,Paella de Marisco,Principal
+T-59325,2026-03-13,Comida,P-15,2,Cerveza Artesana,Bebida
+T-54694,2026-03-13,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-92916,2026-03-13,Cena,P-10,2,Solomillo Iberico,Principal
+T-59064,2026-03-13,Comida,P-16,4,Agua Mineral,Bebida
+T-28794,2026-03-13,Comida,P-25,3,Canelones de Carne,Principal
+T-54487,2026-03-13,Comida,P-22,4,Te Verde,Bebida
+T-40496,2026-03-14,Comida,P-10,3,Solomillo Iberico,Principal
+T-41149,2026-03-14,Cena,P-05,1,Refresco Cola,Bebida
+T-65953,2026-03-14,Comida,P-02,2,Ensalada Cesar,Entrante
+T-82816,2026-03-14,Cena,P-15,3,Cerveza Artesana,Bebida
+T-66631,2026-03-14,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-43692,2026-03-14,Comida,P-24,3,Nuggets de Pollo,Principal
+T-61457,2026-03-14,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-56500,2026-03-14,Comida,P-11,2,Salmon a la Plancha,Principal
+T-33660,2026-03-14,Cena,P-17,1,Brownie con Helado,Postre
+T-79242,2026-03-14,Cena,P-20,4,Paella de Marisco,Principal
+T-56974,2026-03-14,Comida,P-19,2,Entrecot Ternera,Principal
+T-86075,2026-03-14,Comida,P-15,4,Cerveza Artesana,Bebida
+T-90596,2026-03-14,Cena,P-20,2,Paella de Marisco,Principal
+T-47452,2026-03-14,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-51556,2026-03-14,Cena,P-11,2,Salmon a la Plancha,Principal
+T-67440,2026-03-14,Comida,P-01,1,Hamburguesa Smart,Principal
+T-84193,2026-03-14,Cena,P-01,4,Hamburguesa Smart,Principal
+T-33368,2026-03-14,Cena,P-15,1,Cerveza Artesana,Bebida
+T-73093,2026-03-14,Cena,P-25,4,Canelones de Carne,Principal
+T-72781,2026-03-14,Cena,P-05,1,Refresco Cola,Bebida
+T-31996,2026-03-15,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-41081,2026-03-15,Cena,P-11,2,Salmon a la Plancha,Principal
+T-57523,2026-03-15,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-41150,2026-03-15,Comida,P-24,2,Nuggets de Pollo,Principal
+T-90195,2026-03-15,Cena,P-07,3,Pizza Margarita,Principal
+T-32128,2026-03-15,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-26960,2026-03-15,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-48256,2026-03-15,Cena,P-11,4,Salmon a la Plancha,Principal
+T-87919,2026-03-15,Cena,P-16,3,Agua Mineral,Bebida
+T-34294,2026-03-15,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-61577,2026-03-15,Cena,P-02,4,Ensalada Cesar,Entrante
+T-71093,2026-03-15,Cena,P-21,3,Cafe Solo,Bebida
+T-36618,2026-03-15,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-56163,2026-03-15,Cena,P-07,1,Pizza Margarita,Principal
+T-59677,2026-03-15,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-52235,2026-03-15,Comida,P-10,2,Solomillo Iberico,Principal
+T-57784,2026-03-15,Cena,P-10,3,Solomillo Iberico,Principal
+T-34082,2026-03-15,Cena,P-02,2,Ensalada Cesar,Entrante
+T-86946,2026-03-15,Comida,P-20,4,Paella de Marisco,Principal
+T-85075,2026-03-15,Cena,P-21,3,Cafe Solo,Bebida
+T-94494,2026-03-15,Cena,P-19,3,Entrecot Ternera,Principal
+T-70938,2026-03-15,Cena,P-05,3,Refresco Cola,Bebida
+T-85711,2026-03-15,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-84634,2026-03-15,Comida,P-13,2,Bacalao al Horno,Principal
+T-82692,2026-03-15,Cena,P-11,4,Salmon a la Plancha,Principal
+T-37278,2026-03-15,Comida,P-16,3,Agua Mineral,Bebida
+T-46431,2026-03-16,Cena,P-13,2,Bacalao al Horno,Principal
+T-61844,2026-03-16,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-35915,2026-03-16,Comida,P-11,3,Salmon a la Plancha,Principal
+T-34785,2026-03-16,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-32503,2026-03-16,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-79559,2026-03-16,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-79205,2026-03-16,Cena,P-12,4,Risotto de Setas,Principal
+T-80474,2026-03-16,Cena,P-02,2,Ensalada Cesar,Entrante
+T-73223,2026-03-16,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-29492,2026-03-16,Cena,P-25,1,Canelones de Carne,Principal
+T-25247,2026-03-16,Cena,P-25,3,Canelones de Carne,Principal
+T-95617,2026-03-16,Cena,P-01,4,Hamburguesa Smart,Principal
+T-48100,2026-03-16,Cena,P-15,1,Cerveza Artesana,Bebida
+T-34886,2026-03-16,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-72812,2026-03-16,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-70938,2026-03-16,Cena,P-13,1,Bacalao al Horno,Principal
+T-24890,2026-03-16,Cena,P-11,4,Salmon a la Plancha,Principal
+T-51285,2026-03-16,Comida,P-21,1,Cafe Solo,Bebida
+T-94442,2026-03-16,Cena,P-22,3,Te Verde,Bebida
+T-53587,2026-03-16,Cena,P-22,1,Te Verde,Bebida
+T-80905,2026-03-16,Comida,P-21,3,Cafe Solo,Bebida
+T-39434,2026-03-16,Cena,P-05,3,Refresco Cola,Bebida
+T-20993,2026-03-16,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-24152,2026-03-17,Comida,P-02,1,Ensalada Cesar,Entrante
+T-69168,2026-03-17,Comida,P-07,2,Pizza Margarita,Principal
+T-60258,2026-03-17,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-63463,2026-03-17,Comida,P-12,2,Risotto de Setas,Principal
+T-83595,2026-03-17,Cena,P-19,3,Entrecot Ternera,Principal
+T-28308,2026-03-17,Comida,P-15,3,Cerveza Artesana,Bebida
+T-65526,2026-03-17,Cena,P-10,2,Solomillo Iberico,Principal
+T-69841,2026-03-17,Comida,P-24,1,Nuggets de Pollo,Principal
+T-93620,2026-03-17,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-68257,2026-03-17,Comida,P-20,1,Paella de Marisco,Principal
+T-27705,2026-03-17,Comida,P-01,1,Hamburguesa Smart,Principal
+T-62976,2026-03-17,Comida,P-07,4,Pizza Margarita,Principal
+T-23130,2026-03-17,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-82387,2026-03-17,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-65937,2026-03-17,Comida,P-12,4,Risotto de Setas,Principal
+T-50050,2026-03-17,Cena,P-05,1,Refresco Cola,Bebida
+T-81219,2026-03-17,Cena,P-16,2,Agua Mineral,Bebida
+T-29990,2026-03-17,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-37607,2026-03-17,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-67528,2026-03-17,Cena,P-24,4,Nuggets de Pollo,Principal
+T-65740,2026-03-17,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-89605,2026-03-17,Cena,P-19,3,Entrecot Ternera,Principal
+T-40389,2026-03-17,Cena,P-01,3,Hamburguesa Smart,Principal
+T-46653,2026-03-17,Cena,P-17,2,Brownie con Helado,Postre
+T-77424,2026-03-17,Comida,P-20,3,Paella de Marisco,Principal
+T-39423,2026-03-17,Cena,P-01,4,Hamburguesa Smart,Principal
+T-58745,2026-03-17,Cena,P-24,4,Nuggets de Pollo,Principal
+T-73577,2026-03-17,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-31871,2026-03-17,Cena,P-21,4,Cafe Solo,Bebida
+T-25929,2026-03-17,Cena,P-02,3,Ensalada Cesar,Entrante
+T-44033,2026-03-17,Cena,P-01,2,Hamburguesa Smart,Principal
+T-40042,2026-03-18,Cena,P-10,1,Solomillo Iberico,Principal
+T-69273,2026-03-18,Cena,P-15,3,Cerveza Artesana,Bebida
+T-30169,2026-03-18,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-89495,2026-03-18,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-83832,2026-03-18,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-91677,2026-03-18,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-27344,2026-03-18,Cena,P-19,4,Entrecot Ternera,Principal
+T-82447,2026-03-18,Cena,P-06,4,Vino Tinto Copa,Bebida
+T-21050,2026-03-18,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-54528,2026-03-18,Comida,P-16,4,Agua Mineral,Bebida
+T-64109,2026-03-18,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-23988,2026-03-18,Comida,P-13,1,Bacalao al Horno,Principal
+T-89280,2026-03-18,Cena,P-20,3,Paella de Marisco,Principal
+T-79033,2026-03-18,Cena,P-22,2,Te Verde,Bebida
+T-25409,2026-03-18,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-33226,2026-03-18,Cena,P-20,3,Paella de Marisco,Principal
+T-69047,2026-03-18,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-22476,2026-03-18,Cena,P-12,4,Risotto de Setas,Principal
+T-72997,2026-03-18,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-53189,2026-03-18,Comida,P-22,1,Te Verde,Bebida
+T-29754,2026-03-18,Comida,P-19,3,Entrecot Ternera,Principal
+T-56010,2026-03-18,Cena,P-12,2,Risotto de Setas,Principal
+T-64195,2026-03-18,Comida,P-01,3,Hamburguesa Smart,Principal
+T-40081,2026-03-18,Cena,P-12,4,Risotto de Setas,Principal
+T-35025,2026-03-18,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-67477,2026-03-18,Comida,P-07,1,Pizza Margarita,Principal
+T-34599,2026-03-19,Comida,P-22,3,Te Verde,Bebida
+T-36096,2026-03-19,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-22698,2026-03-19,Comida,P-24,3,Nuggets de Pollo,Principal
+T-23603,2026-03-19,Cena,P-07,2,Pizza Margarita,Principal
+T-86685,2026-03-19,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-52640,2026-03-19,Cena,P-16,3,Agua Mineral,Bebida
+T-71679,2026-03-19,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-99513,2026-03-19,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-53804,2026-03-19,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-60120,2026-03-19,Comida,P-25,3,Canelones de Carne,Principal
+T-64239,2026-03-19,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-24785,2026-03-19,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-22385,2026-03-19,Comida,P-12,4,Risotto de Setas,Principal
+T-30891,2026-03-19,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-73990,2026-03-19,Cena,P-11,3,Salmon a la Plancha,Principal
+T-75206,2026-03-19,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-38304,2026-03-19,Cena,P-15,3,Cerveza Artesana,Bebida
+T-29532,2026-03-19,Comida,P-21,2,Cafe Solo,Bebida
+T-21266,2026-03-19,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-26762,2026-03-20,Comida,P-11,1,Salmon a la Plancha,Principal
+T-25471,2026-03-20,Cena,P-05,2,Refresco Cola,Bebida
+T-48971,2026-03-20,Comida,P-20,3,Paella de Marisco,Principal
+T-96780,2026-03-20,Cena,P-05,4,Refresco Cola,Bebida
+T-37803,2026-03-20,Cena,P-15,4,Cerveza Artesana,Bebida
+T-21228,2026-03-20,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-31864,2026-03-20,Cena,P-02,1,Ensalada Cesar,Entrante
+T-82575,2026-03-20,Comida,P-20,3,Paella de Marisco,Principal
+T-83873,2026-03-20,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-95362,2026-03-20,Cena,P-16,3,Agua Mineral,Bebida
+T-48557,2026-03-20,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-53115,2026-03-20,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-32920,2026-03-20,Cena,P-16,2,Agua Mineral,Bebida
+T-34876,2026-03-20,Comida,P-20,1,Paella de Marisco,Principal
+T-38811,2026-03-20,Cena,P-13,2,Bacalao al Horno,Principal
+T-86382,2026-03-20,Cena,P-19,4,Entrecot Ternera,Principal
+T-70645,2026-03-20,Cena,P-25,3,Canelones de Carne,Principal
+T-75326,2026-03-20,Cena,P-11,2,Salmon a la Plancha,Principal
+T-48785,2026-03-20,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-96038,2026-03-20,Comida,P-10,3,Solomillo Iberico,Principal
+T-27034,2026-03-20,Cena,P-02,1,Ensalada Cesar,Entrante
+T-60301,2026-03-20,Comida,P-11,1,Salmon a la Plancha,Principal
+T-31084,2026-03-20,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-92404,2026-03-20,Cena,P-07,3,Pizza Margarita,Principal
+T-90428,2026-03-20,Cena,P-13,2,Bacalao al Horno,Principal
+T-66846,2026-03-20,Cena,P-19,2,Entrecot Ternera,Principal
+T-33671,2026-03-21,Comida,P-22,4,Te Verde,Bebida
+T-50926,2026-03-21,Comida,P-18,2,Ensaladilla Rusa,Entrante
+T-69291,2026-03-21,Comida,P-11,3,Salmon a la Plancha,Principal
+T-40882,2026-03-21,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-72447,2026-03-21,Cena,P-01,2,Hamburguesa Smart,Principal
+T-35888,2026-03-21,Cena,P-22,1,Te Verde,Bebida
+T-39092,2026-03-21,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-91716,2026-03-21,Cena,P-24,4,Nuggets de Pollo,Principal
+T-32016,2026-03-21,Cena,P-25,1,Canelones de Carne,Principal
+T-23962,2026-03-21,Comida,P-21,3,Cafe Solo,Bebida
+T-61305,2026-03-21,Comida,P-09,3,Gazpacho Andaluz,Entrante
+T-21571,2026-03-21,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-46984,2026-03-21,Cena,P-05,4,Refresco Cola,Bebida
+T-60405,2026-03-21,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-65083,2026-03-21,Cena,P-21,3,Cafe Solo,Bebida
+T-26664,2026-03-21,Comida,P-11,4,Salmon a la Plancha,Principal
+T-46309,2026-03-21,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-70591,2026-03-21,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-29087,2026-03-21,Comida,P-21,2,Cafe Solo,Bebida
+T-44302,2026-03-21,Cena,P-01,1,Hamburguesa Smart,Principal
+T-54144,2026-03-21,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-30467,2026-03-21,Cena,P-02,4,Ensalada Cesar,Entrante
+T-90465,2026-03-21,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-85745,2026-03-21,Comida,P-10,3,Solomillo Iberico,Principal
+T-62609,2026-03-21,Comida,P-15,1,Cerveza Artesana,Bebida
+T-76542,2026-03-21,Comida,P-06,3,Vino Tinto Copa,Bebida
+T-73157,2026-03-21,Cena,P-20,1,Paella de Marisco,Principal
+T-73475,2026-03-21,Cena,P-25,1,Canelones de Carne,Principal
+T-93930,2026-03-22,Comida,P-19,3,Entrecot Ternera,Principal
+T-55137,2026-03-22,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-23156,2026-03-22,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-29030,2026-03-22,Comida,P-19,3,Entrecot Ternera,Principal
+T-92227,2026-03-22,Cena,P-17,4,Brownie con Helado,Postre
+T-96140,2026-03-22,Cena,P-22,3,Te Verde,Bebida
+T-75433,2026-03-22,Comida,P-11,1,Salmon a la Plancha,Principal
+T-80896,2026-03-22,Cena,P-07,4,Pizza Margarita,Principal
+T-73322,2026-03-22,Cena,P-16,3,Agua Mineral,Bebida
+T-47787,2026-03-22,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-69409,2026-03-22,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-96945,2026-03-22,Comida,P-17,4,Brownie con Helado,Postre
+T-63542,2026-03-22,Comida,P-05,3,Refresco Cola,Bebida
+T-95177,2026-03-22,Cena,P-16,2,Agua Mineral,Bebida
+T-29793,2026-03-22,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-61421,2026-03-22,Comida,P-16,2,Agua Mineral,Bebida
+T-64028,2026-03-22,Comida,P-15,4,Cerveza Artesana,Bebida
+T-39600,2026-03-22,Cena,P-11,1,Salmon a la Plancha,Principal
+T-47342,2026-03-22,Cena,P-10,1,Solomillo Iberico,Principal
+T-54861,2026-03-22,Cena,P-15,2,Cerveza Artesana,Bebida
+T-65796,2026-03-22,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-38861,2026-03-22,Cena,P-13,2,Bacalao al Horno,Principal
+T-89192,2026-03-22,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-57246,2026-03-22,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-82496,2026-03-22,Cena,P-24,4,Nuggets de Pollo,Principal
+T-90565,2026-03-22,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-76762,2026-03-22,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-94062,2026-03-22,Comida,P-16,4,Agua Mineral,Bebida
+T-75794,2026-03-22,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-77646,2026-03-22,Cena,P-03,3,Pasta Carbonara IA,Principal
+T-97050,2026-03-22,Comida,P-12,4,Risotto de Setas,Principal
+T-98737,2026-03-22,Comida,P-07,2,Pizza Margarita,Principal
+T-56262,2026-03-23,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-50387,2026-03-23,Comida,P-07,1,Pizza Margarita,Principal
+T-57379,2026-03-23,Comida,P-12,3,Risotto de Setas,Principal
+T-90597,2026-03-23,Cena,P-02,4,Ensalada Cesar,Entrante
+T-57614,2026-03-23,Comida,P-02,3,Ensalada Cesar,Entrante
+T-50241,2026-03-23,Cena,P-07,3,Pizza Margarita,Principal
+T-30873,2026-03-23,Comida,P-07,4,Pizza Margarita,Principal
+T-82601,2026-03-23,Cena,P-01,4,Hamburguesa Smart,Principal
+T-51407,2026-03-23,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-65994,2026-03-23,Cena,P-17,1,Brownie con Helado,Postre
+T-92195,2026-03-23,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-35181,2026-03-23,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-77135,2026-03-23,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-37464,2026-03-23,Cena,P-19,2,Entrecot Ternera,Principal
+T-86676,2026-03-23,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-87641,2026-03-23,Comida,P-02,2,Ensalada Cesar,Entrante
+T-84122,2026-03-23,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-79808,2026-03-23,Comida,P-25,2,Canelones de Carne,Principal
+T-74417,2026-03-23,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-47466,2026-03-23,Cena,P-15,3,Cerveza Artesana,Bebida
+T-50019,2026-03-23,Cena,P-25,3,Canelones de Carne,Principal
+T-40719,2026-03-23,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-43178,2026-03-23,Cena,P-21,1,Cafe Solo,Bebida
+T-46290,2026-03-23,Cena,P-20,2,Paella de Marisco,Principal
+T-81321,2026-03-23,Cena,P-01,2,Hamburguesa Smart,Principal
+T-36099,2026-03-23,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-87450,2026-03-23,Comida,P-02,3,Ensalada Cesar,Entrante
+T-34078,2026-03-23,Cena,P-10,3,Solomillo Iberico,Principal
+T-71214,2026-03-23,Cena,P-02,4,Ensalada Cesar,Entrante
+T-76892,2026-03-24,Comida,P-19,1,Entrecot Ternera,Principal
+T-45669,2026-03-24,Comida,P-19,3,Entrecot Ternera,Principal
+T-91354,2026-03-24,Cena,P-13,2,Bacalao al Horno,Principal
+T-64801,2026-03-24,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-86288,2026-03-24,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-49251,2026-03-24,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-90391,2026-03-24,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-38016,2026-03-24,Comida,P-24,1,Nuggets de Pollo,Principal
+T-31952,2026-03-24,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-27682,2026-03-24,Cena,P-12,4,Risotto de Setas,Principal
+T-31763,2026-03-24,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-85630,2026-03-24,Comida,P-25,4,Canelones de Carne,Principal
+T-32371,2026-03-24,Cena,P-10,1,Solomillo Iberico,Principal
+T-73883,2026-03-24,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-80728,2026-03-24,Comida,P-05,4,Refresco Cola,Bebida
+T-38663,2026-03-24,Cena,P-21,2,Cafe Solo,Bebida
+T-95987,2026-03-24,Cena,P-16,4,Agua Mineral,Bebida
+T-75167,2026-03-24,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-57621,2026-03-25,Cena,P-10,2,Solomillo Iberico,Principal
+T-71640,2026-03-25,Comida,P-05,1,Refresco Cola,Bebida
+T-40934,2026-03-25,Cena,P-13,1,Bacalao al Horno,Principal
+T-32752,2026-03-25,Comida,P-16,1,Agua Mineral,Bebida
+T-90513,2026-03-25,Cena,P-02,1,Ensalada Cesar,Entrante
+T-56026,2026-03-25,Cena,P-22,3,Te Verde,Bebida
+T-38158,2026-03-25,Comida,P-15,4,Cerveza Artesana,Bebida
+T-74772,2026-03-25,Cena,P-20,3,Paella de Marisco,Principal
+T-53351,2026-03-25,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-90327,2026-03-25,Cena,P-21,1,Cafe Solo,Bebida
+T-27873,2026-03-25,Cena,P-10,3,Solomillo Iberico,Principal
+T-98562,2026-03-25,Cena,P-17,4,Brownie con Helado,Postre
+T-28739,2026-03-26,Cena,P-24,4,Nuggets de Pollo,Principal
+T-43155,2026-03-26,Comida,P-11,3,Salmon a la Plancha,Principal
+T-38981,2026-03-26,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-75734,2026-03-26,Cena,P-20,2,Paella de Marisco,Principal
+T-73390,2026-03-26,Comida,P-07,4,Pizza Margarita,Principal
+T-75960,2026-03-26,Cena,P-18,3,Ensaladilla Rusa,Entrante
+T-90155,2026-03-26,Cena,P-02,4,Ensalada Cesar,Entrante
+T-34334,2026-03-26,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-79623,2026-03-26,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-66032,2026-03-26,Comida,P-10,3,Solomillo Iberico,Principal
+T-33708,2026-03-26,Comida,P-07,1,Pizza Margarita,Principal
+T-51923,2026-03-26,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-56025,2026-03-27,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-80376,2026-03-27,Cena,P-11,2,Salmon a la Plancha,Principal
+T-55732,2026-03-27,Cena,P-17,1,Brownie con Helado,Postre
+T-62468,2026-03-27,Comida,P-07,2,Pizza Margarita,Principal
+T-84496,2026-03-27,Comida,P-17,4,Brownie con Helado,Postre
+T-32598,2026-03-27,Cena,P-17,1,Brownie con Helado,Postre
+T-24392,2026-03-27,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-74026,2026-03-27,Comida,P-07,4,Pizza Margarita,Principal
+T-70484,2026-03-27,Comida,P-17,4,Brownie con Helado,Postre
+T-51041,2026-03-27,Cena,P-20,3,Paella de Marisco,Principal
+T-64671,2026-03-27,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-25875,2026-03-27,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-98610,2026-03-27,Cena,P-07,2,Pizza Margarita,Principal
+T-33226,2026-03-27,Cena,P-07,2,Pizza Margarita,Principal
+T-63728,2026-03-27,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-30484,2026-03-27,Comida,P-17,3,Brownie con Helado,Postre
+T-96411,2026-03-27,Cena,P-20,1,Paella de Marisco,Principal
+T-90748,2026-03-27,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-83585,2026-03-27,Comida,P-12,1,Risotto de Setas,Principal
+T-99717,2026-03-27,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-48277,2026-03-27,Cena,P-19,4,Entrecot Ternera,Principal
+T-85482,2026-03-27,Cena,P-21,3,Cafe Solo,Bebida
+T-20284,2026-03-27,Cena,P-17,4,Brownie con Helado,Postre
+T-99962,2026-03-27,Comida,P-07,3,Pizza Margarita,Principal
+T-23509,2026-03-27,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-72100,2026-03-27,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-38646,2026-03-27,Cena,P-13,1,Bacalao al Horno,Principal
+T-44694,2026-03-27,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-28364,2026-03-27,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-71292,2026-03-28,Cena,P-15,1,Cerveza Artesana,Bebida
+T-63193,2026-03-28,Cena,P-21,4,Cafe Solo,Bebida
+T-53842,2026-03-28,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-22409,2026-03-28,Comida,P-11,1,Salmon a la Plancha,Principal
+T-39636,2026-03-28,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-35767,2026-03-28,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-87932,2026-03-28,Cena,P-19,3,Entrecot Ternera,Principal
+T-90719,2026-03-28,Cena,P-06,1,Vino Tinto Copa,Bebida
+T-96827,2026-03-28,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-27098,2026-03-28,Comida,P-11,3,Salmon a la Plancha,Principal
+T-52431,2026-03-28,Cena,P-12,4,Risotto de Setas,Principal
+T-70038,2026-03-28,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-94030,2026-03-28,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-58819,2026-03-28,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-47951,2026-03-29,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-46328,2026-03-29,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-78896,2026-03-29,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-21961,2026-03-29,Cena,P-07,3,Pizza Margarita,Principal
+T-80632,2026-03-29,Cena,P-17,3,Brownie con Helado,Postre
+T-38226,2026-03-29,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-93252,2026-03-29,Cena,P-02,1,Ensalada Cesar,Entrante
+T-55321,2026-03-29,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-41155,2026-03-29,Cena,P-11,3,Salmon a la Plancha,Principal
+T-56507,2026-03-29,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-49595,2026-03-29,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-28422,2026-03-29,Comida,P-25,4,Canelones de Carne,Principal
+T-79627,2026-03-29,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-93172,2026-03-29,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-35127,2026-03-29,Comida,P-09,2,Gazpacho Andaluz,Entrante
+T-62623,2026-03-29,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-57598,2026-03-29,Comida,P-14,3,Tortilla de Patatas,Entrante
+T-63492,2026-03-29,Comida,P-16,3,Agua Mineral,Bebida
+T-27047,2026-03-29,Comida,P-15,3,Cerveza Artesana,Bebida
+T-89138,2026-03-29,Comida,P-25,4,Canelones de Carne,Principal
+T-56373,2026-03-29,Comida,P-01,4,Hamburguesa Smart,Principal
+T-47700,2026-03-29,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-76811,2026-03-29,Comida,P-20,2,Paella de Marisco,Principal
+T-99991,2026-03-29,Cena,P-15,2,Cerveza Artesana,Bebida
+T-89886,2026-03-30,Comida,P-12,1,Risotto de Setas,Principal
+T-29932,2026-03-30,Comida,P-01,2,Hamburguesa Smart,Principal
+T-34927,2026-03-30,Cena,P-24,3,Nuggets de Pollo,Principal
+T-75535,2026-03-30,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-65297,2026-03-30,Cena,P-12,3,Risotto de Setas,Principal
+T-87635,2026-03-30,Comida,P-25,4,Canelones de Carne,Principal
+T-96586,2026-03-30,Cena,P-25,1,Canelones de Carne,Principal
+T-45435,2026-03-30,Comida,P-19,1,Entrecot Ternera,Principal
+T-36878,2026-03-30,Comida,P-13,4,Bacalao al Horno,Principal
+T-29867,2026-03-30,Comida,P-18,1,Ensaladilla Rusa,Entrante
+T-70667,2026-03-30,Cena,P-05,2,Refresco Cola,Bebida
+T-55814,2026-03-30,Comida,P-05,2,Refresco Cola,Bebida
+T-63884,2026-03-30,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-85073,2026-03-30,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-61803,2026-03-30,Cena,P-20,2,Paella de Marisco,Principal
+T-59320,2026-03-30,Comida,P-19,3,Entrecot Ternera,Principal
+T-38745,2026-03-30,Comida,P-03,4,Pasta Carbonara IA,Principal
+T-24619,2026-03-30,Cena,P-20,3,Paella de Marisco,Principal
+T-68587,2026-03-30,Comida,P-22,3,Te Verde,Bebida
+T-91716,2026-03-30,Cena,P-11,2,Salmon a la Plancha,Principal
+T-61205,2026-03-31,Cena,P-21,4,Cafe Solo,Bebida
+T-44817,2026-03-31,Cena,P-24,4,Nuggets de Pollo,Principal
+T-34098,2026-03-31,Comida,P-20,2,Paella de Marisco,Principal
+T-74085,2026-03-31,Comida,P-16,4,Agua Mineral,Bebida
+T-29733,2026-03-31,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-45900,2026-03-31,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-42169,2026-03-31,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-74225,2026-03-31,Cena,P-25,1,Canelones de Carne,Principal
+T-97172,2026-03-31,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-30006,2026-03-31,Comida,P-23,2,Tiramisu de la Casa,Postre
+T-50514,2026-03-31,Comida,P-11,1,Salmon a la Plancha,Principal
+T-24467,2026-03-31,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-52830,2026-03-31,Comida,P-08,4,Croquetas de Jamon,Entrante
+T-39959,2026-03-31,Comida,P-22,3,Te Verde,Bebida
+T-38620,2026-03-31,Comida,P-22,2,Te Verde,Bebida
+T-89949,2026-04-01,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-73988,2026-04-01,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-64234,2026-04-01,Comida,P-11,1,Salmon a la Plancha,Principal
+T-42215,2026-04-01,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-50060,2026-04-01,Comida,P-20,3,Paella de Marisco,Principal
+T-31529,2026-04-01,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-86910,2026-04-01,Comida,P-16,3,Agua Mineral,Bebida
+T-92220,2026-04-01,Comida,P-10,4,Solomillo Iberico,Principal
+T-82800,2026-04-01,Cena,P-13,2,Bacalao al Horno,Principal
+T-67541,2026-04-01,Cena,P-17,3,Brownie con Helado,Postre
+T-39707,2026-04-01,Cena,P-16,4,Agua Mineral,Bebida
+T-76796,2026-04-01,Comida,P-24,1,Nuggets de Pollo,Principal
+T-63582,2026-04-01,Cena,P-19,3,Entrecot Ternera,Principal
+T-64399,2026-04-01,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-72495,2026-04-01,Cena,P-20,4,Paella de Marisco,Principal
+T-54404,2026-04-01,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-90382,2026-04-01,Cena,P-15,1,Cerveza Artesana,Bebida
+T-35953,2026-04-01,Cena,P-16,2,Agua Mineral,Bebida
+T-40298,2026-04-01,Cena,P-22,2,Te Verde,Bebida
+T-28340,2026-04-01,Cena,P-24,4,Nuggets de Pollo,Principal
+T-80982,2026-04-01,Cena,P-20,3,Paella de Marisco,Principal
+T-45335,2026-04-01,Cena,P-24,3,Nuggets de Pollo,Principal
+T-29401,2026-04-01,Cena,P-13,1,Bacalao al Horno,Principal
+T-23987,2026-04-01,Cena,P-07,2,Pizza Margarita,Principal
+T-67185,2026-04-01,Cena,P-24,4,Nuggets de Pollo,Principal
+T-53013,2026-04-01,Cena,P-16,4,Agua Mineral,Bebida
+T-22917,2026-04-02,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-33271,2026-04-02,Cena,P-22,3,Te Verde,Bebida
+T-93711,2026-04-02,Cena,P-21,4,Cafe Solo,Bebida
+T-93594,2026-04-02,Cena,P-12,3,Risotto de Setas,Principal
+T-56890,2026-04-02,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-56491,2026-04-02,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-22381,2026-04-02,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-23276,2026-04-02,Comida,P-02,1,Ensalada Cesar,Entrante
+T-81048,2026-04-02,Cena,P-01,1,Hamburguesa Smart,Principal
+T-30610,2026-04-02,Cena,P-17,2,Brownie con Helado,Postre
+T-68327,2026-04-02,Cena,P-05,4,Refresco Cola,Bebida
+T-69942,2026-04-02,Comida,P-20,2,Paella de Marisco,Principal
+T-68380,2026-04-02,Cena,P-22,2,Te Verde,Bebida
+T-32836,2026-04-02,Comida,P-15,2,Cerveza Artesana,Bebida
+T-37627,2026-04-02,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-31763,2026-04-02,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-83016,2026-04-02,Comida,P-25,2,Canelones de Carne,Principal
+T-75850,2026-04-02,Comida,P-07,2,Pizza Margarita,Principal
+T-27888,2026-04-02,Comida,P-15,1,Cerveza Artesana,Bebida
+T-40363,2026-04-02,Cena,P-11,3,Salmon a la Plancha,Principal
+T-67523,2026-04-02,Cena,P-11,4,Salmon a la Plancha,Principal
+T-63763,2026-04-02,Comida,P-16,1,Agua Mineral,Bebida
+T-97711,2026-04-02,Comida,P-14,1,Tortilla de Patatas,Entrante
+T-36004,2026-04-02,Comida,P-17,3,Brownie con Helado,Postre
+T-89545,2026-04-02,Comida,P-21,1,Cafe Solo,Bebida
+T-24174,2026-04-02,Comida,P-21,3,Cafe Solo,Bebida
+T-46328,2026-04-02,Comida,P-02,4,Ensalada Cesar,Entrante
+T-66331,2026-04-02,Cena,P-17,4,Brownie con Helado,Postre
+T-82814,2026-04-02,Cena,P-11,1,Salmon a la Plancha,Principal
+T-61007,2026-04-02,Comida,P-24,4,Nuggets de Pollo,Principal
+T-36995,2026-04-02,Comida,P-07,4,Pizza Margarita,Principal
+T-60098,2026-04-03,Comida,P-16,3,Agua Mineral,Bebida
+T-66547,2026-04-03,Comida,P-03,3,Pasta Carbonara IA,Principal
+T-88780,2026-04-03,Comida,P-21,3,Cafe Solo,Bebida
+T-47367,2026-04-03,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-53867,2026-04-03,Comida,P-06,4,Vino Tinto Copa,Bebida
+T-68358,2026-04-03,Cena,P-03,4,Pasta Carbonara IA,Principal
+T-52820,2026-04-03,Comida,P-16,1,Agua Mineral,Bebida
+T-47717,2026-04-03,Cena,P-02,3,Ensalada Cesar,Entrante
+T-26255,2026-04-03,Cena,P-24,2,Nuggets de Pollo,Principal
+T-29648,2026-04-03,Cena,P-06,3,Vino Tinto Copa,Bebida
+T-41452,2026-04-03,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-35392,2026-04-03,Cena,P-07,3,Pizza Margarita,Principal
+T-89768,2026-04-03,Cena,P-10,3,Solomillo Iberico,Principal
+T-44330,2026-04-03,Cena,P-08,1,Croquetas de Jamon,Entrante
+T-81424,2026-04-03,Cena,P-17,1,Brownie con Helado,Postre
+T-79602,2026-04-03,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-56938,2026-04-03,Comida,P-02,2,Ensalada Cesar,Entrante
+T-87896,2026-04-03,Cena,P-16,2,Agua Mineral,Bebida
+T-38891,2026-04-03,Cena,P-01,3,Hamburguesa Smart,Principal
+T-29813,2026-04-03,Comida,P-23,4,Tiramisu de la Casa,Postre
+T-36756,2026-04-03,Cena,P-09,1,Gazpacho Andaluz,Entrante
+T-92352,2026-04-03,Comida,P-07,4,Pizza Margarita,Principal
+T-71576,2026-04-03,Cena,P-02,2,Ensalada Cesar,Entrante
+T-46302,2026-04-03,Cena,P-13,4,Bacalao al Horno,Principal
+T-98600,2026-04-03,Comida,P-25,2,Canelones de Carne,Principal
+T-39092,2026-04-03,Cena,P-07,1,Pizza Margarita,Principal
+T-63359,2026-04-03,Cena,P-15,2,Cerveza Artesana,Bebida
+T-44390,2026-04-04,Cena,P-19,3,Entrecot Ternera,Principal
+T-36668,2026-04-04,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-71563,2026-04-04,Comida,P-13,3,Bacalao al Horno,Principal
+T-70713,2026-04-04,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-63516,2026-04-04,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-21783,2026-04-04,Comida,P-24,2,Nuggets de Pollo,Principal
+T-96192,2026-04-04,Cena,P-13,4,Bacalao al Horno,Principal
+T-61319,2026-04-04,Cena,P-12,1,Risotto de Setas,Principal
+T-23078,2026-04-04,Cena,P-23,3,Tiramisu de la Casa,Postre
+T-89920,2026-04-04,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-41656,2026-04-04,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-60414,2026-04-04,Cena,P-01,2,Hamburguesa Smart,Principal
+T-53194,2026-04-04,Comida,P-25,3,Canelones de Carne,Principal
+T-69690,2026-04-04,Comida,P-22,4,Te Verde,Bebida
+T-46299,2026-04-04,Comida,P-17,3,Brownie con Helado,Postre
+T-67980,2026-04-04,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-74642,2026-04-04,Comida,P-12,1,Risotto de Setas,Principal
+T-67278,2026-04-04,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-36644,2026-04-04,Cena,P-17,2,Brownie con Helado,Postre
+T-95946,2026-04-04,Comida,P-07,4,Pizza Margarita,Principal
+T-70561,2026-04-04,Cena,P-04,4,Tarta de Queso Casera,Postre
+T-78940,2026-04-04,Comida,P-01,4,Hamburguesa Smart,Principal
+T-48699,2026-04-04,Cena,P-10,4,Solomillo Iberico,Principal
+T-98492,2026-04-04,Cena,P-24,3,Nuggets de Pollo,Principal
+T-47571,2026-04-04,Cena,P-07,1,Pizza Margarita,Principal
+T-76668,2026-04-04,Comida,P-21,1,Cafe Solo,Bebida
+T-73855,2026-04-04,Comida,P-18,3,Ensaladilla Rusa,Entrante
+T-95233,2026-04-04,Comida,P-20,2,Paella de Marisco,Principal
+T-84193,2026-04-05,Cena,P-12,1,Risotto de Setas,Principal
+T-81004,2026-04-05,Comida,P-01,2,Hamburguesa Smart,Principal
+T-36454,2026-04-05,Cena,P-05,4,Refresco Cola,Bebida
+T-37314,2026-04-05,Comida,P-07,1,Pizza Margarita,Principal
+T-47085,2026-04-05,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-77809,2026-04-05,Comida,P-13,4,Bacalao al Horno,Principal
+T-47899,2026-04-05,Comida,P-24,2,Nuggets de Pollo,Principal
+T-97730,2026-04-05,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-49900,2026-04-05,Comida,P-19,2,Entrecot Ternera,Principal
+T-79898,2026-04-05,Cena,P-12,4,Risotto de Setas,Principal
+T-91622,2026-04-05,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-80159,2026-04-05,Cena,P-24,3,Nuggets de Pollo,Principal
+T-50359,2026-04-05,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-49115,2026-04-05,Cena,P-24,3,Nuggets de Pollo,Principal
+T-63707,2026-04-05,Comida,P-09,1,Gazpacho Andaluz,Entrante
+T-85654,2026-04-05,Comida,P-16,1,Agua Mineral,Bebida
+T-48788,2026-04-05,Cena,P-22,1,Te Verde,Bebida
+T-52387,2026-04-05,Comida,P-15,4,Cerveza Artesana,Bebida
+T-38035,2026-04-05,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-94259,2026-04-05,Cena,P-19,4,Entrecot Ternera,Principal
+T-79671,2026-04-05,Cena,P-20,2,Paella de Marisco,Principal
+T-27314,2026-04-05,Comida,P-22,4,Te Verde,Bebida
+T-26857,2026-04-06,Comida,P-21,4,Cafe Solo,Bebida
+T-36020,2026-04-06,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-95846,2026-04-06,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-60854,2026-04-06,Comida,P-13,1,Bacalao al Horno,Principal
+T-82162,2026-04-06,Cena,P-17,1,Brownie con Helado,Postre
+T-77690,2026-04-06,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-63411,2026-04-06,Cena,P-19,3,Entrecot Ternera,Principal
+T-91764,2026-04-06,Cena,P-25,2,Canelones de Carne,Principal
+T-57544,2026-04-06,Cena,P-19,2,Entrecot Ternera,Principal
+T-45483,2026-04-06,Comida,P-11,1,Salmon a la Plancha,Principal
+T-42394,2026-04-06,Cena,P-22,4,Te Verde,Bebida
+T-29285,2026-04-06,Cena,P-20,3,Paella de Marisco,Principal
+T-49669,2026-04-06,Cena,P-01,3,Hamburguesa Smart,Principal
+T-74763,2026-04-06,Cena,P-05,4,Refresco Cola,Bebida
+T-98593,2026-04-06,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-51501,2026-04-06,Cena,P-24,3,Nuggets de Pollo,Principal
+T-82914,2026-04-06,Cena,P-21,4,Cafe Solo,Bebida
+T-89830,2026-04-06,Comida,P-21,1,Cafe Solo,Bebida
+T-26270,2026-04-06,Comida,P-17,3,Brownie con Helado,Postre
+T-37770,2026-04-06,Comida,P-21,4,Cafe Solo,Bebida
+T-79326,2026-04-06,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-41767,2026-04-07,Cena,P-17,3,Brownie con Helado,Postre
+T-99106,2026-04-07,Comida,P-22,1,Te Verde,Bebida
+T-99751,2026-04-07,Cena,P-25,4,Canelones de Carne,Principal
+T-45808,2026-04-07,Comida,P-25,1,Canelones de Carne,Principal
+T-29696,2026-04-07,Cena,P-20,1,Paella de Marisco,Principal
+T-28879,2026-04-07,Cena,P-07,2,Pizza Margarita,Principal
+T-27826,2026-04-07,Cena,P-17,3,Brownie con Helado,Postre
+T-82134,2026-04-07,Comida,P-19,3,Entrecot Ternera,Principal
+T-54360,2026-04-07,Cena,P-10,3,Solomillo Iberico,Principal
+T-80516,2026-04-07,Cena,P-20,4,Paella de Marisco,Principal
+T-66675,2026-04-07,Comida,P-12,4,Risotto de Setas,Principal
+T-91954,2026-04-07,Comida,P-04,4,Tarta de Queso Casera,Postre
+T-85211,2026-04-07,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-22445,2026-04-07,Cena,P-05,4,Refresco Cola,Bebida
+T-62027,2026-04-07,Cena,P-12,4,Risotto de Setas,Principal
+T-53877,2026-04-07,Comida,P-19,3,Entrecot Ternera,Principal
+T-51529,2026-04-07,Cena,P-24,1,Nuggets de Pollo,Principal
+T-68084,2026-04-07,Cena,P-02,4,Ensalada Cesar,Entrante
+T-23642,2026-04-07,Cena,P-23,2,Tiramisu de la Casa,Postre
+T-73281,2026-04-07,Comida,P-01,1,Hamburguesa Smart,Principal
+T-33109,2026-04-07,Cena,P-07,3,Pizza Margarita,Principal
+T-47700,2026-04-07,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-51451,2026-04-07,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-84657,2026-04-08,Cena,P-13,4,Bacalao al Horno,Principal
+T-40230,2026-04-08,Cena,P-25,3,Canelones de Carne,Principal
+T-34776,2026-04-08,Cena,P-09,2,Gazpacho Andaluz,Entrante
+T-75816,2026-04-08,Cena,P-16,2,Agua Mineral,Bebida
+T-32269,2026-04-08,Cena,P-05,4,Refresco Cola,Bebida
+T-84214,2026-04-08,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-26180,2026-04-08,Cena,P-13,2,Bacalao al Horno,Principal
+T-47778,2026-04-08,Cena,P-02,2,Ensalada Cesar,Entrante
+T-49082,2026-04-08,Cena,P-21,2,Cafe Solo,Bebida
+T-63013,2026-04-08,Cena,P-14,1,Tortilla de Patatas,Entrante
+T-49384,2026-04-09,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-83428,2026-04-09,Cena,P-24,2,Nuggets de Pollo,Principal
+T-58918,2026-04-09,Cena,P-15,1,Cerveza Artesana,Bebida
+T-41194,2026-04-09,Comida,P-21,1,Cafe Solo,Bebida
+T-89427,2026-04-09,Cena,P-12,3,Risotto de Setas,Principal
+T-92778,2026-04-09,Comida,P-11,1,Salmon a la Plancha,Principal
+T-90062,2026-04-09,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-22151,2026-04-09,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-44538,2026-04-09,Cena,P-08,2,Croquetas de Jamon,Entrante
+T-96674,2026-04-09,Cena,P-02,3,Ensalada Cesar,Entrante
+T-21414,2026-04-09,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-74973,2026-04-09,Cena,P-07,3,Pizza Margarita,Principal
+T-52329,2026-04-09,Cena,P-11,4,Salmon a la Plancha,Principal
+T-75645,2026-04-09,Cena,P-15,3,Cerveza Artesana,Bebida
+T-59415,2026-04-09,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-70487,2026-04-09,Cena,P-16,4,Agua Mineral,Bebida
+T-95806,2026-04-09,Cena,P-17,1,Brownie con Helado,Postre
+T-29159,2026-04-10,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-77769,2026-04-10,Cena,P-15,2,Cerveza Artesana,Bebida
+T-39783,2026-04-10,Cena,P-25,4,Canelones de Carne,Principal
+T-36229,2026-04-10,Cena,P-18,1,Ensaladilla Rusa,Entrante
+T-85248,2026-04-10,Comida,P-12,2,Risotto de Setas,Principal
+T-51009,2026-04-10,Cena,P-25,2,Canelones de Carne,Principal
+T-33690,2026-04-10,Cena,P-16,4,Agua Mineral,Bebida
+T-91349,2026-04-10,Comida,P-01,1,Hamburguesa Smart,Principal
+T-67505,2026-04-10,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-69258,2026-04-10,Cena,P-19,2,Entrecot Ternera,Principal
+T-68692,2026-04-10,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-80274,2026-04-10,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-38305,2026-04-10,Comida,P-06,1,Vino Tinto Copa,Bebida
+T-97195,2026-04-10,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-64207,2026-04-11,Comida,P-04,1,Tarta de Queso Casera,Postre
+T-27447,2026-04-11,Cena,P-23,1,Tiramisu de la Casa,Postre
+T-37664,2026-04-11,Cena,P-14,2,Tortilla de Patatas,Entrante
+T-25997,2026-04-11,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-75421,2026-04-11,Cena,P-17,2,Brownie con Helado,Postre
+T-70706,2026-04-11,Comida,P-24,1,Nuggets de Pollo,Principal
+T-31782,2026-04-11,Cena,P-24,1,Nuggets de Pollo,Principal
+T-29447,2026-04-11,Cena,P-24,2,Nuggets de Pollo,Principal
+T-50669,2026-04-11,Comida,P-11,1,Salmon a la Plancha,Principal
+T-34602,2026-04-11,Comida,P-02,2,Ensalada Cesar,Entrante
+T-92104,2026-04-11,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-93244,2026-04-11,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-49774,2026-04-11,Comida,P-13,1,Bacalao al Horno,Principal
+T-36338,2026-04-11,Cena,P-20,3,Paella de Marisco,Principal
+T-74403,2026-04-11,Comida,P-22,1,Te Verde,Bebida
+T-40094,2026-04-11,Cena,P-24,2,Nuggets de Pollo,Principal
+T-77000,2026-04-11,Cena,P-16,3,Agua Mineral,Bebida
+T-63890,2026-04-11,Comida,P-24,3,Nuggets de Pollo,Principal
+T-86588,2026-04-11,Cena,P-03,1,Pasta Carbonara IA,Principal
+T-99942,2026-04-11,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-73123,2026-04-11,Cena,P-07,2,Pizza Margarita,Principal
+T-88259,2026-04-11,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-59527,2026-04-11,Cena,P-12,2,Risotto de Setas,Principal
+T-51534,2026-04-11,Cena,P-22,3,Te Verde,Bebida
+T-69684,2026-04-11,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-90063,2026-04-12,Comida,P-17,4,Brownie con Helado,Postre
+T-30051,2026-04-12,Comida,P-21,2,Cafe Solo,Bebida
+T-67643,2026-04-12,Cena,P-12,2,Risotto de Setas,Principal
+T-85257,2026-04-12,Comida,P-23,1,Tiramisu de la Casa,Postre
+T-56224,2026-04-12,Cena,P-04,1,Tarta de Queso Casera,Postre
+T-98649,2026-04-12,Comida,P-04,3,Tarta de Queso Casera,Postre
+T-27181,2026-04-12,Cena,P-18,4,Ensaladilla Rusa,Entrante
+T-78828,2026-04-12,Comida,P-22,1,Te Verde,Bebida
+T-68975,2026-04-12,Cena,P-16,1,Agua Mineral,Bebida
+T-89984,2026-04-12,Cena,P-09,4,Gazpacho Andaluz,Entrante
+T-71233,2026-04-12,Comida,P-02,1,Ensalada Cesar,Entrante
+T-90738,2026-04-12,Cena,P-08,3,Croquetas de Jamon,Entrante
+T-93373,2026-04-12,Comida,P-10,2,Solomillo Iberico,Principal
+T-26596,2026-04-12,Comida,P-11,4,Salmon a la Plancha,Principal
+T-89850,2026-04-12,Cena,P-24,4,Nuggets de Pollo,Principal
+T-72341,2026-04-12,Cena,P-16,4,Agua Mineral,Bebida
+T-37185,2026-04-12,Cena,P-22,2,Te Verde,Bebida
+T-88896,2026-04-12,Comida,P-21,1,Cafe Solo,Bebida
+T-53557,2026-04-12,Cena,P-17,3,Brownie con Helado,Postre
+T-22420,2026-04-12,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-43671,2026-04-12,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-69155,2026-04-12,Comida,P-08,3,Croquetas de Jamon,Entrante
+T-61709,2026-04-12,Comida,P-22,2,Te Verde,Bebida
+T-51305,2026-04-12,Comida,P-17,4,Brownie con Helado,Postre
+T-37459,2026-04-12,Comida,P-24,4,Nuggets de Pollo,Principal
+T-93060,2026-04-13,Cena,P-13,2,Bacalao al Horno,Principal
+T-59476,2026-04-13,Cena,P-01,1,Hamburguesa Smart,Principal
+T-72858,2026-04-13,Comida,P-12,4,Risotto de Setas,Principal
+T-95817,2026-04-13,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-45294,2026-04-13,Comida,P-18,4,Ensaladilla Rusa,Entrante
+T-79459,2026-04-13,Cena,P-11,3,Salmon a la Plancha,Principal
+T-62291,2026-04-13,Cena,P-07,2,Pizza Margarita,Principal
+T-89551,2026-04-13,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-38182,2026-04-13,Cena,P-24,4,Nuggets de Pollo,Principal
+T-45379,2026-04-13,Cena,P-17,2,Brownie con Helado,Postre
+T-54583,2026-04-13,Cena,P-13,2,Bacalao al Horno,Principal
+T-63312,2026-04-13,Comida,P-12,4,Risotto de Setas,Principal
+T-91079,2026-04-13,Comida,P-22,4,Te Verde,Bebida
+T-96391,2026-04-13,Cena,P-03,2,Pasta Carbonara IA,Principal
+T-42752,2026-04-13,Comida,P-03,2,Pasta Carbonara IA,Principal
+T-97948,2026-04-13,Comida,P-19,3,Entrecot Ternera,Principal
+T-47003,2026-04-13,Cena,P-04,3,Tarta de Queso Casera,Postre
+T-55108,2026-04-13,Cena,P-08,4,Croquetas de Jamon,Entrante
+T-85075,2026-04-13,Cena,P-19,2,Entrecot Ternera,Principal
+T-66745,2026-04-13,Cena,P-11,2,Salmon a la Plancha,Principal
+T-78403,2026-04-13,Cena,P-13,1,Bacalao al Horno,Principal
+T-56041,2026-04-13,Comida,P-19,4,Entrecot Ternera,Principal
+T-80080,2026-04-13,Comida,P-23,3,Tiramisu de la Casa,Postre
+T-48306,2026-04-13,Cena,P-25,1,Canelones de Carne,Principal
+T-93396,2026-04-13,Cena,P-12,2,Risotto de Setas,Principal
+T-22373,2026-04-13,Comida,P-16,3,Agua Mineral,Bebida
+T-25978,2026-04-13,Comida,P-01,3,Hamburguesa Smart,Principal
+T-61770,2026-04-13,Comida,P-21,2,Cafe Solo,Bebida
+T-98844,2026-04-13,Cena,P-21,3,Cafe Solo,Bebida
+T-86251,2026-04-14,Cena,P-12,2,Risotto de Setas,Principal
+T-51355,2026-04-14,Cena,P-24,1,Nuggets de Pollo,Principal
+T-97290,2026-04-14,Cena,P-13,4,Bacalao al Horno,Principal
+T-67416,2026-04-14,Cena,P-19,4,Entrecot Ternera,Principal
+T-89489,2026-04-14,Cena,P-25,2,Canelones de Carne,Principal
+T-42621,2026-04-14,Comida,P-21,3,Cafe Solo,Bebida
+T-46322,2026-04-14,Cena,P-15,2,Cerveza Artesana,Bebida
+T-48796,2026-04-14,Cena,P-17,3,Brownie con Helado,Postre
+T-72052,2026-04-14,Cena,P-13,4,Bacalao al Horno,Principal
+T-69168,2026-04-14,Comida,P-03,1,Pasta Carbonara IA,Principal
+T-97028,2026-04-14,Comida,P-02,3,Ensalada Cesar,Entrante
+T-87374,2026-04-14,Cena,P-07,4,Pizza Margarita,Principal
+T-24387,2026-04-14,Cena,P-06,2,Vino Tinto Copa,Bebida
+T-30058,2026-04-14,Comida,P-15,4,Cerveza Artesana,Bebida
+T-73218,2026-04-14,Cena,P-19,4,Entrecot Ternera,Principal
+T-56073,2026-04-14,Comida,P-13,4,Bacalao al Horno,Principal
+T-48026,2026-04-14,Comida,P-08,2,Croquetas de Jamon,Entrante
+T-66063,2026-04-14,Cena,P-16,3,Agua Mineral,Bebida
+T-91164,2026-04-14,Cena,P-13,3,Bacalao al Horno,Principal
+T-48882,2026-04-14,Comida,P-21,1,Cafe Solo,Bebida
+T-44926,2026-04-14,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-88209,2026-04-14,Cena,P-20,3,Paella de Marisco,Principal
+T-77263,2026-04-14,Cena,P-23,4,Tiramisu de la Casa,Postre
+T-50330,2026-04-14,Cena,P-13,1,Bacalao al Horno,Principal
+T-64242,2026-04-14,Cena,P-13,2,Bacalao al Horno,Principal
+T-52696,2026-04-14,Cena,P-07,3,Pizza Margarita,Principal
+T-93788,2026-04-14,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-39772,2026-04-14,Comida,P-12,1,Risotto de Setas,Principal
+T-49699,2026-04-15,Cena,P-10,1,Solomillo Iberico,Principal
+T-29275,2026-04-15,Cena,P-02,2,Ensalada Cesar,Entrante
+T-51840,2026-04-15,Comida,P-19,3,Entrecot Ternera,Principal
+T-27968,2026-04-15,Comida,P-10,3,Solomillo Iberico,Principal
+T-82159,2026-04-15,Comida,P-04,2,Tarta de Queso Casera,Postre
+T-32156,2026-04-15,Cena,P-14,4,Tortilla de Patatas,Entrante
+T-31684,2026-04-15,Comida,P-19,3,Entrecot Ternera,Principal
+T-77565,2026-04-15,Cena,P-20,3,Paella de Marisco,Principal
+T-47457,2026-04-15,Cena,P-01,3,Hamburguesa Smart,Principal
+T-71175,2026-04-15,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-93378,2026-04-15,Cena,P-01,4,Hamburguesa Smart,Principal
+T-23589,2026-04-15,Comida,P-19,4,Entrecot Ternera,Principal
+T-52288,2026-04-15,Cena,P-14,3,Tortilla de Patatas,Entrante
+T-98130,2026-04-15,Cena,P-07,1,Pizza Margarita,Principal
+T-76487,2026-04-15,Comida,P-06,2,Vino Tinto Copa,Bebida
+T-61256,2026-04-15,Cena,P-24,4,Nuggets de Pollo,Principal
+T-57423,2026-04-15,Cena,P-15,4,Cerveza Artesana,Bebida
+T-94107,2026-04-15,Cena,P-01,1,Hamburguesa Smart,Principal
+T-97763,2026-04-15,Comida,P-21,4,Cafe Solo,Bebida
+T-24223,2026-04-15,Comida,P-14,4,Tortilla de Patatas,Entrante
+T-45285,2026-04-15,Comida,P-05,2,Refresco Cola,Bebida
+T-23158,2026-04-15,Comida,P-22,4,Te Verde,Bebida
+T-32183,2026-04-15,Comida,P-17,4,Brownie con Helado,Postre
+T-65226,2026-04-15,Comida,P-08,1,Croquetas de Jamon,Entrante
+T-44289,2026-04-15,Cena,P-01,1,Hamburguesa Smart,Principal
+T-94413,2026-04-15,Cena,P-09,3,Gazpacho Andaluz,Entrante
+T-76912,2026-04-15,Comida,P-11,3,Salmon a la Plancha,Principal
+T-43919,2026-04-15,Cena,P-18,2,Ensaladilla Rusa,Entrante
+T-47238,2026-04-15,Cena,P-04,2,Tarta de Queso Casera,Postre
+T-70440,2026-04-15,Comida,P-04,3,Tarta de Queso Casera,Postre

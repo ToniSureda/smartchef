@@ -5,9 +5,8 @@ from datetime import datetime, timedelta
 import os
 
 # --- CONFIGURACIÓN DE RUTAS ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
-CLEAN_PATH = os.path.join(PROJECT_ROOT, 'data', 'clean_data', 'dim_context.csv')
+DATA_PATH = os.getenv("DATA_PATH", "/data")
+CLEAN_PATH = os.path.join(DATA_PATH, "clean_data", "dim_context.csv")
 
 LAT, LON = 41.3851, 2.1734 # Barcelona
 
