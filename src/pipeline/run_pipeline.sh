@@ -1,20 +1,20 @@
 #!/bin/sh
 
-echo "⏳ Iniciando Pipeline Integral de SmartChef (3:00 AM)..."
+echo "Iniciando ejecución del pipeline de datos..."
 
-# 1. ACTUALIZACIÓN DE DATOS BRUTOS
-python /app/generate_raw_historic.py
+# 1. Actualización de datos en crudopython /app/generate_raw_historic.py
 python /app/ingest.py
 python /app/context_update.py
 
-# 2. SINCRONIZACIÓN BBDD (Para que el ML lea datos frescos)
+# 2. Sincronización de base de datos para garantizar información actualizada al modelo
 python /app/db_sync.py
 
-# 3. INTELIGENCIA ARTIFICIAL (NUEVOS PASOS)
-echo "🧠 Entrenando modelo y generando predicciones..."
-# Entrenamos con los últimos datos y generamos el CSV de predicciones
+# 3. Entrenamiento con el dataset actualizado y generación de inferencias
+echo "Ejecutando entrenamiento del modelo predictivo..."
 python /app/backend/services/train_predictions.py
-echo "📥 Importando predicciones a PostgreSQL..."
-# Metemos ese CSV en la tabla fact_predictions para que la API lo vea
+
+# Inserción de resultados en la tabla fact_predictions para exposición mediante API
+echo "Volcando predicciones en la base de datos..."
 python /app/backend/services/import_predictions.py
-echo "✅ Proceso completo. Sistema actualizado y listo para el servicio."
+
+echo "Ejecución finalizada con éxito."

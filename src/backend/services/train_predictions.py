@@ -104,47 +104,6 @@ contexto_futuro = contexto[
 
 predicciones = []
 id_counter = 1
-############################################Quitar############################################
-print("🚀 Generando predicciones...")
-
-# Este bucle hace las DOS cosas: llena la barra y genera los datos
-for _, ctx in tqdm(contexto_futuro.iterrows(), total=len(contexto_futuro), desc="Progreso"):
-    for _, plato in platos.iterrows():
-
-        receta = recetas_feat[recetas_feat["id_plato"] == plato["id_plato"]].iloc[0]
-
-        X_pred = pd.DataFrame([{
-            "id_plato": le_plato.transform([plato["id_plato"]])[0],
-            "categoria": le_cat.transform([plato["categoria"]])[0],
-            "precio_venta": plato["precio_venta"],
-            "num_ingredientes": receta["num_ingredientes"],
-            "coste_medio": receta["coste_medio"],
-            "is_holiday": ctx["is_holiday"],
-            "es_vispera": ctx["es_vispera"],
-            "day_of_week": le_day.transform([ctx["day_of_week"]])[0],
-            "temp_max": ctx["temp_max"],
-            "precipitation": ctx["precipitation"]
-        }])
-
-        # Predicción por árbol (usando .values para que no de warnings)
-        tree_preds = np.array([
-            tree.predict(X_pred.values)[0] for tree in model.estimators_
-        ])
-
-        pred = tree_preds.mean()
-        low = np.percentile(tree_preds, 10)
-        high = np.percentile(tree_preds, 90)
-
-        predicciones.append({
-            "id_prediction": id_counter,
-            "fecha_prediccion": ctx["date"],
-            "id_plato": str(plato["id_plato"]),
-            "cantidad_predicha": round(pred, 2),
-            "intervalo_confianza": f"{round(low,2)} - {round(high,2)}"
-        })
-
-        id_counter += 1
-############################################Quitar############################################
 
 for _, ctx in contexto_futuro.iterrows():
     for _, plato in platos.iterrows():

@@ -1,5 +1,5 @@
 services:
-# 1. BASE DE DATOS
+# Base de datos PostgreSQL con volumen persistente para evitar pérdida de información
   db:
     build: ./data/database
     container_name: smartchef_db
@@ -9,17 +9,17 @@ services:
       POSTGRES_DB: smartchef
     ports:
       - "5432:5432"
+# Healthcheck para la revisión de disponibilidad antes de arrancar otros contenedores.
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U smartchef"]
       interval: 5s
       timeout: 5s
       retries: 5
     volumes:
-      - db_data:/var/lib/postgresql/data
-
-  # 2. BACKEND (Tu API)
+      - db_data:/var/lib/postgresql/databackend
+# Backend FastAPI. Mapeo de volumen local para sincronización de código en tiempo real.  backend:
   backend:
-    build: 
+    build:  
       context: ./src/backend
     container_name: smartchef_backend
     ports:
@@ -27,23 +27,22 @@ services:
     depends_on:
       - db
     volumes:
-      - ./src/backend:/app          # Tu código en vivo
-      - ./data:/app/data            # Acceso a los CSVs y exports
+      - ./src/backend:/app         
+      - ./data:/app/data           
     environment:
       - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
 
-  # 3. FRONTEND (Servidor Web Nginx)
+# Servidor Nginx para el despliegue del frontend web.
   frontend:
     image: nginx:alpine
     container_name: smartchef_frontend
     build: ./src/frontend
     ports:
-      - "80:80"  # Lo verás en http://localhost
+      - "80:80"  
     volumes:
-      # Sirve tus archivos HTML, CSS y JS automáticamente
       - ./src/frontend:/usr/share/nginx/html
 
-  # 4. PIPELINE (El currante de las 3 AM)
+# Servicio de ingesta y modelo predictivo. Condicionado al estado saludable de la base de datos.
   pipeline:
     build:
       context: ./src/pipeline
@@ -52,11 +51,12 @@ services:
       db:
         condition: service_healthy
     volumes:
-      - ./src/pipeline:/app         # Tu código de pipeline
+      - ./src/pipeline:/app       
       - ./data:/data     
-      - ./src/backend:/app/backend         # Acceso para guardar los CSVs limpios/sucios
+      - ./src/backend:/app/backend         
     environment:
       - DATABASE_URL=postgresql://smartchef:password@db:5432/smartchef
 
 volumes:
+# Declaración del volumen físico para almacenamiento persistente.
   db_data:

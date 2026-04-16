@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+# Definicion de la entidad de dominio para detallar la composicion de recetas y escandallos
 @dataclass
 class DimRecipesEntity:
     id_recipe: int

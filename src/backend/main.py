@@ -18,7 +18,7 @@ def get_dashboard():
     try:
         conn = get_connection()
         
-        # 1. Predicciones Próxima Semana (Limpias y Agrupadas)
+        # 1. Extraccion de predicciones a 7 dias vista agrupadas por ingrediente
         query_pred = """
             SELECT 
                 r.ingrediente, 
@@ -33,7 +33,7 @@ def get_dashboard():
         """
         df_pred = pd.read_sql(query_pred, conn)
 
-        # 2. KPIs Generales (De la tabla de ventas)
+        # 2. Calculo de Indicadores Clave de Rendimiento consolidados
         query_kpis = """
            SELECT 
                 COALESCE(SUM(s.cantidad * m.precio_venta), 0) AS total_revenue,
@@ -46,7 +46,7 @@ def get_dashboard():
         df_kpis = pd.read_sql(query_kpis, conn)
         kpis = df_kpis.iloc[0].to_dict() if not df_kpis.empty else {}
 
-        # 3. Ventas por Categoría
+        # 3. Agregacion de volumen de ventas por categoria de producto
         query_cat = """
             SELECT 
                 m.categoria, 
@@ -58,7 +58,7 @@ def get_dashboard():
         """
         df_cat = pd.read_sql(query_cat, conn)
 
-        # 4. Ingresos Históricos Diarios (Gráfica de área)
+        # 4. Serie temporal historica de ingresos para analisis de tendencia
         query_rev = """
             SELECT 
                 TO_CHAR(s.fecha, 'YYYY-MM-DD') AS fecha, 
@@ -70,7 +70,7 @@ def get_dashboard():
         """
         df_rev = pd.read_sql(query_rev, conn)
 
-        # 5. Top 6 Platos Históricos
+        # 5. Identificacion de los platos con mayor volumen de venta historico
         query_top = """
             SELECT 
                 m.nombre_plato AS plato, 
@@ -83,7 +83,7 @@ def get_dashboard():
         """
         df_top = pd.read_sql(query_top, conn)
 
-        # 6. Contexto Climático (Temperaturas y días de lluvia)
+        # 6. Extraccion de metricas climaticas consolidadas en ventana de 90 dias
         query_ctx = """
             SELECT 
                 COALESCE(AVG(temp_max), 0) AS avg_temp,
@@ -95,7 +95,7 @@ def get_dashboard():
         df_ctx = pd.read_sql(query_ctx, conn)
         ctx = df_ctx.iloc[0].to_dict() if not df_ctx.empty else {}
 
-        # 7. Demanda de Ingredientes Reales (Recetas * Ventas)
+        # 7. Cuantificacion de demanda real de ingredientes cruzando ventas con escandallos
         query_ing = """
             SELECT 
                 r.ingrediente, 
@@ -110,7 +110,7 @@ def get_dashboard():
         """
         df_ing = pd.read_sql(query_ing, conn)
 
-        # 8. Riesgo de Desperdicio (Predicción semana próxima VS Media histórica)
+        # 8. Analisis predictivo de riesgo de desperdicio basado en desviacion de demanda media
         query_waste = """
             WITH predicted AS (
                 SELECT r.ingrediente, SUM(p.cantidad_predicha * r.cantidad) AS kg_predicho
@@ -144,7 +144,7 @@ def get_dashboard():
 
         conn.close()
 
-        # DEVOLVERMOS TODO EL PAQUETE LISTO PARA EL DASHBOARD
+        # Consolidacion de estructura de datos para transferencia al cliente
         return {
             "status": "success",
             "next_week_predictions": df_pred.to_dict(orient="records"),

@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+# Definicion de la entidad de dominio para la representacion del catalogo de productos
 @dataclass
 class DimMenuEntity:
     id_plato: str
