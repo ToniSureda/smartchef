@@ -1,12 +1,12 @@
 FROM nginx:alpine
 
-# Borramos lo que venga por defecto
+# Eliminacion del contenido estatico predeterminado del servidor base
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copiamos todo el contenido de tu carpeta frontend
+# Transferencia de los activos del frontend al directorio de despliegue
 COPY . /usr/share/nginx/html/
 
-# Forzamos permisos de lectura para que Nginx no se queje
+# Asignacion de permisos de lectura y ejecucion para garantizar el acceso web
 RUN chmod -R 755 /usr/share/nginx/html
 
 EXPOSE 80

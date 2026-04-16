@@ -1,38 +1,37 @@
 import pandas as pd
-import psycopg2
 import os
 import sys
 
-# 1. PRIMERO preparamos el camino (esto debe ir antes de importar database)
+# Configuracion de la variable de entorno PATH para permitir la importacion de modulos raiz
 ruta_padre = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if ruta_padre not in sys.path:
     sys.path.append(ruta_padre)
 
-# 2. AHORA ya podemos importar database
+# Inicializacion del controlador de base de datos
 try:
     from database import get_connection
-    print("✅ Conexión con database.py establecida")
+    print("Conexion con el modulo de persistencia establecida exitosamente.")
 except ImportError:
-    print("❌ Error: Todavía no encuentro database.py. Revisa la estructura de carpetas.")
+    print("Error de importacion: Modulo database no encontrado. Verifique la estructura de directorios del proyecto.")
     sys.exit(1)
 
-# 3. Ruta absoluta al CSV
+# Definicion de la ruta absoluta para la ingesta del modelo de machine learning
 CSV_PATH = "/app/backend/exports/predictions/fact_predictions_ml.csv"
 
 if not os.path.exists(CSV_PATH):
-    print(f"❌ Error: No se encuentra el CSV en {CSV_PATH}")
+    print(f"Error critico: Archivo de predicciones no localizado en la ruta esperada: {CSV_PATH}")
     sys.exit(1)
 
-## Leer CSV
+# Lectura y tipado del dataset de predicciones
 df = pd.read_csv(CSV_PATH, parse_dates=["fecha_prediccion"])
-print(f"📊 Filas leídas del CSV: {len(df)}")
+print(f"Total de registros cargados en memoria temporal: {len(df)}")
 
-## Conexion a SQL e Inserción
+# Apertura de conexion y ejecucion de bloque transaccional
 try:
     conn = get_connection()
     cur = conn.cursor()
 
-    # Usamos ON CONFLICT para que no te de error si lo lanzas varias veces
+    # Sentencia DML con instruccion de resolucion de conflictos para garantizar idempotencia
     insert_sql = """
     INSERT INTO fact_predictions (
         id_prediction, fecha_prediccion, id_plato, cantidad_predicha, intervalo_confianza
@@ -58,7 +57,7 @@ try:
     conn.commit()
     cur.close()
     conn.close()
-    print("🚀 ¡ÉXITO! Predicciones insertadas en la base de datos.")
+    print("Operacion completada. Lote de predicciones persistido correctamente en la base de datos.")
 
 except Exception as e:
-    print(f"❌ Error en la base de datos: {e}")
+    print(f"Fallo durante la transaccion de insercion de datos: {e}")

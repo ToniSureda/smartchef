@@ -7,7 +7,7 @@ const AMBER = '#f5a623';
 const MUTED = '#7a8088';
 const BORDER = '#2a2d32';
 const BLUE = '#5b9cf6';
-const RED = '#e05c5c';  // <--- ¡AÑADE ESTA LÍNEA!
+const RED = '#e05c5c';  
 const CAT_COLORS = [AMBER, '#5b9cf6', '#3dd68c', '#e05c5c', '#a78bfa', '#f472b6'];
 
 const baseOptions = () => ({
@@ -17,32 +17,32 @@ const baseOptions = () => ({
   animation: { duration: 800 }
 });
 
-// ── INICIALIZACIÓN (SOLO REAL) ────────────────────────────────────────────────
+// ── INICIALIZACIÓN  ────────────────────────────────────────────────
 async function init() {
   let result;
 
-  // FASE 1: Conexión
+// Fase 1: Conexion a la API de backend
   try {
-    // Asegúrate de usar localhost si en el navegador usas localhost
+// Peticion HTTP al endpoint principal de metricas
     const response = await fetch('http://localhost:8000/api/dashboard');
     result = await response.json();
   } catch (error) {
-    console.error("❌ Error de red/CORS:", error);
-    showError("Fallo de red: El navegador bloquea la conexión (CORS).");
-    return; // Paramos aquí
+    console.error("Error de red/CORS:", error);
+    showError("Navegador bloquea la conexion por politicas de seguridad.");
+    return; 
   }
 
-  // FASE 2: Dibujado
+// Fase 2: Renderizado de componentes visuales
   try {
     if (result.status === "success") {
-      console.log("✅ Datos listos para dibujar:", result);
+      console.log("Datos listos para dibujar:", result);
       renderDashboard(result);
     } else {
       showError("Error en la Base de Datos: " + result.message);
     }
   } catch (error) {
-    console.error("❌ Error dibujando gráficas:", error);
-    showError("Datos recibidos, pero falló el código al dibujar. Pulsa F12.");
+    console.error("Error dibujando gráficas:", error);
+    showError("Datos recibidos, pero falló el código al dibujar.");
   }
 }
 
@@ -51,7 +51,7 @@ function renderDashboard(data) {
     day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
   });
 
-  // ¡DESBLOQUEAMOS EL PODER TOTAL! 🎉
+// Despliegue condicional de modulos de visualizacion analitica
   if (data.next_week_predictions) {
     buildPredChart(data.next_week_predictions);
     buildPredTable(data.next_week_predictions);
@@ -69,7 +69,7 @@ function renderDashboard(data) {
     buildTopDishChart(data.top_dishes);
     buildTopDishTable(data.top_dishes);
   }
-  // Funciones extra (asegúrate de que las tenías definidas abajo, si no, puedes quitarlas)
+// Carga condicional de modulos complementarios de contexto e ingredientes
   if (data.dim_context_summary && typeof buildClimate === 'function') buildClimate(data.dim_context_summary);
   if (data.waste_risk && typeof buildWasteChart === 'function') {
     buildWasteChart(data.waste_risk);
@@ -91,7 +91,7 @@ function showError(msg) {
   loader.innerHTML = `<div class="loader-text" style="color:#e05c5c">ERROR: ${msg}</div>`;
 }
 
-// ── TABS (Esto estaba fuera de sitio) ────────────────────────────────────────
+// ── LOGICA DE NAVEGACION POR PESTANAS ─────────────────────────────────────────
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -120,9 +120,9 @@ function buildKPIs(k) {
   $('kpi-days').textContent = k.days_analyzed;
 }
 
-// ── REVENUE MINI CHART ────────────────────────────────────────────────────────
+// ── GRAFICO DE INGRESOS  ────────────────────────────────────────────
 function buildRevenueChart(series) {
-  // Sample every 3rd day for clarity
+// Muestreo de datos iterativo para optimizacion visual del espacio
   const sampled = series.filter((_, i) => i % 3 === 0);
   new Chart($('revenueChart'), {
     type: 'line',
@@ -148,7 +148,7 @@ function buildRevenueChart(series) {
   });
 }
 
-// ── CATEGORY BAR ─────────────────────────────────────────────────────────────
+// ── GRAFICO DE BARRAS POR CATEGORIA ───────────────────────────────────────────
 function buildCatChart(cats) {
   new Chart($('catChart'), {
     type: 'bar',
@@ -172,7 +172,7 @@ function buildCatChart(cats) {
   });
 }
 
-// ── CLIMATE ───────────────────────────────────────────────────────────────────
+// ── MODULO DE CONTEXTO CLIMATICO ──────────────────────────────────────────────
 function buildClimate(ctx) {
   $('climateGrid').innerHTML = `
     <div class="climate-item">
@@ -190,7 +190,7 @@ function buildClimate(ctx) {
   `;
 }
 
-// ── TOP DISH CHART ────────────────────────────────────────────────────────────
+// ── GRAFICO DE PLATOS MAS VENDIDOS ────────────────────────────────────────────
 function buildTopDishChart(dishes) {
   new Chart($('topDishChart'), {
     type: 'bar',
@@ -213,7 +213,7 @@ function buildTopDishChart(dishes) {
   });
 }
 
-// ── REVENUE AREA (ventas tab) ─────────────────────────────────────────────────
+// ── GRAFICO DE AREA DE INGRESOS ───────────────────────────────────────────────
 function buildRevenueArea(series) {
   new Chart($('revenueArea'), {
     type: 'line',
@@ -244,7 +244,7 @@ function buildRevenueArea(series) {
   });
 }
 
-// ── CATEGORY DOUGHNUT ─────────────────────────────────────────────────────────
+// ── GRAFICO DE ANILLO POR CATEGORIA ───────────────────────────────────────────
 function buildCatDoughnut(cats) {
   new Chart($('catDoughnut'), {
     type: 'doughnut',
@@ -273,7 +273,7 @@ function buildCatDoughnut(cats) {
   });
 }
 
-// ── TOP DISH TABLE ────────────────────────────────────────────────────────────
+// ── TABLA DE PLATOS MAS VENDIDOS ──────────────────────────────────────────────
 function buildTopDishTable(dishes) {
   const max = dishes[0].unidades;
   const tbody = $('topDishTable').querySelector('tbody');
@@ -296,7 +296,7 @@ function buildTopDishTable(dishes) {
   `).join('');
 }
 
-// ── PREDICTIONS CHART ─────────────────────────────────────────────────────────
+// ── GRAFICO DE PREDICCIONES ───────────────────────────
 function buildPredChart(preds) {
   new Chart($('predChart'), {
     type: 'bar',
@@ -318,7 +318,7 @@ function buildPredChart(preds) {
       indexAxis: 'y',
       plugins: {
         ...baseOptions().plugins,
-        legend: { display: false } // Quitamos la leyenda al haber solo 1 barra
+        legend: { display: false } // Ocultacion de leyenda por unicidad de conjunto de datos
       },
       scales: {
         // Quitamos el +'kg' porque ahora hay uds, litros, etc.
@@ -329,7 +329,7 @@ function buildPredChart(preds) {
   });
 }
 
-// ── PREDICTIONS TABLE ─────────────────────────────────────────────────────────
+// ── TABLA DE PREDICCIONES INTELIGENCIA ARTIFICIAL ─────────────────────────────
 function buildPredTable(pred) {
   const tbody = $('predTable').querySelector('tbody');
   tbody.innerHTML = pred.map((item, i) => `
@@ -344,7 +344,7 @@ function buildPredTable(pred) {
   `).join('');
 }
 
-// ── WASTE CHART ───────────────────────────────────────────────────────────────
+// ── GRAFICO DE RIESGO DE DESPERDICIO ──────────────────────────────────────────
 function buildWasteChart(waste) {
   const labels = waste.map(w => w.ingrediente);
   const pred = waste.map(w => w.kg_predicho);
@@ -391,7 +391,7 @@ function buildWasteChart(waste) {
   });
 }
 
-// ── WASTE TABLE ───────────────────────────────────────────────────────────────
+// ── TABLA DE RIESGO DE DESPERDICIO ────────────────────────────────────────────
 function buildWasteTable(waste) {
   const tbody = $('wasteTable').querySelector('tbody');
   tbody.innerHTML = waste.map(w => {
@@ -408,14 +408,13 @@ function buildWasteTable(waste) {
   `}).join('');
 }
 
-// ── INGREDIENT CHART ──────────────────────────────────────────────────────────
+// ── GRAFICO DE DEMANDA DE INGREDIENTES ────────────────────────────────────────
 function buildIngChart(ing) {
   new Chart($('ingChart'), {
     type: 'bar',
     data: {
       labels: ing.map(i => i.ingrediente),
       datasets: [{
-        // OJO AQUÍ: Ahora lee total_valor, no kg_total
         data: ing.map(i => i.total_valor || 0),
         backgroundColor: ing.map((_, idx) => `hsla(${36 + idx * 18},90%,${60 - idx * 2}%,0.75)`),
         borderRadius: 3,
@@ -426,7 +425,6 @@ function buildIngChart(ing) {
       ...baseOptions(),
       indexAxis: 'y',
       scales: {
-        // Hemos quitado el +'kg'
         x: { ticks: { color: MUTED, font: { size: 10 } }, grid: { color: BORDER } },
         y: { ticks: { color: MUTED, font: { size: 11 } }, grid: { display: false } },
       }
@@ -434,7 +432,7 @@ function buildIngChart(ing) {
   });
 }
 
-// ── INGREDIENT TABLE ──────────────────────────────────────────────────────────
+// ── TABLA DE DEMANDA DE INGREDIENTES ──────────────────────────────────────────
 function buildIngTable(ing) {
   const tbody = $('ingTable').querySelector('tbody');
   tbody.innerHTML = ing.map((item, i) => `
@@ -446,5 +444,5 @@ function buildIngTable(ing) {
   `).join('');
 }
 
-// ── START ─────────────────────────────────────────────────────────────────────
+// ── Inicio ─────────────────────────────────────────────────────────────────────
 init();

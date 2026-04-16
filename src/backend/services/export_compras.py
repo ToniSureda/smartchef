@@ -1,4 +1,3 @@
-
 import os
 from datetime import date
 from repos.compras_repo import get_historico_compras

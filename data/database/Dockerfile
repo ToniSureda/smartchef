@@ -1,8 +1,8 @@
 FROM postgres:17
 
-# Copiamos el script de arranque a la carpeta mágica y le damos permisos
+# Transferencia del script de inicializacion al directorio de autoarranque y asignacion de permisos de ejecucion
 COPY init-db.sh /docker-entrypoint-initdb.d/
 RUN chmod +x /docker-entrypoint-initdb.d/init-db.sh
 
-# Copiamos tu base de datos a una carpeta temporal para que pg_restore la lea
+# Aprovisionamiento del archivo de volcado en un directorio temporal para su procesamiento durante el despliegue
 COPY SmartChefBBDD.sql /tmp/SmartChefBBDD.sql

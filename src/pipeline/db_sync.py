@@ -14,6 +14,7 @@ CLEAN_FOLDER = os.path.abspath(os.path.join(BASE_DIR, "..", "..", "data", "clean
 # Conexion a la base de datos
 DB_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DB_URL)
+
 def upsert_context(df):
     """ Actualiza si la fecha ya existe o inserta si es nueva """
     query = text("""
