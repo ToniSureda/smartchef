@@ -1,4 +1,4 @@
-// ── UTILITIES ─────────────────────────────────────────────────────────────────
+// Utilidades globales: selector DOM y formateador numerico.
 const $ = id => document.getElementById(id);
 const fmt = (n, dec = 0, prefix = '') =>
   prefix + n.toLocaleString('es-ES', { minimumFractionDigits: dec, maximumFractionDigits: dec });
@@ -7,7 +7,7 @@ const AMBER = '#f5a623';
 const MUTED = '#7a8088';
 const BORDER = '#2a2d32';
 const BLUE = '#5b9cf6';
-const RED = '#e05c5c';  
+const RED = '#e05c5c';
 const CAT_COLORS = [AMBER, '#5b9cf6', '#3dd68c', '#e05c5c', '#a78bfa', '#f472b6'];
 
 const baseOptions = () => ({
@@ -17,32 +17,29 @@ const baseOptions = () => ({
   animation: { duration: 800 }
 });
 
-// ── INICIALIZACIÓN  ────────────────────────────────────────────────
+// Punto de entrada. Obtiene datos del backend y dispara el renderizado.
 async function init() {
-  let result;
-
-// Fase 1: Conexion a la API de backend
   try {
-// Peticion HTTP al endpoint principal de metricas
-    const response = await fetch('http://localhost:8000/api/dashboard');
-    result = await response.json();
-  } catch (error) {
-    console.error("Error de red/CORS:", error);
-    showError("Navegador bloquea la conexion por politicas de seguridad.");
-    return; 
-  }
+    // Ruta relativa: Nginx reescribe /api/* hacia el backend interno.
+    const response = await fetch('/api/dashboard');
 
-// Fase 2: Renderizado de componentes visuales
-  try {
-    if (result.status === "success") {
-      console.log("Datos listos para dibujar:", result);
-      renderDashboard(result);
-    } else {
-      showError("Error en la Base de Datos: " + result.message);
+    // Captura errores HTTP (4xx, 5xx) antes de parsear el cuerpo.
+    if (!response.ok) {
+      throw new Error(`Error HTTP ${response.status}: ${response.statusText}`);
     }
+
+    const result = await response.json();
+
+    // Valida que la capa de negocio haya resuelto correctamente.
+    if (result.status !== "success") {
+      throw new Error("Error en el backend: " + (result.message || "respuesta inesperada"));
+    }
+
+    renderDashboard(result);
+
   } catch (error) {
-    console.error("Error dibujando gráficas:", error);
-    showError("Datos recibidos, pero falló el código al dibujar.");
+    console.error("Error en init():", error);
+    showError(error.message);
   }
 }
 
@@ -51,7 +48,7 @@ function renderDashboard(data) {
     day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'
   });
 
-// Despliegue condicional de modulos de visualizacion analitica
+  // Renderiza cada modulo solo si el dato esta presente en la respuesta.
   if (data.next_week_predictions) {
     buildPredChart(data.next_week_predictions);
     buildPredTable(data.next_week_predictions);
@@ -69,7 +66,7 @@ function renderDashboard(data) {
     buildTopDishChart(data.top_dishes);
     buildTopDishTable(data.top_dishes);
   }
-// Carga condicional de modulos complementarios de contexto e ingredientes
+  // Renderiza modulos opcionales si su funcion esta disponible en el scope.
   if (data.dim_context_summary && typeof buildClimate === 'function') buildClimate(data.dim_context_summary);
   if (data.waste_risk && typeof buildWasteChart === 'function') {
     buildWasteChart(data.waste_risk);
@@ -80,18 +77,42 @@ function renderDashboard(data) {
     buildIngTable(data.ingredient_demand);
   }
 
-  // Quitamos el loader
+  // Oculta el overlay con transicion de opacidad.
   const loader = $('loading');
   loader.style.opacity = '0';
   setTimeout(() => loader.style.display = 'none', 400);
 }
 
+// Reemplaza el overlay de carga con un panel de error visible.
 function showError(msg) {
   const loader = $('loading');
-  loader.innerHTML = `<div class="loader-text" style="color:#e05c5c">ERROR: ${msg}</div>`;
+  loader.style.opacity = '1';
+  loader.style.display = 'flex';
+  loader.innerHTML = `
+    <div style="
+      background:#1c1e21;
+      border:1px solid #e05c5c;
+      border-radius:8px;
+      padding:32px 40px;
+      max-width:480px;
+      text-align:center;
+      font-family:'Space Mono',monospace;
+    ">
+      <div style="font-size:28px;margin-bottom:16px;">&#9888;</div>
+      <div style="color:#e05c5c;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;">
+        Error de conexion
+      </div>
+      <div style="color:#e8e9ea;font-size:12px;line-height:1.6;margin-bottom:20px;">
+        ${msg}
+      </div>
+      <div style="color:#7a8088;font-size:11px;">
+        Comprueba que el backend esta activo y vuelve a cargar la pagina.
+      </div>
+    </div>
+  `;
 }
 
-// ── LOGICA DE NAVEGACION POR PESTANAS ─────────────────────────────────────────
+// Navegacion por pestanas: activa seccion y tab correspondiente.
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -102,7 +123,7 @@ document.querySelectorAll('.tab').forEach(tab => {
 });
 
 
-// ── TABS ──────────────────────────────────────────────────────────────────────
+// Segundo registro del listener de tabs (bloque heredado).
 document.querySelectorAll('.tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
@@ -112,7 +133,7 @@ document.querySelectorAll('.tab').forEach(tab => {
   });
 });
 
-// ── KPIs ──────────────────────────────────────────────────────────────────────
+// Rellena los 4 indicadores clave en el DOM.
 function buildKPIs(k) {
   $('kpi-revenue').textContent = fmt(k.total_revenue, 0, '') + ' €';
   $('kpi-tickets').textContent = fmt(k.total_tickets);
@@ -120,9 +141,9 @@ function buildKPIs(k) {
   $('kpi-days').textContent = k.days_analyzed;
 }
 
-// ── GRAFICO DE INGRESOS  ────────────────────────────────────────────
+// Grafico de linea con ingresos diarios muestreados (1 de cada 3).
 function buildRevenueChart(series) {
-// Muestreo de datos iterativo para optimizacion visual del espacio
+  // Reduce densidad visual mostrando 1 punto de cada 3.
   const sampled = series.filter((_, i) => i % 3 === 0);
   new Chart($('revenueChart'), {
     type: 'line',
@@ -148,7 +169,7 @@ function buildRevenueChart(series) {
   });
 }
 
-// ── GRAFICO DE BARRAS POR CATEGORIA ───────────────────────────────────────────
+// Grafico de barras horizontales por categoria de plato.
 function buildCatChart(cats) {
   new Chart($('catChart'), {
     type: 'bar',
@@ -172,7 +193,7 @@ function buildCatChart(cats) {
   });
 }
 
-// ── MODULO DE CONTEXTO CLIMATICO ──────────────────────────────────────────────
+// Renderiza resumen climatico en los 3 bloques del grid.
 function buildClimate(ctx) {
   $('climateGrid').innerHTML = `
     <div class="climate-item">
@@ -190,7 +211,7 @@ function buildClimate(ctx) {
   `;
 }
 
-// ── GRAFICO DE PLATOS MAS VENDIDOS ────────────────────────────────────────────
+// Grafico de barras con ranking de platos por unidades vendidas.
 function buildTopDishChart(dishes) {
   new Chart($('topDishChart'), {
     type: 'bar',
@@ -213,7 +234,7 @@ function buildTopDishChart(dishes) {
   });
 }
 
-// ── GRAFICO DE AREA DE INGRESOS ───────────────────────────────────────────────
+// Grafico de area con degradado para la vista detallada de ingresos.
 function buildRevenueArea(series) {
   new Chart($('revenueArea'), {
     type: 'line',
@@ -244,7 +265,7 @@ function buildRevenueArea(series) {
   });
 }
 
-// ── GRAFICO DE ANILLO POR CATEGORIA ───────────────────────────────────────────
+// Grafico de anillo con distribucion de ventas por categoria.
 function buildCatDoughnut(cats) {
   new Chart($('catDoughnut'), {
     type: 'doughnut',
@@ -273,7 +294,7 @@ function buildCatDoughnut(cats) {
   });
 }
 
-// ── TABLA DE PLATOS MAS VENDIDOS ──────────────────────────────────────────────
+// Tabla de ranking de platos con barra de proporcion relativa.
 function buildTopDishTable(dishes) {
   const max = dishes[0].unidades;
   const tbody = $('topDishTable').querySelector('tbody');
@@ -296,16 +317,19 @@ function buildTopDishTable(dishes) {
   `).join('');
 }
 
-// ── GRAFICO DE PREDICCIONES ───────────────────────────
+// Grafico de barras horizontales con cantidades predichas por ingrediente.
 function buildPredChart(preds) {
+  // Cortamos el array para quedarnos solo con los 15 primeros
+  const topPreds = preds.slice(0, 15);
+
   new Chart($('predChart'), {
     type: 'bar',
     data: {
-      labels: preds.map(p => p.ingrediente),
+      labels: topPreds.map(p => p.ingrediente),
       datasets: [
         {
           label: 'Cantidad predicha',
-          data: preds.map(p => p.kg_predicho), // Solo dibujamos el número real
+          data: topPreds.map(p => p.kg_predicho), 
           backgroundColor: 'rgba(245,166,35,0.7)',
           borderColor: AMBER,
           borderWidth: 1,
@@ -318,10 +342,9 @@ function buildPredChart(preds) {
       indexAxis: 'y',
       plugins: {
         ...baseOptions().plugins,
-        legend: { display: false } // Ocultacion de leyenda por unicidad de conjunto de datos
+        legend: { display: false }
       },
       scales: {
-        // Quitamos el +'kg' porque ahora hay uds, litros, etc.
         x: { ticks: { color: MUTED, font: { size: 10 } }, grid: { color: BORDER } },
         y: { ticks: { color: MUTED, font: { size: 11 } }, grid: { display: false } },
       }
@@ -329,7 +352,7 @@ function buildPredChart(preds) {
   });
 }
 
-// ── TABLA DE PREDICCIONES INTELIGENCIA ARTIFICIAL ─────────────────────────────
+// Tabla de predicciones ML: cantidad predicha e intervalo de confianza.
 function buildPredTable(pred) {
   const tbody = $('predTable').querySelector('tbody');
   tbody.innerHTML = pred.map((item, i) => `
@@ -344,7 +367,7 @@ function buildPredTable(pred) {
   `).join('');
 }
 
-// ── GRAFICO DE RIESGO DE DESPERDICIO ──────────────────────────────────────────
+// Grafico comparativo: cantidad predicha vs historico semanal.
 function buildWasteChart(waste) {
   const labels = waste.map(w => w.ingrediente);
   const pred = waste.map(w => w.kg_predicho);
@@ -391,7 +414,7 @@ function buildWasteChart(waste) {
   });
 }
 
-// ── TABLA DE RIESGO DE DESPERDICIO ────────────────────────────────────────────
+// Tabla de riesgo de desperdicio con nivel de alerta por ingrediente.
 function buildWasteTable(waste) {
   const tbody = $('wasteTable').querySelector('tbody');
   tbody.innerHTML = waste.map(w => {
@@ -408,7 +431,7 @@ function buildWasteTable(waste) {
   `}).join('');
 }
 
-// ── GRAFICO DE DEMANDA DE INGREDIENTES ────────────────────────────────────────
+// Grafico de barras con demanda agregada de ingredientes.
 function buildIngChart(ing) {
   new Chart($('ingChart'), {
     type: 'bar',
@@ -435,14 +458,14 @@ function buildIngChart(ing) {
 // ── TABLA DE DEMANDA DE INGREDIENTES ──────────────────────────────────────────
 function buildIngTable(ing) {
   const tbody = $('ingTable').querySelector('tbody');
+
   tbody.innerHTML = ing.map((item, i) => `
     <tr>
       <td class="mono" style="color:${MUTED}">${String(i + 1).padStart(2, '0')}</td>
       <td>${item.ingrediente}</td>
-      <td class="mono right" style="color:${AMBER}">${fmt(item.total_valor || 0, 1)} ${item.unidad || ''}</td>
+      <td class="mono" style="text-align: center; color:${AMBER}">${fmt(item.total_valor || 0, 1)} ${item.unidad || ''}</td>
     </tr>
   `).join('');
 }
-
-// ── Inicio ─────────────────────────────────────────────────────────────────────
+// Arranque de la aplicacion.
 init();

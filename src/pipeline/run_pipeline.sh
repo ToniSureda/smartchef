@@ -2,7 +2,8 @@
 
 echo "Iniciando ejecución del pipeline de datos..."
 
-# 1. Actualización de datos en crudopython /app/generate_raw_historic.py
+# 1. Actualización de datos en crudo
+python /app/generate_raw_historic.py
 python /app/ingest.py
 python /app/context_update.py
 

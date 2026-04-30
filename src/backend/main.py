@@ -20,18 +20,38 @@ def get_dashboard():
         
         # 1. Extraccion de predicciones a 7 dias vista agrupadas por ingrediente
         query_pred = """
+            WITH window_dates AS (
+                SELECT MIN(fecha_prediccion) AS start_date
+                FROM fact_predictions
+            )
             SELECT 
                 r.ingrediente, 
                 SUM(p.cantidad_predicha * r.cantidad) AS kg_predicho, 
                 MAX(p.intervalo_confianza) AS intervalo_confianza,
                 MAX(r.unidad) AS unidad
             FROM fact_predictions p
-            JOIN dim_recipes r ON p.id_plato = r.id_plato
-            WHERE p.fecha_prediccion >= CURRENT_DATE AND p.fecha_prediccion < CURRENT_DATE + 7
+            JOIN dim_recipes r ON p.id_plato::text = r.id_plato::text
+            CROSS JOIN window_dates w
+            WHERE p.fecha_prediccion >= w.start_date 
+              AND p.fecha_prediccion < w.start_date + 7
             GROUP BY r.ingrediente
             ORDER BY kg_predicho DESC;
         """
-        df_pred = pd.read_sql(query_pred, conn)
+        # En lugar de pd.read_sql, usamos el cursor de la conexión
+        cur = conn.cursor()
+        cur.execute(query_pred)
+        rows = cur.fetchall()
+        
+        # Convertimos manualmente a lista de diccionarios
+        next_week_predictions = []
+        for row in rows:
+            next_week_predictions.append({
+                "ingrediente": row[0],
+                "kg_predicho": float(row[1]),
+                "intervalo_confianza": row[2],
+                "unidad": row[3]
+            })
+        cur.close()
 
         # 2. Calculo de Indicadores Clave de Rendimiento consolidados
         query_kpis = """
@@ -86,7 +106,7 @@ def get_dashboard():
         # 6. Extraccion de metricas climaticas consolidadas en ventana de 90 dias
         query_ctx = """
             SELECT 
-                COALESCE(AVG(temp_max), 0) AS avg_temp,
+                ROUND(COALESCE(AVG(temp_max), 0)::numeric, 1) AS avg_temp,
                 SUM(CASE WHEN precipitation > 0 THEN 1 ELSE 0 END) AS rainy_days,
                 SUM(is_holiday) AS holiday_days
             FROM dim_context
@@ -112,18 +132,26 @@ def get_dashboard():
 
         # 8. Analisis predictivo de riesgo de desperdicio basado en desviacion de demanda media
         query_waste = """
-            WITH predicted AS (
+            WITH window_dates AS (
+                SELECT MIN(fecha_prediccion) AS start_date
+                FROM fact_predictions
+            ),
+            predicted AS (
                 SELECT r.ingrediente, SUM(p.cantidad_predicha * r.cantidad) AS kg_predicho
                 FROM fact_predictions p
-                JOIN dim_recipes r ON p.id_plato = r.id_plato
-                WHERE p.fecha_prediccion >= CURRENT_DATE AND p.fecha_prediccion < CURRENT_DATE + 7
+                JOIN dim_recipes r ON p.id_plato::text = r.id_plato::text
+                CROSS JOIN window_dates w
+                WHERE p.fecha_prediccion >= w.start_date 
+                  AND p.fecha_prediccion < w.start_date + 7
                 GROUP BY r.ingrediente
             ),
             historical AS (
                 SELECT r.ingrediente, SUM(s.cantidad * r.cantidad)/12.0 AS kg_historico_semana
                 FROM fact_sales s
-                JOIN dim_recipes r ON s.id_plato = r.id_plato
-                WHERE s.fecha >= CURRENT_DATE - 84
+                JOIN dim_recipes r ON s.id_plato::text = r.id_plato::text
+                CROSS JOIN window_dates w
+                WHERE s.fecha::date >= (w.start_date - 84) 
+                  AND s.fecha::date < w.start_date
                 GROUP BY r.ingrediente
             )
             SELECT 
@@ -140,21 +168,33 @@ def get_dashboard():
             LEFT JOIN historical h ON p.ingrediente = h.ingrediente
             ORDER BY desviacion_pct DESC;
         """
-        df_waste = pd.read_sql(query_waste, conn)
-
+        
+        cur_w = conn.cursor()
+        cur_w.execute(query_waste)
+        rows_w = cur_w.fetchall()
+        
+        waste_risk = []
+        for row in rows_w:
+            waste_risk.append({
+                "ingrediente": row[0],
+                "kg_predicho": float(row[1]),
+                "kg_historico_semana": float(row[2]),
+                "desviacion_pct": float(row[3]),
+                "riesgo": row[4]
+            })
         conn.close()
 
         # Consolidacion de estructura de datos para transferencia al cliente
         return {
             "status": "success",
-            "next_week_predictions": df_pred.to_dict(orient="records"),
+            "next_week_predictions": next_week_predictions,
             "kpis": kpis,
             "sales_by_category": df_cat.to_dict(orient="records"),
             "revenue_series": df_rev.to_dict(orient="records"),
             "top_dishes": df_top.to_dict(orient="records"),
             "dim_context_summary": ctx,
             "ingredient_demand": df_ing.to_dict(orient="records"),
-            "waste_risk": df_waste.to_dict(orient="records")
+            "waste_risk": waste_risk
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
