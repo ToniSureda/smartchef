@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from database import get_connection
 import pandas as pd
@@ -15,6 +15,7 @@ app.add_middleware(
 
 @app.get("/api/dashboard")
 def get_dashboard():
+    conn = None
     try:
         conn = get_connection()
         
@@ -41,6 +42,12 @@ def get_dashboard():
         cur = conn.cursor()
         cur.execute(query_pred)
         rows = cur.fetchall()
+
+        if not rows:
+            raise HTTPException(
+                status_code=status.TTP_404_NOT_FOUND,
+                detail = "No hay predicciones disponibles"
+            )
         
         # Convertimos manualmente a lista de diccionarios
         next_week_predictions = []
@@ -114,6 +121,7 @@ def get_dashboard():
         """
         df_ctx = pd.read_sql(query_ctx, conn)
         ctx = df_ctx.iloc[0].to_dict() if not df_ctx.empty else {}
+
 
         # 7. Cuantificacion de demanda real de ingredientes cruzando ventas con escandallos
         query_ing = """
@@ -196,5 +204,15 @@ def get_dashboard():
             "ingredient_demand": df_ing.to_dict(orient="records"),
             "waste_risk": waste_risk
         }
+    except HTTPException:
+        raise
+
     except Exception as e:
-        return {"status": "error", "message": str(e)}
+        raise HTTPException(
+            status_code = status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error interno del servidor: {str(e)}"
+        )
+    
+    finally:
+        if conn:
+            conn.close()
