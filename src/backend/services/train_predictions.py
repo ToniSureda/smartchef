@@ -2,15 +2,16 @@
 import os
 import pandas as pd
 import numpy as np
+import warnings  # <--- FALTA ESTA LÍNEA
 from datetime import timedelta
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
+from tqdm import tqdm  # <--- Importamos la barrita
+warnings.filterwarnings("ignore", category=UserWarning) # <--- Silenciamos el ruido
 
-## Carga del CSV
+DATA_DIR = "/data/clean_data" 
 
-## PONER RUTA DONDE ESTEN LOS CSVs
-DATA_DIR = r""
-
+# Usamos join para que las barras funcionen bien en Linux
 VENTAS = os.path.join(DATA_DIR, "ventas_historico_limpio.csv")
 CONTEXTO = os.path.join(DATA_DIR, "dim_context.csv")
 PLATOS = os.path.join(DATA_DIR, "maestro_platos_limpio.csv")

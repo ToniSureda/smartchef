@@ -4,12 +4,11 @@ import requests
 from datetime import datetime, timedelta
 import os
 
-# --- CONFIGURACIÓN DE RUTAS ---
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.abspath(os.path.join(BASE_DIR, "..", ".."))
-CLEAN_PATH = os.path.join(PROJECT_ROOT, 'data', 'clean_data', 'dim_context.csv')
+# Configuracion de rutas de acceso al sistema de archivos local
+DATA_PATH = os.getenv("DATA_PATH", "/data")
+CLEAN_PATH = os.path.join(DATA_PATH, "clean_data", "dim_context.csv")
 
-LAT, LON = 41.3851, 2.1734 # Barcelona
+LAT, LON = 41.3851, 2.1734 # Coords Barcelona
 
 def get_weather_data(start_date, end_date):
     yesterday = (datetime.now() - timedelta(days=1)).date()
@@ -18,10 +17,10 @@ def get_weather_data(start_date, end_date):
 
     all_data = []
 
-    # 1. PARTE HISTÓRICA
+    # 1. Extraccion de bloque de datos historicos meteorologicos
     if start_dt <= yesterday:
         hist_end = min(end_dt, yesterday)
-        print(f"📡 Consultando histórico: {start_date} al {hist_end}")
+        print(f"Consultando histórico: {start_date} al {hist_end}")
         url_hist = "https://archive-api.open-meteo.com/v1/archive"
         params_hist = {
             "latitude": LAT, "longitude": LON,
@@ -37,10 +36,10 @@ def get_weather_data(start_date, end_date):
                 "precipitation": res["daily"]["precipitation_sum"]
             }))
 
-    # 2. PARTE FUTURA
+    # 2. Extraccion de bloque de datos predictivos futuros
     if end_dt > yesterday:
         fore_start = max(start_dt, yesterday + timedelta(days=1))
-        print(f"📡 Consultando predicción: {fore_start} al {end_date}")
+        print(f"Consultando predicción: {fore_start} al {end_date}")
         url_fore = "https://api.open-meteo.com/v1/forecast"
         params_fore = {
             "latitude": LAT, "longitude": LON,
@@ -65,7 +64,7 @@ def add_features(df):
     df = df.sort_values('date')
     df['es_vispera'] = df['is_holiday'].shift(-1).fillna(0).astype(int)
     
-    # Mapeo sin acentos para evitar problemas de compatibilidad (opcional pero seguro)
+    # Mapeo sin acentos para evitar problemas de compatibilidad
     days_map = {0:'Lunes', 1:'Martes', 2:'Miercoles', 3:'Jueves', 4:'Viernes', 5:'Sabado', 6:'Domingo'}
     df['day_of_week'] = df['date'].dt.dayofweek.map(days_map)
     
@@ -85,7 +84,7 @@ def run_init():
         
         cols = ['date', 'is_holiday', 'es_vispera', 'day_of_week', 'temp_max', 'precipitation']
         
-        # GUARDADO BLINDADO
+        # Guardado del conjunto de datos con configuracion de codificacion estricta
         df[cols].to_csv(
             CLEAN_PATH, 
             index=False, 
@@ -94,10 +93,10 @@ def run_init():
             quoting=1,
             lineterminator='\n'
         )
-        print(f"✅ CSV Creado en: {CLEAN_PATH}")
-        print(f"📊 Registros: {len(df)}")
+        print(f"CSV Creado en: {CLEAN_PATH}")
+        print(f"Registros: {len(df)}")
     except Exception as e:
-        print(f"❌ Error en run_init: {e}")
+        print(f"Error context_init: {e}")
 
 if __name__ == "__main__":
     run_init()

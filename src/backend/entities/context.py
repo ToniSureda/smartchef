@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from datetime import date
 
+# Definicion de entidad de dominio para el almacenamiento del contexto temporal y climatico
 @dataclass
 class DimContextEntity:
     date: date

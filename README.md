@@ -1,37 +1,125 @@
-# SmartChef - Predicción de Demanda de Ingredientes
+# 🍳 SmartChef - Sistema Predictivo de Aprovisionamiento HORECA
 
-Este repositorio contiene el código y la documentación del proyecto SmartChef, desarrollado para el Curso de Especialización en Inteligencia Artificial y Big Data (Grupo 9).
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue.svg)
+![Python](https://img.shields.io/badge/python-3.10%2B-green.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql)
 
-## Descripción del Proyecto
+> Proyecto del Curso de Especialización en Inteligencia Artificial y Big Data · **Grupo 9**
 
-SmartChef es una herramienta de apoyo para restaurantes que utiliza Machine Learning para predecir la demanda semanal de ingredientes perecederos. El sistema cruza los datos históricos de ventas y recetas (escandallos) con variables externas como el clima, las reservas y los festivos locales. 
+---
 
-El objetivo principal es generar recomendaciones de compra precisas para ayudar a los gerentes a reducir el desperdicio de alimentos y evitar roturas de stock.
+## 📋 Descripción
 
-## Equipo
+SmartChef es una solución analítica diseñada para optimizar la gestión de restaurantes mediante técnicas de **Machine Learning**.
 
-* **Alejandro Fernández** - Data
-* **Antoni Sureda** - Platform
-* **Blas Martos** - Machine Learning
-* **Hugo Barrera** - Project Management / BI
+El sistema predice la demanda semanal de ingredientes perecederos combinando:
 
-## Arquitectura del Sistema
+- Histórico de ventas  
+- Recetas (escandallos)  
+- Variables externas (clima, festivos, contexto)  
 
-La infraestructura está diseñada para funcionar mediante procesamiento por lotes (batch) y se divide en cuatro capas:
+El objetivo es generar **recomendaciones de compra precisas** que permitan:
 
-1. **Fuentes de datos:** Ingesta de archivos CSV (tickets y recetas) y llamadas a APIs públicas (meteorología y calendario).
-2. **ETL y Almacenamiento:** Pipeline en Python que limpia, transforma y unifica los datos para guardarlos en PostgreSQL.
-3. **Machine Learning y Backend:** El modelo lee el histórico de la base de datos, genera las predicciones y las guarda de nuevo. Una API REST construida con FastAPI se encarga de servir estos datos.
-4. **Presentación:** Un dashboard interactivo en Power BI que consume la API para mostrar los KPIs y recomendaciones finales al usuario.
+- Reducir el desperdicio alimentario  
+- Evitar roturas de stock  
+- Optimizar costes operativos  
 
-## Stack Tecnológico
+---
 
-* Python
-* PostgreSQL
-* FastAPI
-* Scikit-learn / XGBoost
-* Power BI
+## 🏗️ Arquitectura del Sistema
+
+La solución sigue una arquitectura de microservicios completamente contenedorizada con **Docker Compose**:
+
+```
+┌─────────────────────────────────────────────────────┐
+│  Presentación   Nginx + HTML/JS/CSS + Chart.js      │  :443
+├─────────────────────────────────────────────────────┤
+│  Backend        FastAPI (API REST)                  │  :8000
+├─────────────────────────────────────────────────────┤
+│  Procesamiento  Pipeline ETL + Modelo ML            │
+├─────────────────────────────────────────────────────┤
+│  Datos          PostgreSQL                          │  :5432
+└─────────────────────────────────────────────────────┘
+```
+
+### Capas del sistema
+
+- **Capa de Datos:** PostgreSQL almacena ventas, recetas, contexto y predicciones  
+- **Capa de Procesamiento:** Pipeline ETL + entrenamiento del modelo  
+- **Capa de Servicio:** API REST con FastAPI  
+- **Capa de Presentación:** Dashboard web interactivo  
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Área | Tecnología |
+|------|-----------|
+| Lenguaje | Python 3.10+ |
+| Base de datos | PostgreSQL |
+| API | FastAPI + Uvicorn |
+| Machine Learning | Scikit-learn · XGBoost |
+| Frontend | Vanilla JS · Chart.js · CSS3 |
+| Servidor web | Nginx |
+| Infraestructura | Docker · Docker Compose |
+
+---
+
+## 🚀 Despliegue (Quick Start)
+
+### Requisitos
+
+- Docker y Docker Compose  
+- Linux / WSL2 / macOS  
+
+### Instalación y ejecución
 
 1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/ToniSureda/smartchef-fase1.git](https://github.com/ToniSureda/smartchef-fase1.git)
+
+```bash
+git clone <url-del-repositorio>
+cd smartchef-grupo9
+```
+
+2. Dar permisos al script (solo la primera vez):
+
+```bash
+chmod +x start.sh
+```
+
+3. Ejecutar el entorno:
+
+```bash
+./start.sh
+```
+
+4. Acceder al sistema:
+
+👉 https://localhost  
+
+> ⚠️ El navegador puede mostrar una advertencia de seguridad debido a certificados locales autogenerados. Es seguro continuar.
+
+---
+
+## 🔒 Variables de Entorno
+
+El proyecto utiliza variables de entorno para proteger credenciales.
+
+Es necesario crear un archivo `.env` en la raíz del proyecto antes de ejecutar el sistema.
+
+---
+
+## 👥 Equipo - Grupo 9
+
+| Miembro | Rol |
+|--------|-----|
+| **Toni Sureda** | Arquitectura · Frontend · Nginx |
+| **Alejandro Fernández** | Machine Learning · Backend · API |
+| **Hugo Barrera** | Base de datos · Ingesta de datos |
+| **Blas Martos** | ETL · Integración de datos externos |
+
+---
+
+*Curso de Especialización en IA y Big Data · Grupo 9*

@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CLEAN_FOLDER = os.path.abspath(os.path.join(BASE_DIR, "..", "..", "data", "clean_data"))
 
 # Conexion a la base de datos
-DB_URL = "postgresql://postgres:1234@localhost:5432/SmartChefBBDD"
+DB_URL = os.getenv("DATABASE_URL")
 engine = create_engine(DB_URL)
 
 def upsert_context(df):
