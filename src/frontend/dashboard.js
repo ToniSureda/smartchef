@@ -370,8 +370,8 @@ function buildPredTable(pred) {
 // Grafico comparativo: cantidad predicha vs historico semanal.
 function buildWasteChart(waste) {
   const labels = waste.map(w => w.ingrediente);
-  const pred = waste.map(w => w.kg_predicho);
-  const hist = waste.map(w => w.kg_historico_semana);
+  const pred = waste.map(w => w.cantidad_predicha);
+  const hist = waste.map(w => w.cantidad_historico_semana);
   new Chart($('wasteChart'), {
     type: 'bar',
     data: {
@@ -415,20 +415,24 @@ function buildWasteChart(waste) {
 }
 
 // Tabla de riesgo de desperdicio con nivel de alerta por ingrediente.
-function buildWasteTable(waste) {
-  const tbody = $('wasteTable').querySelector('tbody');
-  tbody.innerHTML = waste.map(w => {
-    const devColor = w.desviacion_pct > 0 ? RED : GREEN;
-    const sign = w.desviacion_pct > 0 ? '+' : '';
-    return `
+function buildWasteTable(risk) {
+  const tbody = $('wasteTable').querySelector('tbody'); // O el ID que tengas
+  tbody.innerHTML = risk.map(item => `
     <tr>
-      <td>${w.ingrediente}</td>
-      <td class="mono right">${fmt(w.kg_predicho, 2)} kg</td>
-      <td class="mono right">${fmt(w.kg_historico_semana, 2)} kg</td>
-      <td class="mono right" style="color:${devColor}">${sign}${fmt(w.desviacion_pct, 1)}%</td>
-      <td class="center"><span class="risk risk-${w.riesgo}">${w.riesgo}</span></td>
+      <td>${item.ingrediente}</td>
+      <td class="mono right">${fmt(item.cantidad_predicha, 2)} ${item.unidad || ''}</td>
+      <td class="mono right">${fmt(item.cantidad_historico_semana, 2)} ${item.unidad || ''}</td>
+      <td class="mono right" style="color:${item.desviacion_pct > 0 ? '#ff4d4d' : '#4CAF50'}">
+        ${item.desviacion_pct > 0 ? '+' : ''}${fmt(item.desviacion_pct, 1)}%
+      </td>
+      <td class="right">
+        <!-- Aquí va tu etiqueta/badge de riesgo -->
+        <span class="badge risk-${item.riesgo.toLowerCase()}">
+          &bull; ${item.riesgo.toUpperCase()}
+        </span>
+      </td>
     </tr>
-  `}).join('');
+  `).join('');
 }
 
 // Grafico de barras con demanda agregada de ingredientes.

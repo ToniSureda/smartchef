@@ -145,7 +145,10 @@ def get_dashboard():
                 FROM fact_predictions
             ),
             predicted AS (
-                SELECT r.ingrediente, SUM(p.cantidad_predicha * r.cantidad) AS kg_predicho
+                SELECT 
+                    r.ingrediente, 
+                    SUM(p.cantidad_predicha * r.cantidad) AS cantidad_predicha,
+                    MAX(r.unidad) AS unidad
                 FROM fact_predictions p
                 JOIN dim_recipes r ON p.id_plato::text = r.id_plato::text
                 CROSS JOIN window_dates w
@@ -154,7 +157,9 @@ def get_dashboard():
                 GROUP BY r.ingrediente
             ),
             historical AS (
-                SELECT r.ingrediente, SUM(s.cantidad * r.cantidad)/12.0 AS kg_historico_semana
+                SELECT 
+                    r.ingrediente, 
+                    SUM(s.cantidad * r.cantidad)/12.0 AS cantidad_historica_semana
                 FROM fact_sales s
                 JOIN dim_recipes r ON s.id_plato::text = r.id_plato::text
                 CROSS JOIN window_dates w
@@ -164,17 +169,18 @@ def get_dashboard():
             )
             SELECT 
                 p.ingrediente,
-                ROUND(p.kg_predicho::numeric, 2) AS kg_predicho,
-                ROUND(COALESCE(h.kg_historico_semana, 0)::numeric, 2) AS kg_historico_semana,
-                ROUND((CASE WHEN h.kg_historico_semana > 0 
-                    THEN ((p.kg_predicho - h.kg_historico_semana) / h.kg_historico_semana) * 100 
+                ROUND(p.cantidad_predicha::numeric, 2) AS cantidad_predicha,
+                ROUND(COALESCE(h.cantidad_historica_semana, 0)::numeric, 2) AS cantidad_historica_semana,
+                ROUND((CASE WHEN h.cantidad_historica_semana > 0 
+                    THEN ((p.cantidad_predicha - h.cantidad_historica_semana) / h.cantidad_historica_semana) * 100 
                     ELSE 0 END)::numeric, 2) AS desviacion_pct,
-                CASE WHEN p.kg_predicho > (h.kg_historico_semana * 1.2) THEN 'alto'
-                     WHEN p.kg_predicho < (h.kg_historico_semana * 0.8) THEN 'bajo'
-                     ELSE 'medio' END AS riesgo
+                CASE WHEN p.cantidad_predicha > (h.cantidad_historica_semana * 1.2) THEN 'alto'
+                     WHEN p.cantidad_predicha < (h.cantidad_historica_semana * 0.8) THEN 'bajo'
+                     ELSE 'medio' END AS riesgo,
+                p.unidad
             FROM predicted p
             LEFT JOIN historical h ON p.ingrediente = h.ingrediente
-            ORDER BY desviacion_pct DESC;
+            ORDER BY desviacion_pct DESC, p.cantidad_predicha DESC;
         """
         
         cur_w = conn.cursor()
@@ -185,11 +191,13 @@ def get_dashboard():
         for row in rows_w:
             waste_risk.append({
                 "ingrediente": row[0],
-                "kg_predicho": float(row[1]),
-                "kg_historico_semana": float(row[2]),
+                "cantidad_predicha": float(row[1]),
+                "cantidad_historico_semana": float(row[2]),
                 "desviacion_pct": float(row[3]),
-                "riesgo": row[4]
+                "riesgo": row[4],
+                "unidad": row[5] 
             })
+
         conn.close()
 
         # Consolidacion de estructura de datos para transferencia al cliente
