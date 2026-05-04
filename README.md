@@ -1,73 +1,62 @@
-# SmartChef - Predicción de Demanda de Ingredientes
-# SmartChef — Sistema Predictivo de Aprovisionamiento HORECA
+# 🍳 SmartChef - Sistema Predictivo de Aprovisionamiento HORECA
 
-Este repositorio contiene el código y la documentación del proyecto SmartChef, desarrollado para el Curso de Especialización en Inteligencia Artificial y Big Data (Grupo 9).
-> Proyecto del Curso de Especialización en Inteligencia Artificial y Big Data · Grupo 9
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Docker](https://img.shields.io/badge/docker-ready-blue.svg)
+![Python](https://img.shields.io/badge/python-3.10%2B-green.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql)
 
-## Descripción del Proyecto
+> Proyecto del Curso de Especialización en Inteligencia Artificial y Big Data · **Grupo 9**
+
 ---
 
-SmartChef es una herramienta de apoyo para restaurantes que utiliza Machine Learning para predecir la demanda semanal de ingredientes perecederos. El sistema cruza los datos históricos de ventas y recetas (escandallos) con variables externas como el clima, las reservas y los festivos locales. 
+## 🎥 Presentación del Proyecto
+
+Puedes visualizar la demostración en funcionamiento y la defensa técnica de la arquitectura en el siguiente enlace:  
+👉 **[Ver vídeo de presentación de SmartChef (Google Drive)](https://drive.google.com/file/d/1DpfRgoILcqygcDv487l896uOJv6hH216/view)**
+
+---
+
 ## 📋 Descripción
 
-El objetivo principal es generar recomendaciones de compra precisas para ayudar a los gerentes a reducir el desperdicio de alimentos y evitar roturas de stock.
-SmartChef es una solución integral diseñada para optimizar la cadena de suministro en el sector restauración. Utiliza técnicas de Machine Learning para predecir la demanda semanal de ingredientes, cruzando el histórico de ventas y escandallos con variables externas como meteorología y festivos locales.
+SmartChef es una solución analítica diseñada para optimizar la gestión de restaurantes mediante técnicas de **Machine Learning**.
 
-## Equipo
-El sistema permite a los gerentes reducir el desperdicio alimentario y optimizar el stock mediante recomendaciones de compra basadas en datos reales.
+El sistema predice la demanda semanal de ingredientes perecederos combinando:
 
-* **Alejandro Fernández** - Data
-* **Antoni Sureda** - Platform
-* **Blas Martos** - Machine Learning
-* **Hugo Barrera** - Project Management / BI
+- Histórico de ventas
+- Recetas (escandallos)
+- Variables externas (clima, festivos, contexto)
+
+El objetivo es generar **recomendaciones de compra precisas** que permitan:
+
+- Reducir el desperdicio alimentario
+- Evitar roturas de stock
+- Optimizar costes operativos
+
 ---
 
-## Arquitectura del Sistema
-## 👥 Equipo
+## 🏗️ Arquitectura del Sistema
 
-La infraestructura está diseñada para funcionar mediante procesamiento por lotes (batch) y se divide en cuatro capas:
-| Miembro | Rol |
-|---|---|
-| **Toni Sureda** | Arquitectura de microservicios (Docker) · Frontend (Dashboard interactivo) |
-| **Alejandro Fernández** | Núcleo de Machine Learning · Estructura del Backend · Endpoints de la API |
-| **Hugo Barrera** | Persistencia en Base de Datos · Módulo de Ingest · Alimentación del modelo |
-| **Blas Martos** | Procesos ETL · Mock Data · Integración con APIs meteorológicas |
+La solución sigue una arquitectura de microservicios completamente contenedorizada con **Docker Compose**:
 
-1. **Fuentes de datos:** Ingesta de archivos CSV (tickets y recetas) y llamadas a APIs públicas (meteorología y calendario).
-2. **ETL y Almacenamiento:** Pipeline en Python que limpia, transforma y unifica los datos para guardarlos en PostgreSQL.
-3. **Machine Learning y Backend:** El modelo lee el histórico de la base de datos, genera las predicciones y las guarda de nuevo. Una API REST construida con FastAPI se encarga de servir estos datos.
-4. **Presentación:** Un dashboard interactivo en Power BI que consume la API para mostrar los KPIs y recomendaciones finales al usuario.
----
-
-## Stack Tecnológico
-## 🏗️ Arquitectura
-
-* Python
-* PostgreSQL
-* FastAPI
-* Scikit-learn / XGBoost
-* Power BI
-El sistema está completamente contenedorizado mediante Docker Compose, dividido en cuatro capas:
-
-1. Clonar el repositorio:
-   ```bash
-   git clone [https://github.com/ToniSureda/smartchef-fase1.git](https://github.com/ToniSureda/smartchef-fase1.git)
-```
+```text
 ┌─────────────────────────────────────────────────────┐
-│  4. Presentación   Nginx + HTML/JS/CSS + Chart.js   │  :80
+│  Presentación   Nginx + HTML/JS/CSS + Chart.js      │  :443
 ├─────────────────────────────────────────────────────┤
-│  3. Servicio       FastAPI (API REST)                │  :8000
+│  Backend        FastAPI (API REST)                  │  :8000
 ├─────────────────────────────────────────────────────┤
-│  2. Procesamiento  Pipeline ETL + Modelo ML          │
+│  Procesamiento  Pipeline ETL + Modelo ML            │
 ├─────────────────────────────────────────────────────┤
-│  1. Datos          PostgreSQL                        │  :5432
+│  Datos          PostgreSQL                          │  :5432
 └─────────────────────────────────────────────────────┘
 ```
 
-- **Capa de Datos** — PostgreSQL almacena el histórico de ventas, recetas, contexto climático y las predicciones generadas por el modelo.
-- **Capa de Procesamiento** — Orquestador Python que ejecuta limpieza (ETL), sincronización incremental y entrenamiento del modelo de IA.
-- **Capa de Servicio** — API REST que procesa la lógica de negocio y sirve los datos procesados.
-- **Capa de Presentación** — Dashboard web interactivo que visualiza KPIs, tendencias y alertas de riesgo de desperdicio.
+### Capas del sistema
+
+- **Capa de Datos:** PostgreSQL almacena ventas, recetas, contexto y predicciones.
+- **Capa de Procesamiento:** Pipeline ETL + entrenamiento del modelo de IA.
+- **Capa de Servicio:** API REST con FastAPI.
+- **Capa de Presentación:** Dashboard web interactivo.
 
 ---
 
@@ -75,128 +64,69 @@ El sistema está completamente contenedorizado mediante Docker Compose, dividido
 
 | Área | Tecnología |
 |---|---|
-| Lenguaje | Python 3.11 |
-| Base de datos | PostgreSQL 17 |
+| Lenguaje | Python 3.10+ |
+| Base de datos | PostgreSQL |
 | API | FastAPI + Uvicorn |
-| Machine Learning | Scikit-learn · XGBoost |
+| Machine Learning | Scikit-learn · Random Forest |
 | Frontend | Vanilla JS · Chart.js · CSS3 |
 | Servidor web | Nginx |
 | Infraestructura | Docker · Docker Compose |
 
 ---
 
-## 🚀 Ejecución rápida
+## 🚀 Despliegue (Quick Start)
 
-### Requisitos previos
+### Requisitos
 
-- [Docker](https://docs.docker.com/get-docker/) instalado
-- [Docker Compose](https://docs.docker.com/compose/install/) instalado
+- Docker y Docker Compose
+- Linux / WSL2 / macOS
 
-### Pasos
+### Instalación y ejecución
 
-**1. Clonar el repositorio**
+1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/ToniSureda/smartchef.git
+git clone <url-del-repositorio>
 cd smartchef
 ```
 
-**2. Levantar los contenedores**
+2. Dar permisos al script (solo la primera vez en entornos UNIX):
 
 ```bash
-docker compose up --build
+chmod +x start.sh
 ```
 
-Este comando construye las imágenes, inicializa la base de datos con el esquema y los datos históricos, y arranca todos los servicios automáticamente.
-
-**3. Ejecutar el pipeline (primera carga y predicción)**
+3. Ejecutar el entorno:
 
 ```bash
-docker exec -it smartchef_pipeline bash run_pipeline.sh
+bash start.sh
 ```
 
-**4. Acceder al sistema**
+4. Acceder al sistema:
 
-| Servicio | URL |
+👉 **https://localhost**
+
+> ⚠️ El navegador mostrará una advertencia de seguridad rutinaria debido al uso de certificados locales SSL autogenerados (necesarios para la mitigación CORS). Haz clic en "Configuración avanzada" y selecciona "Continuar a localhost (inseguro)".
+
+---
+
+## 🔒 Variables de Entorno y Seguridad
+
+El proyecto sigue la metodología **12-Factor App**, delegando la gestión de secretos a variables de entorno para evitar incrustar contraseñas en el código fuente.
+
+Es necesario crear un archivo `.env` en la raíz del proyecto antes de ejecutar el sistema (ver documentación técnica para las credenciales de evaluación académica).
+
+---
+
+## 👥 Equipo - Grupo 9
+
+| Miembro | Rol Estratégico |
 |---|---|
-| Dashboard | http://localhost |
-| API Swagger | http://localhost:8000/docs |
+| Alejandro Fernández Fuentes | Data Engineering (Gestión, tratamiento y estructuración de datos) |
+| Antoni Sureda Cardona | Platform & Architecture (Infraestructura Docker, Backend API, Frontend y Nginx) |
+| Blas Martos Ortega | Machine Learning (Modelos predictivos, cálculo de IC y detección de anomalías) |
+| Hugo Barrera Castillo | Project Management & BI (Coordinación, definición de KPIs y valor de negocio) |
 
 ---
 
-## 📁 Estructura del proyecto
-
-```
-smartchef/
-├── data/
-│   ├── clean_data/
-│   │   ├── dim_context.csv
-│   │   ├── maestro_platos_limpio.csv
-│   │   ├── recetas_ingredientes_limpio.csv
-│   │   └── ventas_historico_limpio.csv
-│   ├── database/
-│   │   ├── Dockerfile
-│   │   ├── init-db.sh
-│   │   ├── SmartChefBBDD.sql
-│   │   └── SmartChefBBDD.txt
-│   └── raw_data/
-│       ├── agentes_externos.csv
-│       └── ventas_historico_sucio.csv
-├── docs/
-│   ├── arquitectura.png
-│   └── fase1_grupo9.pdf
-├── src/
-│   ├── backend/
-│   │   ├── entities/
-│   │   │   ├── __init__.py
-│   │   │   ├── context.py
-│   │   │   ├── menu.py
-│   │   │   ├── predictions.py
-│   │   │   ├── recipes.py
-│   │   │   └── sales.py
-│   │   ├── exports/
-│   │   │   ├── compras_historico/
-│   │   │   │   └── 2026-04-13_historico_compras.csv
-│   │   │   └── predictions/
-│   │   │       └── fact_predictions_ml.csv
-│   │   ├── repos/
-│   │   │   ├── __init__.py
-│   │   │   ├── compras_repo.py
-│   │   │   ├── context_repo.py
-│   │   │   ├── menu_repo.py
-│   │   │   ├── predictions_repo.py
-│   │   │   ├── recipes_repo.py
-│   │   │   └── Sales_repo.py
-│   │   ├── services/
-│   │   │   ├── __init__.py
-│   │   │   ├── export_compras.py
-│   │   │   ├── import_predictions.py
-│   │   │   └── train_predictions.py
-│   │   ├── database.py
-│   │   ├── Dockerfile
-│   │   ├── main.py
-│   │   └── requirements.txt
-│   ├── frontend/
-│   │   ├── dashboard.css
-│   │   ├── dashboard.js
-│   │   ├── Dockerfile
-│   │   └── index.html
-│   └── pipeline/
-│       ├── context_init.py
-│       ├── context_update.py
-│       ├── db_sync.py
-│       ├── Dockerfile
-│       ├── generate_raw_historic.py
-│       ├── ingest.py
-│       ├── requirements.txt
-│       └── run_pipeline.sh
-├── docker-compose.yml
-├── .gitignore
-└── README.md
-```
-
----
-
-
-
-*Curso de Especialización en IA y Big Data · Modalidad Online · Grupo 9*
+> Curso de Especialización en IA y Big Data · Grupo 9

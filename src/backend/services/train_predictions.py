@@ -1,15 +1,24 @@
-
 import os
 import pandas as pd
 import numpy as np
-import warnings  # <--- FALTA ESTA LÍNEA
-from datetime import timedelta
+import warnings
+from datetime import date
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
-from tqdm import tqdm  # <--- Importamos la barrita
-warnings.filterwarnings("ignore", category=UserWarning) # <--- Silenciamos el ruido
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error
 
-DATA_DIR = "/data/clean_data" 
+warnings.filterwarnings("ignore", category=UserWarning)
+
+BASE_DIR = os.path.dirname(
+    os.path.dirname(
+        os.path.dirname(
+            os.path.dirname(__file__)
+        )
+    )
+)
+
+DATA_DIR = os.path.join(BASE_DIR, "data", "clean_data")
 
 # Usamos join para que las barras funcionen bien en Linux
 VENTAS = os.path.join(DATA_DIR, "ventas_historico_limpio.csv")
@@ -82,16 +91,30 @@ y = df["total_vendido"]
 
 ## Entrenamiento
 
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, shuffle=False
+)
+
+## ENTRENAMIENTO (REGULARIZADO)
+
 model = RandomForestRegressor(
     n_estimators=200,
+    max_depth=10,
+    min_samples_leaf=5,
     random_state=42,
     n_jobs=-1
 )
 
-model.fit(X, y)
+model.fit(X_train, y_train)
 
 print("Modelo entrenado")
 
+## EVALUACIÓN DEL MODELO
+
+y_pred = model.predict(X_test)
+mae = mean_absolute_error(y_test, y_pred)
+
+print(f"MAE del modelo: {mae:.2f}")
 
 ## Predicción Futura
 
@@ -156,7 +179,11 @@ EXPORT_DIR = os.path.join(
 
 os.makedirs(EXPORT_DIR, exist_ok=True)
 
-output_path = os.path.join(EXPORT_DIR, "fact_predictions_ml.csv")
+today = date.today().isoformat()
+
+filename = f"fact_predictions_ml_{today}.csv"
+
+output_path = os.path.join(EXPORT_DIR, filename)
 pred_df.to_csv(output_path, index=False, encoding="utf-8")
 
 print("CSV final generado:")

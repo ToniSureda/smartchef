@@ -20,7 +20,7 @@ def get_weather_data(start_date, end_date):
     # 1. Extraccion de bloque de datos historicos meteorologicos
     if start_dt <= yesterday:
         hist_end = min(end_dt, yesterday)
-        print(f"📡 Consultando histórico: {start_date} al {hist_end}")
+        print(f"Consultando histórico: {start_date} al {hist_end}")
         url_hist = "https://archive-api.open-meteo.com/v1/archive"
         params_hist = {
             "latitude": LAT, "longitude": LON,
@@ -39,7 +39,7 @@ def get_weather_data(start_date, end_date):
     # 2. Extraccion de bloque de datos predictivos futuros
     if end_dt > yesterday:
         fore_start = max(start_dt, yesterday + timedelta(days=1))
-        print(f"📡 Consultando predicción: {fore_start} al {end_date}")
+        print(f"Consultando predicción: {fore_start} al {end_date}")
         url_fore = "https://api.open-meteo.com/v1/forecast"
         params_fore = {
             "latitude": LAT, "longitude": LON,

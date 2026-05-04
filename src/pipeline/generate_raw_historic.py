@@ -13,7 +13,7 @@ PATH_OUTPUT = os.path.join(PROJECT_ROOT, 'data', 'raw_data', 'ventas_historico_s
 def generate_daily_dirty_data():
     # 1. Cargar platos reales
     if not os.path.exists(PATH_MAESTRO):
-        print(f"❌ Error: No encuentro {PATH_MAESTRO}. Créalo primero.")
+        print(f"Error: No encuentro {PATH_MAESTRO}. Créalo primero.")
         return
     
     df_maestro = pd.read_csv(PATH_MAESTRO)
@@ -27,16 +27,16 @@ def generate_daily_dirty_data():
         df_old['fecha_dt'] = pd.to_datetime(df_old['fecha'], errors='coerce')
         ultima_fecha = df_old['fecha_dt'].max().date()
         fecha_inicio = ultima_fecha + timedelta(days=1)
-        print(f"🔄 Continuando desde la última fecha: {ultima_fecha}")
+        print(f"Continuando desde la última fecha: {ultima_fecha}")
     else:
         # Si no existe, empezamos en 2024
         fecha_inicio = datetime(2024, 1, 1).date()
-        print(f"🆕 Creando nuevo archivo RAW desde {fecha_inicio}")
+        print(f"Creando nuevo archivo RAW desde {fecha_inicio}")
 
     fecha_hoy = datetime.now().date()
     
     if fecha_inicio > fecha_hoy:
-        print("✅ Los datos ya están actualizados hasta hoy.")
+        print("Los datos ya están actualizados hasta hoy.")
         return
 
     # 3. Generar datos por cada día faltante
@@ -82,10 +82,10 @@ def generate_daily_dirty_data():
         
         df_final = pd.concat([df_old, new_df], ignore_index=True)
         df_final.to_csv(PATH_OUTPUT, index=False)
-        print(f"✅ Se han añadido {len(new_df)} nuevas líneas de ventas.")
+        print(f"Se han añadido {len(new_df)} nuevas líneas de ventas.")
     else:
         new_df.to_csv(PATH_OUTPUT, index=False)
-        print(f"✅ Archivo RAW creado con {len(new_df)} líneas.")
+        print(f"Archivo RAW creado con {len(new_df)} líneas.")
 
 if __name__ == "__main__":
     generate_daily_dirty_data()
