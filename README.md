@@ -10,21 +10,28 @@
 
 ---
 
+## 🎥 Presentación del Proyecto
+
+Puedes visualizar la demostración en funcionamiento y la defensa técnica de la arquitectura en el siguiente enlace:  
+👉 **[Ver vídeo de presentación de SmartChef (Google Drive)](https://drive.google.com/file/d/1DpfRgoILcqygcDv487l896uOJv6hH216/view)**
+
+---
+
 ## 📋 Descripción
 
 SmartChef es una solución analítica diseñada para optimizar la gestión de restaurantes mediante técnicas de **Machine Learning**.
 
 El sistema predice la demanda semanal de ingredientes perecederos combinando:
 
-- Histórico de ventas  
-- Recetas (escandallos)  
-- Variables externas (clima, festivos, contexto)  
+- Histórico de ventas
+- Recetas (escandallos)
+- Variables externas (clima, festivos, contexto)
 
 El objetivo es generar **recomendaciones de compra precisas** que permitan:
 
-- Reducir el desperdicio alimentario  
-- Evitar roturas de stock  
-- Optimizar costes operativos  
+- Reducir el desperdicio alimentario
+- Evitar roturas de stock
+- Optimizar costes operativos
 
 ---
 
@@ -32,7 +39,7 @@ El objetivo es generar **recomendaciones de compra precisas** que permitan:
 
 La solución sigue una arquitectura de microservicios completamente contenedorizada con **Docker Compose**:
 
-```
+```text
 ┌─────────────────────────────────────────────────────┐
 │  Presentación   Nginx + HTML/JS/CSS + Chart.js      │  :443
 ├─────────────────────────────────────────────────────┤
@@ -46,21 +53,21 @@ La solución sigue una arquitectura de microservicios completamente contenedoriz
 
 ### Capas del sistema
 
-- **Capa de Datos:** PostgreSQL almacena ventas, recetas, contexto y predicciones  
-- **Capa de Procesamiento:** Pipeline ETL + entrenamiento del modelo  
-- **Capa de Servicio:** API REST con FastAPI  
-- **Capa de Presentación:** Dashboard web interactivo  
+- **Capa de Datos:** PostgreSQL almacena ventas, recetas, contexto y predicciones.
+- **Capa de Procesamiento:** Pipeline ETL + entrenamiento del modelo de IA.
+- **Capa de Servicio:** API REST con FastAPI.
+- **Capa de Presentación:** Dashboard web interactivo.
 
 ---
 
 ## 🛠️ Stack Tecnológico
 
 | Área | Tecnología |
-|------|-----------|
+|---|---|
 | Lenguaje | Python 3.10+ |
 | Base de datos | PostgreSQL |
 | API | FastAPI + Uvicorn |
-| Machine Learning | Scikit-learn · XGBoost |
+| Machine Learning | Scikit-learn · Random Forest |
 | Frontend | Vanilla JS · Chart.js · CSS3 |
 | Servidor web | Nginx |
 | Infraestructura | Docker · Docker Compose |
@@ -71,8 +78,8 @@ La solución sigue una arquitectura de microservicios completamente contenedoriz
 
 ### Requisitos
 
-- Docker y Docker Compose  
-- Linux / WSL2 / macOS  
+- Docker y Docker Compose
+- Linux / WSL2 / macOS
 
 ### Instalación y ejecución
 
@@ -80,10 +87,10 @@ La solución sigue una arquitectura de microservicios completamente contenedoriz
 
 ```bash
 git clone <url-del-repositorio>
-cd smartchef-grupo9
+cd smartchef
 ```
 
-2. Dar permisos al script (solo la primera vez):
+2. Dar permisos al script (solo la primera vez en entornos UNIX):
 
 ```bash
 chmod +x start.sh
@@ -92,34 +99,34 @@ chmod +x start.sh
 3. Ejecutar el entorno:
 
 ```bash
-./start.sh
+bash start.sh
 ```
 
 4. Acceder al sistema:
 
-👉 https://localhost  
+👉 **https://localhost**
 
-> ⚠️ El navegador puede mostrar una advertencia de seguridad debido a certificados locales autogenerados. Es seguro continuar.
+> ⚠️ El navegador mostrará una advertencia de seguridad rutinaria debido al uso de certificados locales SSL autogenerados (necesarios para la mitigación CORS). Haz clic en "Configuración avanzada" y selecciona "Continuar a localhost (inseguro)".
 
 ---
 
-## 🔒 Variables de Entorno
+## 🔒 Variables de Entorno y Seguridad
 
-El proyecto utiliza variables de entorno para proteger credenciales.
+El proyecto sigue la metodología **12-Factor App**, delegando la gestión de secretos a variables de entorno para evitar incrustar contraseñas en el código fuente.
 
-Es necesario crear un archivo `.env` en la raíz del proyecto antes de ejecutar el sistema.
+Es necesario crear un archivo `.env` en la raíz del proyecto antes de ejecutar el sistema (ver documentación técnica para las credenciales de evaluación académica).
 
 ---
 
 ## 👥 Equipo - Grupo 9
 
-| Miembro | Rol |
-|--------|-----|
-| **Toni Sureda** | Arquitectura · Frontend · Nginx |
-| **Alejandro Fernández** | Machine Learning · Backend · API |
-| **Hugo Barrera** | Base de datos · Ingesta de datos |
-| **Blas Martos** | ETL · Integración de datos externos |
+| Miembro | Rol Estratégico |
+|---|---|
+| Alejandro Fernández Fuentes | Data Engineering (Gestión, tratamiento y estructuración de datos) |
+| Antoni Sureda Cardona | Platform & Architecture (Infraestructura Docker, Backend API, Frontend y Nginx) |
+| Blas Martos Ortega | Machine Learning (Modelos predictivos, cálculo de IC y detección de anomalías) |
+| Hugo Barrera Castillo | Project Management & BI (Coordinación, definición de KPIs y valor de negocio) |
 
 ---
 
-*Curso de Especialización en IA y Big Data · Grupo 9*
+> Curso de Especialización en IA y Big Data · Grupo 9
