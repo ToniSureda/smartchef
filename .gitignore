@@ -135,7 +135,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+#.env Lo quitamos para que cuando el jurado pruebe de ejecutar el proyecto pueda usar las credenciales de la bbdd
 .envrc
 .venv
 env/
